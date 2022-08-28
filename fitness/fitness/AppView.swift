@@ -100,7 +100,8 @@ struct AppView: View {
  
                             
                         }.frame(width: 420, height: 300)
-                    
+                    Spacer()
+                        .frame(height: 190)
                     //لازم اعدل وافهم شلون تشتغل //
                     TabView(){
                         
