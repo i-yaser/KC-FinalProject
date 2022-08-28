@@ -21,6 +21,7 @@ struct AppView: View {
                 .foregroundColor(Color.theme.Colorf)
             
             VStack{
+                
             HStack{
                 Spacer()
                     .frame(width: 28, height: 0)
@@ -98,26 +99,41 @@ struct AppView: View {
                             
  
                             
-                        }.frame(width: 420, height: 400)
+                        }.frame(width: 420, height: 300)
                     
-                    
-                    Spacer()
-                        .frame(height:210)
-                    
-                    
-                    
-                    
+                    //لازم اعدل وافهم شلون تشتغل //
+                    TabView(){
+                        
+                        AppView()
+                            .tabItem {
+                                Image(systemName: "house")
+                                Text("Home")
+                            }
+                       Text("LL")
+                            .tabItem{
+                                Image(systemName: "folder")
+                                Text("setting")
+                            }
                     }
                     
+                    
+                    
+                    
+                   
+                    
+                    }
+                
+               
                     
                 }
                 
             
             
             
-            }//VStack 1
+            }//ZStack 1
             
-        }//ZStack 1
+        }//Navig 1
+        
         
     }
 }
