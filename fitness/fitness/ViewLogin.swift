@@ -54,7 +54,7 @@ struct TheFirst: View {
                     }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
-                    .background(Color.theme.Background .opacity(0.8))
+                    .background(Color.theme.Colorf .opacity(0.8))
                     .cornerRadius(10)
                     
                     Button("هل نسيت كلمة المرور؟"){
@@ -62,7 +62,7 @@ struct TheFirst: View {
                         
                     }
                     .font(.system(size: 14))
-                    .foregroundColor(Color.theme.Background)
+                    .foregroundColor(Color.theme.Colorf .opacity(0.8))
                     .frame(width: 200, height: 20)
                     
                     Spacer()

@@ -1,0 +1,131 @@
+//
+//  AppView.swift
+//  fitness
+//
+//  Created by Yasr Alajmi on 28/08/2022.
+//
+
+import SwiftUI
+
+struct AppView: View {
+    var body: some View {
+        NavigationView {
+        ZStack{
+            Color.theme.Colorf .ignoresSafeArea()
+            
+            Circle()
+                .scale(1.7)
+                .foregroundColor(Color.theme.Colorjj .opacity(0.20))
+            Circle()
+                .scale(1.35)
+                .foregroundColor(Color.theme.Colorf)
+            
+            VStack{
+            HStack{
+                Spacer()
+                    .frame(width: 28, height: 0)
+                
+                Image("LOGO")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                
+                Spacer()
+                
+                Text("الصفحه الرئيسيه")
+                    .font(.title)
+                    .foregroundColor(Color.theme.Background)
+                Image(systemName: "house")
+                Spacer()
+               
+            } //HStack 1
+                Divider()
+            
+            
+            
+                
+                    ScrollView(.horizontal){
+                        HStack{
+                    ForEach(AdAdAd){ Ad in
+                        
+                        
+                            Image(Ad.PhotoAd)
+                                .resizable()
+                                .frame(width: 310, height: 200)
+                        
+                        } // ForEach 1
+                    
+                    }//HStack 2
+                        .background(Color.black)
+                    
+                }//ScrollView 1
+                
+                Divider()
+                VStack{
+                    Text("القوائم المهمه")
+                        .font(.title3)
+                        .foregroundColor(Color.theme.Background)
+                        
+                    
+                    
+                   
+                        ScrollView{
+                            
+                            VStack{
+                                    ForEach(HomePhoto){ Qphoto in
+                                        
+                                        HStack{
+                                            
+                                            Image(Qphoto.photo1)
+                                                .resizable()
+                                                .frame(width: 200, height: 200)
+                                                .cornerRadius(38)
+                                                .onTapGesture {
+                                                    
+                                                }
+                                       
+                                        Image(Qphoto.photo2)
+                                            .resizable()
+                                            .frame(width: 200, height: 200)
+                                            .cornerRadius(38)
+                                    }
+                                    
+                                    
+                                    
+                                }
+                                
+                                
+                            }
+                            
+ 
+                            
+                        }.frame(width: 420, height: 400)
+                    
+                    
+                    Spacer()
+                        .frame(height:210)
+                    
+                    
+                    
+                    
+                    }
+                    
+                    
+                }
+                
+            
+            
+            
+            }//VStack 1
+            
+        }//ZStack 1
+        
+    }
+}
+
+struct AppView_Previews: PreviewProvider {
+    static var previews: some View {
+        AppView()
+            .preferredColorScheme(.light)
+            .previewDevice("iPhone 11")
+    }
+}

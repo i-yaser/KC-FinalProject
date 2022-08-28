@@ -19,3 +19,32 @@ struct ColorTheme{
     let Colorf = Color("Colorf")
     let Colorjj = Color("Colorjj")
 }
+
+
+//Color 👆🏻 //
+
+
+struct AdModel: Identifiable{
+    let id = UUID()
+    var PhotoAd: String
+    
+
+}
+
+var AdAdAd = [ AdModel(PhotoAd: "FoodAd"), AdModel(PhotoAd: "Dr.Ad"), AdModel(PhotoAd: "GYM.Ad")
+
+]
+
+//Struct Ad👆🏻 //
+
+
+struct homeModel: Identifiable{
+    let id = UUID()
+    var photo1: String
+    var photo2: String
+    
+}
+
+var HomePhoto = [ homeModel(photo1: "KETO", photo2: "BMR")
+
+]
