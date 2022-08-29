@@ -65,6 +65,7 @@ struct ContentView: View {
                     
                     Text("اهلا بك \n خيارك الأفضل لصحه")
                         .multilineTextAlignment(.center)
+                        .foregroundColor(.black)
                         
                         .frame(width: 200, height: 80)
                         

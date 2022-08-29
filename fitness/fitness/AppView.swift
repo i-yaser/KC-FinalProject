@@ -112,8 +112,13 @@ struct AppView: View {
                             }
                        Text("LL")
                             .tabItem{
-                                Image(systemName: "folder")
-                                Text("setting")
+                                Image(systemName: "bolt.heart")
+                                Text("Healthy")
+                            }
+                        Text("JJ")
+                            .tabItem {
+                                Image(systemName: "person.crop.circle")
+                                Text("Profile")
                             }
                     }
                     
@@ -142,7 +147,7 @@ struct AppView: View {
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {
         AppView()
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
             .previewDevice("iPhone 11")
     }
 }

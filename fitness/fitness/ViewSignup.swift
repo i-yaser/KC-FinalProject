@@ -19,19 +19,19 @@ struct ViewSignup: View {
     //
     var body: some View {
         ZStack{
-            Color.theme.Background .opacity(0.8) .ignoresSafeArea()
+            Color.theme.Colorf .opacity(0.8) .ignoresSafeArea()
             
             Circle()
                 .scale(1.7)
                 .foregroundColor(.white .opacity(0.15))
-                
+                .offset(y: -70)
             Circle()
                 .scale(1.35)
                 .foregroundColor(.white)
-            
+                .offset(y: -70)
             VStack{
                 
-                Image("LOGO2")
+                Image("LogoDouble")
                     .resizable()
                     .frame(width: 180, height: 180)
                     .offset(y: 60)
@@ -82,7 +82,7 @@ struct ViewSignup: View {
                     .foregroundColor(.black)
                 
                 Spacer()
-                    .frame(width: 0, height: 60)
+                    .frame(width: 0, height: 10)
                 
                 
                 
@@ -104,7 +104,7 @@ struct ViewSignup: View {
                                             } label: {
                                                 Text("شديد النشاط")
                                                     .frame(width: 100, height: 40)
-                                                    .background(Color.theme.Background)
+                                                    .background(Color.theme.Colorf)
                                                     .cornerRadius(30)
                                                     .padding()
                                                     
@@ -118,7 +118,7 @@ struct ViewSignup: View {
                                             } label: {
                                                 Text("نشيط")
                                                     .frame(width: 100, height: 40)
-                                                    .background(Color.theme.Background)
+                                                    .background(Color.theme.Colorf)
                                                     .cornerRadius(30)
                                                     .padding()
                                                    
@@ -132,7 +132,7 @@ struct ViewSignup: View {
                                             } label: {
                                                 Text("متوسط النّشاط")
                                                     .frame(width: 100, height: 40)
-                                                    .background(Color.theme.Background)
+                                                    .background(Color.theme.Colorf)
                                                     .cornerRadius(30)
                                                     .padding()
                                                    
@@ -146,7 +146,7 @@ struct ViewSignup: View {
                                            } label: {
                                                Text("خفيف النشاط")
                                                    .frame(width: 100, height: 40)
-                                                   .background(Color.theme.Background)
+                                                   .background(Color.theme.Colorf)
                                                    .cornerRadius(30)
                                                    .padding()
                                                   
@@ -162,7 +162,7 @@ struct ViewSignup: View {
                                             } label: {
                                                 Text(" خامل")
                                                     .frame(width: 100, height: 40)
-                                                    .background(Color.theme.Background)
+                                                    .background(Color.theme.Colorf)
                                                     .cornerRadius(30)
                                                     .padding()
                                                     
@@ -181,7 +181,7 @@ struct ViewSignup: View {
                         
                     
                    
-                        } .background(.white) .cornerRadius(20)
+                        } .background(Color.theme.Colorjj) .cornerRadius(20)
                         
                     }
                     VStack{
@@ -190,7 +190,30 @@ struct ViewSignup: View {
                     Text("\(MMM)")
                         .foregroundColor(.white)
                         
-                    }
+                        
+                       Button("إنشاء الحساب"){
+                            
+                            
+                            
+   
+                        } .foregroundColor(.white)
+                                .frame(width: 300, height: 50)
+                                .background(Color.black .opacity(0.8))
+                                .cornerRadius(10)
+                        
+                        
+//                        NavigationLink(destination: Text("ViewSignup")){
+//                            Text("إنشاء حساب جديد")
+//                            .foregroundColor(.white)
+//                            .frame(width: 300, height: 50)
+//                            .background(Color.black .opacity(0.8))
+//                            .cornerRadius(10)
+//
+//                        }
+                        
+                }
+                    Spacer()
+                        .frame(height: 90)
                 }
                 
                 
@@ -222,5 +245,6 @@ struct ViewSignup_Previews: PreviewProvider {
         ViewSignup()
             .preferredColorScheme(.light)
             .previewDevice("iPhone 11")
+            .previewInterfaceOrientation(.portrait)
     }
 }
