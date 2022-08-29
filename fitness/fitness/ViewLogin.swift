@@ -48,15 +48,13 @@ struct TheFirst: View {
                         .cornerRadius(10)
                         .foregroundColor(.black)
                     
-                    Button("تسجيل الدخول"){
-                        
-                        
-                    }
+                    NavigationLink(destination: Text("j")){
+                        Text("تسجيل الدخول")
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
                     .background(Color.theme.Colorf .opacity(0.8))
                     .cornerRadius(10)
-                    
+                    }
                     Button("هل نسيت كلمة المرور؟"){
                         
                         
@@ -78,7 +76,7 @@ struct TheFirst: View {
 struct TheFirst_Previews: PreviewProvider {
     static var previews: some View {
         TheFirst()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
             .previewDevice("iPhone 11")
     }
 }

@@ -71,7 +71,7 @@ struct ContentView: View {
                         
                     Spacer()
                     
-                    NavigationLink(destination: Text("ViewLogin")){
+                    NavigationLink(destination: TheFirst()){
                         Text("تسجيل الدخول")
                         .foregroundColor(.white)
                         .frame(width: 300, height: 50)
@@ -80,7 +80,7 @@ struct ContentView: View {
                         
                     }
                    
-                    NavigationLink(destination: Text("ViewSignup")){
+                    NavigationLink(destination: ViewSignup()){
                         Text("إنشاء حساب جديد")
                         .foregroundColor(.white)
                         .frame(width: 300, height: 50)
@@ -109,7 +109,7 @@ struct ContentView: View {
                     
                 
                 }
-            }
+            }.navigationTitle("Fitness")
             
         }
             
