@@ -18,6 +18,10 @@ struct ColorTheme{
     let coloB = Color("colorB")
     let Colorf = Color("Colorf")
     let Colorjj = Color("Colorjj")
+    let Primary = Color("Primary")
+    let PrimaryOn = Color("PrimaryOn")
+    let PrimaryContainer = Color("PrimaryContainer")
+    let OnPrimaryContainer = Color("OnPrimaryContainer")
 }
 
 

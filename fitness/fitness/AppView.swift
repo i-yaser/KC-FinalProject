@@ -11,14 +11,15 @@ struct AppView: View {
     var body: some View {
         NavigationView {
         ZStack{
-            Color.theme.Colorf .ignoresSafeArea()
+            Color.theme.Primary .ignoresSafeArea()
             
-            Circle()
-                .scale(1.7)
-                .foregroundColor(Color.theme.Colorjj .opacity(0.20))
-            Circle()
-                .scale(1.35)
-                .foregroundColor(Color.theme.Colorf)
+            Ellipse()
+                .scale(1.1)
+                .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
+                
+            Ellipse()
+                .scale(1)
+                .foregroundColor(Color.theme.PrimaryContainer)
             
             VStack{
                 
@@ -103,24 +104,24 @@ struct AppView: View {
                     Spacer()
                         .frame(height: 190)
                     //لازم اعدل وافهم شلون تشتغل //
-                    TabView(){
-                        
-                        AppView()
-                            .tabItem {
-                                Image(systemName: "house")
-                                Text("Home")
-                            }
-                       Text("LL")
-                            .tabItem{
-                                Image(systemName: "bolt.heart")
-                                Text("Healthy")
-                            }
-                        Text("JJ")
-                            .tabItem {
-                                Image(systemName: "person.crop.circle")
-                                Text("Profile")
-                            }
-                    }
+//                    TabView(){
+//
+//                        AppView()
+//                            .tabItem {
+//                                Image(systemName: "house")
+//                                Text("Home")
+//                            }
+//                       Text("LL")
+//                            .tabItem{
+//                                Image(systemName: "bolt.heart")
+//                                Text("Healthy")
+//                            }
+//                        ProfileView()
+//                            .tabItem {
+//                                Image(systemName: "person.crop.circle")
+//                                Text("Profile")
+//                            }
+//                    }
                     
                     
                     
@@ -147,7 +148,7 @@ struct AppView: View {
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {
         AppView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
             .previewDevice("iPhone 11")
     }
 }

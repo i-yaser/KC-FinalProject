@@ -78,7 +78,7 @@ struct TheFirst: View {
 struct TheFirst_Previews: PreviewProvider {
     static var previews: some View {
         TheFirst()
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
             .previewDevice("iPhone 11")
     }
 }
