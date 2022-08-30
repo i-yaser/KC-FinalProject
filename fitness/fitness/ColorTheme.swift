@@ -64,3 +64,22 @@ struct HealthyModel: Identifiable{
 var HealthyPhoto0 = [HealthyModel(category1: "FoodAd")]
 var HealthyPhoto1 = [HealthyModel(category1: "GYM.Ad")]
 var HealthyPhoto2 = [HealthyModel(category1: "Dr.Ad")]
+
+//Struct Healthy Tab👆🏻//
+
+struct detailsNadi: Identifiable{
+    let id = UUID()
+    var Name: String
+    var logo: String
+    var Prices: String
+    var ourPhotoNadi: [String]
+    var Place: String
+    
+}
+
+var ourGYM = [
+detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "50K.D/m", ourPhotoNadi: ["OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم"], Place: "العقيله \n جابر العلي \n الجابريه")
+,
+detailsNadi(Name: "Platinum Health Club", logo: "Platinum Health Club", Prices: "50K.D/m", ourPhotoNadi: ["Platinum Health Club", "Platinum Health Club" , "Platinum Health Club"], Place: "العقيله \n جابر العلي \n الجابري")
+
+]
