@@ -78,7 +78,7 @@ struct detailsNadi: Identifiable{
 }
 
 var ourGYM = [
-detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "50K.D/m", ourPhotoNadi: ["OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم"], Place: "العقيله \n جابر العلي \n الجابريه")
+detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "8K.D/يوم \n 50K.D/شهر1 \n 140K.D/3شهور \n 240K.D/6شهور \n 220K.D/سنه", ourPhotoNadi: ["OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم"], Place: "صباح السالم \n الرقعي \n العديلية")
 ,
 detailsNadi(Name: "Platinum Health Club", logo: "Platinum Health Club", Prices: "50K.D/m", ourPhotoNadi: ["Platinum Health Club", "Platinum Health Club" , "Platinum Health Club"], Place: "العقيله \n جابر العلي \n الجابري")
 

@@ -24,6 +24,7 @@ struct AppView: View {
             VStack{
                 
             HStack{
+                
                 Spacer()
                     .frame(width: 28, height: 0)
                 
@@ -92,7 +93,6 @@ struct AppView: View {
                                     }
                                     
                                     
-                                    
                                 }
                                 
                                 
@@ -106,21 +106,25 @@ struct AppView: View {
 //                    لازم اعدل وافهم شلون تشتغل //
                     TabView(){
 
-                        AppView()
-                            .tabItem {
-                                Image(systemName: "house")
-                                Text("Home")
-                            }
+                        
                         HealthyView()
                             .tabItem{
                                 Image(systemName: "bolt.heart")
                                 Text("Healthy")
                             }
+                        
+                        AppView()
+                            .tabItem {
+                                Image(systemName: "house")
+                                Text("Home")
+                            }
+                        
                         ProfileView()
                             .tabItem {
                                 Image(systemName: "person.crop.circle")
                                 Text("Profile")
                             }
+                        
                     }
                     
                     
@@ -139,7 +143,7 @@ struct AppView: View {
             
             }//ZStack 1
             
-        }//Navig 1
+        }//Navig
         
         
     }

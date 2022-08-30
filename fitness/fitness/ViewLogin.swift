@@ -48,13 +48,14 @@ struct TheFirst: View {
                         .cornerRadius(10)
                         .foregroundColor(.black)
                     
-                    NavigationLink(destination: Text("j")){
+                    NavigationLink(destination: AppView()){
                         Text("تسجيل الدخول")
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
                     .background(Color.theme.Colorf .opacity(0.8))
                     .cornerRadius(10)
                     }
+                    
                     Button("هل نسيت كلمة المرور؟"){
                         
                         
