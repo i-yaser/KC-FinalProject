@@ -52,3 +52,15 @@ struct homeModel: Identifiable{
 var HomePhoto = [ homeModel(photo1: "KETO", photo2: "BMR")
 
 ]
+
+//Struct undr ad👆🏻 //
+struct HealthyModel: Identifiable{
+    let id = UUID()
+    var category1: String
+//    var category2: String
+    
+}
+
+var HealthyPhoto0 = [HealthyModel(category1: "FoodAd")]
+var HealthyPhoto1 = [HealthyModel(category1: "GYM.Ad")]
+var HealthyPhoto2 = [HealthyModel(category1: "Dr.Ad")]

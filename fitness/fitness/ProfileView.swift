@@ -25,7 +25,6 @@ struct ProfileView: View {
                 .scale()
                 .foregroundColor(Color.theme.PrimaryContainer)
                 
-            
             VStack {
                 
                 VStack{
@@ -110,7 +109,7 @@ struct ProfileView: View {
                                 Spacer()
                                          .frame(height:1)
                             
-                            Link("اضغط هنا", destination: URL(string: "https://www.youtube.com/watch?v=8TqH661a2Uc&list=RD38y_Znfe-rw&index=31")!)
+                            Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
                                 .frame(width: 140, height: 40)
     //                            .background(Color.white) .cornerRadius(50)
                             }
@@ -122,7 +121,7 @@ struct ProfileView: View {
                                          .frame(height:1)
                            
                             
-                            Link("اضغط هنا", destination: URL(string: "https://www.youtube.com/watch?v=8TqH661a2Uc&list=RD38y_Znfe-rw&index=31")!)
+                            Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
                                 .frame(width: 140, height: 40)
     //                            .background(Color.white) .cornerRadius(50)
                             }
@@ -133,7 +132,7 @@ struct ProfileView: View {
                            Spacer()
                                     .frame(height:1)
                             
-                            Link("اضغط هنا", destination: URL(string: "https://www.youtube.com/watch?v=8TqH661a2Uc&list=RD38y_Znfe-rw&index=31")!)
+                            Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
                                 .frame(width: 140, height: 40)
     //                            .background(Color.white) .cornerRadius(50)
                             }
@@ -156,6 +155,7 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
+            .previewDevice("iPhone 11")
             .preferredColorScheme(.dark)
     }
 }
