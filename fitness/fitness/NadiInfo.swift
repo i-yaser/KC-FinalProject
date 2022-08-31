@@ -22,8 +22,7 @@ struct NadiInfo: View {
             VStack{
                 
                 VStack {
-                    Spacer()
-                        .frame(width: 330, height: 0)
+                   
                     
                     Image("LogoDouble")
                         .resizable()
@@ -32,14 +31,14 @@ struct NadiInfo: View {
                     HStack{
                         Image(ourNadi.Name)
                             .resizable()
-                            .frame(width: 180, height: 180)
+                            .frame(width: 120, height: 120)
                         Spacer()
                         Text(ourNadi.logo)
-                            .font(.title2)
+                            .font(.title3)
                             .multilineTextAlignment(.center)
                             .padding()
                             .foregroundColor(Color.theme.Primary)
-                        
+                            .frame(width: 182,height: 160)
                        }//HStack 1
                     .padding()
                 .background(.white .opacity(0.3))
@@ -83,14 +82,13 @@ struct NadiInfo: View {
                             
                             Image(nadi)
                                 .resizable()
-                                .frame(width: 250, height: 220)
-                            
-                            
-                            
+                                .frame(width: 280, height: 190)
+                                .cornerRadius(30)
+  
                             
                         }
                     }
-                }
+                }.background(.white .opacity(0.3))
                 
                 HStack{
                     VStack{
@@ -144,9 +142,9 @@ struct NadiInfo: View {
 struct NadiInfo_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            NadiInfo(ourNadi: detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "7K.D/يوم \n 50K.D/شهر1 \n 140K.D/3شهور \n 240K.D/6شهور \n 220K.D/سنه", ourPhotoNadi: ["OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم"], Place: "صباح السالم \n الرقعي \n العديلية"))
+            NadiInfo(ourNadi: detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "50K.D/m", ourPhotoNadi: ["O2-1", "O2-2", "O2-3", "O2-4", "O2-5"], Place: "العقيله \n جابر العلي \n الجابريه"))
                 .preferredColorScheme(.light)
-            NadiInfo(ourNadi: detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "7K.D/يوم \n 50K.D/شهر1 \n 140K.D/3شهور \n 240K.D/6شهور \n 220K.D/سنه", ourPhotoNadi: ["OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم", "OXYGEN GYMS | اوكسجين جيم"], Place: "صباح السالم \n الرقعي \n العديلية"))
+            NadiInfo(ourNadi: detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "50K.D/m", ourPhotoNadi: ["O2-1", "O2-2", "O2-3", "O2-4", "O2-5"], Place: "العقيله \n جابر العلي \n الجابريه"))
                 .preferredColorScheme(.dark)
         }
     }
