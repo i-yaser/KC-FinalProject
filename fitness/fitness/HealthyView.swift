@@ -105,6 +105,7 @@ struct HealthyView: View {
         //                } //TabView
                         
                     }//VStack 1
+                    
                 }
             
         }

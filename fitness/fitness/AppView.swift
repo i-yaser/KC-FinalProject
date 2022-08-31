@@ -104,28 +104,28 @@ struct AppView: View {
                     Spacer()
                         .frame(height: 190)
 //                    لازم اعدل وافهم شلون تشتغل //
-                    TabView(){
-
-                        
-                        HealthyView()
-                            .tabItem{
-                                Image(systemName: "bolt.heart")
-                                Text("Healthy")
-                            }
-                        
-                        AppView()
-                            .tabItem {
-                                Image(systemName: "house")
-                                Text("Home")
-                            }
-                        
-                        ProfileView()
-                            .tabItem {
-                                Image(systemName: "person.crop.circle")
-                                Text("Profile")
-                            }
-                        
-                    }
+//                    TabView(){
+//
+//
+//                        HealthyView()
+//                            .tabItem{
+//                                Image(systemName: "bolt.heart")
+//                                Text("Healthy")
+//                            }
+//
+//                        AppView()
+//                            .tabItem {
+//                                Image(systemName: "house")
+//                                Text("Home")
+//                            }
+//
+//                        ProfileView()
+//                            .tabItem {
+//                                Image(systemName: "person.crop.circle")
+//                                Text("Profile")
+//                            }
+//
+//                    }
                     
                     
                     

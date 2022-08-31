@@ -53,7 +53,7 @@ struct NadiView: View {
                                 
                                 NavigationLink(destination: {
                                     
-                                    NadiInfo(ourNadi: detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "50K.D/m", ourPhotoNadi: ["O2-1", "O2-2", "O2-3", "O2-4", "O2-5"], Place: "العقيله \n جابر العلي \n الجابريه"))
+                                    NadiInfo(ourNadi: nad)
                                     
                                 }, label: {
                                     

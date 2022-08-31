@@ -21,7 +21,7 @@ struct NoadiTime: View {
             Spacer()
             Text(nad)
             Spacer()
-            Text("??K.D /m ")
+            
             
             
             

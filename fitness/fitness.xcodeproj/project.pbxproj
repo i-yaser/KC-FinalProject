@@ -22,6 +22,7 @@
 		8BC4F24A28B523DA000A1610 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4F24928B523DA000A1610 /* ContentView.swift */; };
 		8BC4F24C28B523DC000A1610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4F24B28B523DC000A1610 /* Assets.xcassets */; };
 		8BC4F24F28B523DC000A1610 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4F24E28B523DC000A1610 /* Preview Assets.xcassets */; };
+		8BCF366A28BF8E9E00E1A3FC /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF366928BF8E9E00E1A3FC /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		8BC4F24928B523DA000A1610 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BC4F24B28B523DC000A1610 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BC4F24E28B523DC000A1610 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BCF366928BF8E9E00E1A3FC /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				8BC4F24728B523DA000A1610 /* fitnessApp.swift */,
 				8BC4F24928B523DA000A1610 /* ContentView.swift */,
+				8BCF366928BF8E9E00E1A3FC /* FirstView.swift */,
 				8B1F7CF828B98E9900654C23 /* Launch Screen.storyboard */,
 				8BC4F24B28B523DC000A1610 /* Assets.xcassets */,
 				8BC4F24D28B523DC000A1610 /* Preview Content */,
@@ -178,6 +181,7 @@
 				8BB3DA6E28BB17C0002DBC86 /* AppView.swift in Sources */,
 				8B1F7CF728B9790B00654C23 /* ViewSignup.swift in Sources */,
 				8B54A8BE28B6DAB100FECA15 /* ViewLogin.swift in Sources */,
+				8BCF366A28BF8E9E00E1A3FC /* FirstView.swift in Sources */,
 				8BBAD18F28BC51F40013C5DC /* ProfileView.swift in Sources */,
 				8BBAD19128BC78430013C5DC /* HealthyView.swift in Sources */,
 				8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */,
