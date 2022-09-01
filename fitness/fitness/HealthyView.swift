@@ -51,10 +51,12 @@ struct HealthyView: View {
                             
                             ForEach(HealthyPhoto0){ Healthy in
                                 
-                                Image(Healthy.category1)
-                                    .resizable()
-                                    .cornerRadius(40)
+                                NavigationLink(destination: ListDait()) {
+                                    Image(Healthy.category1)
+                                        .resizable()
+                                        .cornerRadius(40)
                                     .frame(width: 420, height: 200)
+                                }
                             }
                             Divider()
                             
