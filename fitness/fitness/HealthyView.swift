@@ -85,7 +85,6 @@ struct HealthyView: View {
                         
                         
                         
-                        
         //                TabView(){
         //
         //                    AppView()
