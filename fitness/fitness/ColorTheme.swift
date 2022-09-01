@@ -85,5 +85,25 @@ var ourGYM = [
     
 ]
 
+//ourGEM ///
 
+struct DaitLOL: Identifiable {
+    let id = UUID()
+    var photo1: String
+    var photo2: String
+    var photo3: String
+    var photo4: String
+    var photo5: String
+    var photo6: String
+    var photo7: String
+    var photo8: String
+    var photo9: String
+    var photo10: String
+    var photo11: String
+    var photo12: String
+    var photo13: String
+    var photo14: String
 
+}
+
+var ourDait = [DaitLOL(photo1: "photo2500", photo2: "photo2400", photo3: "photo2300", photo4: "photo2200", photo5: "photo2100", photo6: "photo2000", photo7: "photo1900", photo8: "photo1800", photo9: "photo1700", photo10: "photo1600", photo11: "photo1500", photo12: "photo1400", photo13: "photo1300", photo14: "photo1200")]

@@ -82,10 +82,7 @@ struct AppView: View {
                                                 .resizable()
                                                 .frame(width: 200, height: 200)
                                                 .cornerRadius(38)
-                                                .onTapGesture {
-                                                    
-                                                }
-                                       
+                                            
                                         Image(Qphoto.photo2)
                                             .resizable()
                                             .frame(width: 200, height: 200)
