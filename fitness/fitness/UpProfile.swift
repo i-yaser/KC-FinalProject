@@ -21,7 +21,7 @@ struct UpProfile: View {
                 .foregroundColor(Color.theme.PrimaryContainer)
                 
             VStack{
-                Text("")
+                Text("هنا شروط التطبيق")
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 360)

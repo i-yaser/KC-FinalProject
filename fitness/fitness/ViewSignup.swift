@@ -17,6 +17,7 @@ struct ViewSignup: View {
     @State var age = ""
     @State var MMM = 0.0
     //
+    @State var LogInIs = false
     var body: some View {
         ZStack{
             Color.theme.Colorf .opacity(0.8) .ignoresSafeArea()
@@ -29,32 +30,47 @@ struct ViewSignup: View {
                 .scale(1.35)
                 .foregroundColor(.white)
                 .offset(y: -70)
+            
             VStack{
+                
+                
                 
                 Image("LogoDouble")
                     .resizable()
                     .frame(width: 180, height: 180)
                     .offset(y: 60)
-                Text("إنشاء حساب جديد")
-                    .font(.largeTitle)
-                    .foregroundColor(.black)
+                
+                Picker(selection: $LogInIs,  label: Text("LOL")){
+                    Text("ذكر")
+                        .tag(true)
+                    Text("انثى")
+                        .tag(false)
+                }.pickerStyle(SegmentedPickerStyle())
                     .padding()
                 
-                TextField("اكتب اسمك", text: $Name)
-                    .padding()
-                    .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
-                    .cornerRadius(10)
-                    .foregroundColor(.black)
                 
-                TextField("اكتب الايميل", text: $Email)
-                    .padding()
-                    .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
-                    .cornerRadius(10)
-                    .foregroundColor(.black)
                 
-                TextField("اكتب كلمة المرور", text: $Password)
+//                Text("إنشاء حساب جديد")
+//                    .font(.largeTitle)
+//                    .foregroundColor(.black)
+//                    .padding()
+//
+//                TextField("اكتب اسمك", text: $Name)
+//                    .padding()
+//                    .frame(width: 300, height: 50)
+//                    .background(Color.black.opacity(0.05))
+//                    .cornerRadius(10)
+//                    .foregroundColor(.black)
+//
+//                TextField("اكتب الايميل", text: $Email)
+//                    .keyboardType(.emailAddress)
+//                    .padding()
+//                    .frame(width: 300, height: 50)
+//                    .background(Color.black.opacity(0.05))
+//                    .cornerRadius(10)
+//                    .foregroundColor(.black)
+//
+                SecureField("اكتب كلمة المرور", text: $Password)
                     .padding()
                     .frame(width: 300, height: 50)
                     .background(Color.black.opacity(0.05))
@@ -89,132 +105,136 @@ struct ViewSignup: View {
                 
                
                 
-               
                 VStack {
-                    
-                    Text("ما هو نمط حياتك:")
-                        .font(.body)
-                    
-                    ScrollView(.horizontal) {
-                        HStack{
-                        
-                        Button {
-                                                MMM = BMR(Toool: Double(tol) ?? 0.0 / 100, Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0)*1.900
-                            
-                                            } label: {
-                                                Text("شديد النشاط")
-                                                    .frame(width: 100, height: 40)
-                                                    .background(Color.theme.Colorf)
-                                                    .cornerRadius(30)
-                                                    .padding()
-                                                    
-                                                    
-                                                    
-                                            } //5
 
-                        Button {
-                                                 MMM = BMR(Toool: Double(tol) ?? 0.0, Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0 )*1.725
+              
+                        Text("ما هو نمط حياتك:")
+                            .font(.body)
+                        ScrollView(.horizontal) {
+                            HStack{
                             
-                                            } label: {
-                                                Text("نشيط")
-                                                    .frame(width: 100, height: 40)
-                                                    .background(Color.theme.Colorf)
-                                                    .cornerRadius(30)
-                                                    .padding()
-                                                   
-                                                    .cornerRadius(30)
-                                                   
-                                            } //4
-                        
-                        Button {
-                                                MMM = BMR(Toool: Double(tol) ?? 0.0, Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0 )*1.550
-                                            
-                                            } label: {
-                                                Text("متوسط النّشاط")
-                                                    .frame(width: 100, height: 40)
-                                                    .background(Color.theme.Colorf)
-                                                    .cornerRadius(30)
-                                                    .padding()
-                                                   
-                                                    .cornerRadius(30)
-                                                    
-                                            } //3
-                        
-                        Button {
-                                               MMM = BMR(Toool: Double(tol) ?? 0.0 , Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0 )*1.375
-                                           
-                                           } label: {
-                                               Text("خفيف النشاط")
-                                                   .frame(width: 100, height: 40)
-                                                   .background(Color.theme.Colorf)
-                                                   .cornerRadius(30)
-                                                   .padding()
-                                                  
-                                                   .cornerRadius(30)
-                                                  
-                                           }// 2
+                                Button {
+                                    MMM = BMR(Toool: Double(tol) ?? 0.0 / 100, Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0)*1.900
 
-                    
-                       
-                            Button {
-                                                MMM = BMR(Toool: Double(tol)  ?? 0.0, Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0 )*1.250
+                                } label: {
+                                    Text("شديد النشاط")
+                                        .frame(width: 100, height: 40)
+                                        .background(Color.theme.Colorf)
+                                        .cornerRadius(30)
+                                        .padding()
+
+
+
+                                } //5
+
+                                Button {
+                                    MMM = BMR(Toool: Double(tol) ?? 0.0, Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0 )*1.725
+
+                                } label: {
+                                    Text("نشيط")
+                                        .frame(width: 100, height: 40)
+                                        .background(Color.theme.Colorf)
+                                        .cornerRadius(30)
+                                        .padding()
+
+                                        .cornerRadius(30)
+
+                                } //4
                                 
-                                            } label: {
-                                                Text(" خامل")
-                                                    .frame(width: 100, height: 40)
-                                                    .background(Color.theme.Colorf)
-                                                    .cornerRadius(30)
-                                                    .padding()
+                               
+                                    Button {
+                                                        MMM = BMR(Toool: Double(tol) ?? 0.0, Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0 )*1.550
                                                     
-                                                    .cornerRadius(30)
+                                                    } label: {
+                                                        Text("متوسط النّشاط")
+                                                            .frame(width: 100, height: 40)
+                                                            .background(Color.theme.Colorf)
+                                                            .cornerRadius(30)
+                                                            .padding()
+                                                           
+                                                            .cornerRadius(30)
+                                                            
+                                                
+                                } //3
+                            
+                                    Button {
+                                                       MMM = BMR(Toool: Double(tol) ?? 0.0 , Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0 )*1.375
                                                    
-                                            } //1
+                                                   } label: {
+                                                       Text("خفيف النشاط")
+                                                           .frame(width: 100, height: 40)
+                                                           .background(Color.theme.Colorf)
+                                                           .cornerRadius(30)
+                                                           .padding()
+                                                          
+                                                           .cornerRadius(30)
+                                                          
+                                               
+                                }// 2
+
+                        
+                           
+                                    Button {
+                                                        MMM = BMR(Toool: Double(tol)  ?? 0.0, Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0 )*1.250
+                                        
+                                                    } label: {
+                                                        Text(" خامل")
+                                                            .frame(width: 100, height: 40)
+                                                            .background(Color.theme.Colorf)
+                                                            .cornerRadius(30)
+                                                            .padding()
+                                                            
+                                                            .cornerRadius(30)
+                                                        
+                                                
+                                } //1
+                                
+                               
+                            
                             
                            
                         
-                        
-                       
                     
-                
 
-                    
                         
-                    
-                   
-                        } .background(Color.theme.Colorjj) .cornerRadius(20)
+                            
                         
-                    }
-                    VStack{
-                    Text("احتياجك اليومي لسعرات الحراريه")
                        
-                    Text("\(MMM)")
-                        .foregroundColor(.white)
-                        
-                        
-                       Button("إنشاء الحساب"){
+                            } .background(Color.theme.Colorjj) .cornerRadius(20)
+                            
+                        }
+                        VStack{
+                        Text("احتياجك اليومي لسعرات الحراريه")
+                           
+                        Text("\(MMM)")
+                            .foregroundColor(.white)
                             
                             
+                           Button("إنشاء الحساب"){
+                                
+                                
+                                
+       
+                            } .foregroundColor(.white)
+                                    .frame(width: 300, height: 50)
+                                    .background(Color.black .opacity(0.8))
+                                    .cornerRadius(10)
                             
-   
-                        } .foregroundColor(.white)
-                                .frame(width: 300, height: 50)
-                                .background(Color.black .opacity(0.8))
-                                .cornerRadius(10)
-                        
-                        
-//                        NavigationLink(destination: Text("ViewSignup")){
-//                            Text("إنشاء حساب جديد")
-//                            .foregroundColor(.white)
-//                            .frame(width: 300, height: 50)
-//                            .background(Color.black .opacity(0.8))
-//                            .cornerRadius(10)
-//
-//                        }
-                        
-                }
-                    Spacer()
-                        .frame(height: 90)
-                }
+                            
+    //                        NavigationLink(destination: Text("ViewSignup")){
+    //                            Text("إنشاء حساب جديد")
+    //                            .foregroundColor(.white)
+    //                            .frame(width: 300, height: 50)
+    //                            .background(Color.black .opacity(0.8))
+    //                            .cornerRadius(10)
+    //
+    //                        }
+                            
+                    }
+                        Spacer()
+                            .frame(height: 90)
+                    }
+                
                 
                 
                 

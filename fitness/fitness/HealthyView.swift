@@ -84,12 +84,12 @@ struct HealthyView: View {
                         
                         .navigationBarTitle("صحه")
                         .navigationBarTitleDisplayMode(.inline)
-
+                        
                         .navigationBarItems(leading: Image("LogoDouble")
                             .resizable() .frame(width: 80, height: 80), trailing:
                                                 
                                                 Image(systemName:"bolt.heart")
-                        
+                                            
                         )
 
 

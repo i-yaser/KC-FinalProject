@@ -73,6 +73,7 @@ struct ContentView: View {
                                 Image(systemName: IconTabBarView[num])
                                     .font(.system(size: 34, weight: .bold))
                                     .foregroundColor(.red)
+                                    
 
                             }
                             else{
@@ -80,7 +81,7 @@ struct ContentView: View {
                                     .font(.system(size: 24, weight: .bold))
                                     .foregroundColor(.blue)
                                     .foregroundColor(selesctedIndex == num ? Color(.black) : .init(white: 0.8))
-
+//                                    .offset(y: selesctedIndex == IconTabBarView ? -10 : 0)
                             }
                             Spacer()
                         }

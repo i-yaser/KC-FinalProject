@@ -34,21 +34,21 @@ struct TheFirst: View {
                         .font(.largeTitle)
                         .foregroundColor(.black)
                         .padding()
-                    
                     TextField("اكتب الايميل", text: $Email)
+                        .keyboardType(.emailAddress)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                         .foregroundColor(.black)
-                    TextField("اكتب كلمة المرور", text: $Password)
+                    SecureField("اكتب كلمة المرور", text: $Password)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                         .foregroundColor(.black)
                     
-                    NavigationLink(destination: AppView()){
+                    NavigationLink(destination: ContentView()){
                         Text("تسجيل الدخول")
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
