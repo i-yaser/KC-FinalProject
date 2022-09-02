@@ -152,7 +152,7 @@ struct ProfileView: View {
                         .navigationBarItems(leading: Image("LogoDouble")
                             .resizable() .frame(width: 80, height: 80), trailing:
                                                 NavigationLink(destination: {
-                            UpProfile()
+                            UpNadi()
                         }, label: {
                             Image(systemName:"person.crop.circle")
 
@@ -167,8 +167,10 @@ struct ProfileView: View {
                 }
             }
         }//ZStack 1
+            
         
     }
+
 }
 
 struct ProfileView_Previews: PreviewProvider {

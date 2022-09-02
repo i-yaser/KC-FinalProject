@@ -14,8 +14,8 @@
 		8B4A658F28BDB11B00D7075C /* NadiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658E28BDB11B00D7075C /* NadiInfo.swift */; };
 		8B54A8BE28B6DAB100FECA15 /* ViewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */; };
 		8B7258CF28C07D66000F0CA2 /* ListDait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7258CE28C07D66000F0CA2 /* ListDait.swift */; };
-		8B736EBA28C2009C00C041EF /* UpProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736EB928C2009C00C041EF /* UpProfile.swift */; };
 		8B9030CD28BD936500517FC5 /* NadiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9030CC28BD936500517FC5 /* NadiView.swift */; };
+		8BAF9E2028C2101800B3DCBF /* UpProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */; };
 		8BB1B60C28C1CDB90020A4B7 /* HealthyView0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */; };
 		8BB1B60E28C1D03C0020A4B7 /* HealthyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60D28C1D03C0020A4B7 /* HealthyInfo.swift */; };
 		8BB1B61028C1DBBD0020A4B7 /* List10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60F28C1DBBD0020A4B7 /* List10.swift */; };
@@ -38,8 +38,8 @@
 		8B4A658E28BDB11B00D7075C /* NadiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiInfo.swift; sourceTree = "<group>"; };
 		8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogin.swift; sourceTree = "<group>"; };
 		8B7258CE28C07D66000F0CA2 /* ListDait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDait.swift; sourceTree = "<group>"; };
-		8B736EB928C2009C00C041EF /* UpProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpProfile.swift; sourceTree = "<group>"; };
 		8B9030CC28BD936500517FC5 /* NadiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiView.swift; sourceTree = "<group>"; };
+		8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpProfile.swift; sourceTree = "<group>"; };
 		8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyView0.swift; sourceTree = "<group>"; };
 		8BB1B60D28C1D03C0020A4B7 /* HealthyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyInfo.swift; sourceTree = "<group>"; };
 		8BB1B60F28C1DBBD0020A4B7 /* List10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List10.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				8B4A658E28BDB11B00D7075C /* NadiInfo.swift */,
 				8B4A658A28BD9C6200D7075C /* UpNadi.swift */,
 				8BBAD18E28BC51F40013C5DC /* ProfileView.swift */,
-				8B736EB928C2009C00C041EF /* UpProfile.swift */,
+				8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */,
 				8BBAD19028BC78430013C5DC /* HealthyView.swift */,
 				8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */,
 				8B7258CE28C07D66000F0CA2 /* ListDait.swift */,
@@ -205,7 +205,7 @@
 				8BB1B61028C1DBBD0020A4B7 /* List10.swift in Sources */,
 				8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */,
 				8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */,
-				8B736EBA28C2009C00C041EF /* UpProfile.swift in Sources */,
+				8BAF9E2028C2101800B3DCBF /* UpProfile.swift in Sources */,
 				8BB76E2A28B95B0800375CFC /* ColorTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

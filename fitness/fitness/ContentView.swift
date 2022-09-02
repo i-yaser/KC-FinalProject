@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var selesctedIndex: String
+    @State var selesctedIndex = 1
 
     var IconTabBarView = ["house","bolt.heart","cart", "location.circle", "person.crop.circle"]
     var body: some View {
@@ -29,7 +29,7 @@ struct ContentView: View {
                         }
                     case 2:
                                         VStack{
-                                            
+                                            Text("fjf")
                                         }
                     case 3:
                      NavigationView{
