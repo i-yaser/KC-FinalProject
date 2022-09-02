@@ -22,25 +22,28 @@ struct AppView: View {
                 .foregroundColor(Color.theme.PrimaryContainer)
             
             VStack{
-                
-            HStack{
-                
-                Spacer()
-                    .frame(width: 28, height: 0)
-                
-                Image("LOGO")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                
-                Spacer()
-                
-                Text("الصفحه الرئيسيه")
-                    .font(.title)
-                    .foregroundColor(Color.theme.Background)
-                Image(systemName: "house")
-                Spacer()
-               
-            } //HStack 1
+                //                Image("LOGO")
+                //                    .resizable()
+                //                    .frame(width: 80, height: 80)
+
+//            HStack{
+//
+//                Spacer()
+//                    .frame(width: 28, height: 0)
+//
+//                Image("LOGO")
+//                    .resizable()
+//                    .frame(width: 80, height: 80)
+//
+//                Spacer()
+//
+//                Text("الصفحه الرئيسيه")
+//                    .font(.title)
+//                    .foregroundColor(Color.theme.Background)
+//                Image(systemName: "house")
+//                Spacer()
+//
+//            } //HStack 1
                 Divider()
             
             
@@ -135,7 +138,12 @@ struct AppView: View {
                     
                 }
                 
-            
+            .navigationBarTitle("الصفحة الرئيسية")
+            .navigationBarTitleDisplayMode(.inline)
+
+            .navigationBarItems(leading: Image("LOGO")
+                .resizable() .frame(width: 80, height: 80), trailing:                Image(systemName:"house"))
+
             
             
             }//ZStack 1

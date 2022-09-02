@@ -14,38 +14,34 @@ struct NadiView: View {
             ZStack{
                 Color.theme.Primary .ignoresSafeArea()
                 
-                Ellipse()
-                    .scale(1.1)
-                    .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
-                    .offset(y: -50)
-                Ellipse()
-                    .scale(0.98)
-                    .foregroundColor(Color.theme.PrimaryContainer)
-                    .offset(y: -50)
+//                Ellipse()
+//                    .scale(1.1)
+//                    .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
+//                    .offset(y: -50)
+//                Ellipse()
+//                    .scale(0.98)
+//                    .foregroundColor(Color.theme.PrimaryContainer)
+//                    .offset(y: -50)
                 
                 VStack{
                     
-                    HStack{
-                        Spacer()
-                            .frame(width: 28, height: 0)
-                        
-                        Image("LogoDouble")
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .offset(y: -120)
-                        Spacer()
-                      
-                        
-//                        Text("قائمة نوادي الكويت")
-//                            .font(.title)
-                        NavigationLink(destination: UpNadi()){
-                        Image(systemName: "list.dash")
-                            .font(.system(size: 30))
-                        }
-                        Spacer()
-                       
-                    }
-                    
+//                    HStack{
+//                        Spacer()
+//                            .frame(width: 28, height: 0)
+//
+//                        Image("LogoDouble")
+//                            .resizable()
+//                            .frame(width: 80, height: 80)
+//                            .offset(y: -0)
+//                        Spacer()
+//
+//
+////                        Text("قائمة نوادي الكويت")
+////                            .font(.title)
+//                        Spacer()
+//
+//                    }
+//
                     
                     ZStack {
                         List{
@@ -66,9 +62,22 @@ struct NadiView: View {
                         }
                         
                         
-                        .navigationTitle("قائمة نوادي الكويت")
-                    
-                    
+                        .navigationBarTitle("قائمة نوادي الكويت")
+                        .navigationBarTitleDisplayMode(.inline)
+
+                        .navigationBarItems(leading:
+                                                NavigationLink(destination: {
+                            AppView()
+                        }, label: {
+                            Image(systemName: "house")
+                        })
+                                                
+                                                
+                                                , trailing:
+                                                NavigationLink(destination: UpNadi()){
+                            Image(systemName:"info.circle")
+                                                         })
+                                            
                 }//VS
                 
             }//ZS

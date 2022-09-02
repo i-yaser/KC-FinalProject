@@ -14,140 +14,157 @@ struct ProfileView: View {
     
     var body: some View {
         
-        ZStack{
-            Color.theme.Primary .ignoresSafeArea()
-            
-            Ellipse()
-                .scale(1.1)
-                .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
+        NavigationView {
+            ZStack{
+                Color.theme.Primary .ignoresSafeArea()
                 
-            Ellipse()
-                .scale()
-                .foregroundColor(Color.theme.PrimaryContainer)
-                
-            VStack {
-                
-                VStack{
+                Ellipse()
+                    .scale(1.1)
+                    .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
                     
+                Ellipse()
+                    .scale()
+                    .foregroundColor(Color.theme.PrimaryContainer)
                     
-                    HStack{
-                        Spacer()
-                            .frame(width: 28, height: 0)
-                        
-                        Image("LogoDouble")
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                        
-                        Spacer()
-                        
-                        Text("ملفك الشخصي")
-                            .font(.title)
-                            
-    //                    Image(systemName: "person.crop.circle")
-    //                        .font(.system(size: 30))
-                        Spacer()
-                       
-                    } //HStack 1
-                        Divider()
-                    Image(systemName: "person.crop.circle")
-                        .font(.system(size: 110))
-                    Text("اهلا بك يا \(Name)")
-                    
-                    Text(Name)
-                        .font(.system(size: 18))
-                        .frame(width: 300, height: 40)
-                        .background(Color.theme.Primary)
-                        .cornerRadius(18)
-                    
-                    Text(Email)
-                        .font(.system(size: 18))
-                        .frame(width: 300, height: 40)
-                        .background(Color.theme.Primary)
-                        .cornerRadius(18)
-                    Text("\(NNN)")
-                        .font(.system(size: 18))
-                        .frame(width: 300, height: 40)
-                        .background(Color.theme.Primary)
-                        .cornerRadius(18)
-                    Divider()
-                    Text("اذا كنت تريد حاسبة السعرات الحراريه \n اتجه الى القائمة الرئيسيه")
-                        .multilineTextAlignment(.center)
-                    //u معلومات المستخدم
+                VStack {
                     
                     VStack{
-                      
-                        HStack{
-                            
-                            Text("الشروط والأحكام")
-                            
-                            Spacer()
-                            
-                            Link("اضغط هنا", destination: URL(string: "https://www.youtube.com/watch?v=8TqH661a2Uc&list=RD38y_Znfe-rw&index=31")!)
-                                .frame(width: 140, height: 40)
-    //                            .background(Color.white) .cornerRadius(50)
-                        }//HStack 2
-                        .padding()
-                        .background(.white .opacity(0.11))
                         
-                        HStack{
-                            Text("سياسة التطبيق")
-                            
-                            Spacer()
-                            
-                            Link("اضغط هنا", destination: URL(string: "https://www.youtube.com/watch?v=8TqH661a2Uc&list=RD38y_Znfe-rw&index=31")!)
-                                .frame(width: 140, height: 40)
-    //                            .background(Color.white) .cornerRadius(50)
-                        }//HStack 2
-                        .padding()
-                        .background(.white .opacity(0.11))
                         
-                        HStack{
-                            VStack{
-                           Image("TW")
-                                    .resizable()
-                                    .frame(width: 30, height: 30 )
+    //                    HStack{
+    //                        Spacer()
+    //                            .frame(width: 28, height: 0)
+    //
+    //                        Image("LogoDouble")
+    //                            .resizable()
+    //                            .frame(width: 80, height: 80)
+    //
+    //                        Spacer()
+    //
+    //                        Text("ملفك الشخصي")
+    //                            .font(.title)
+    //
+    //    //                    Image(systemName: "person.crop.circle")
+    //    //                        .font(.system(size: 30))
+    //                        Spacer()
+    //
+    //                    } //HStack 1
+                            Divider()
+                        Image(systemName: "person.crop.circle")
+                            .font(.system(size: 110))
+                        Text("اهلا بك يا \(Name)")
+                        
+                        Text(Name)
+                            .font(.system(size: 18))
+                            .frame(width: 300, height: 40)
+                            .background(Color.theme.Primary)
+                            .cornerRadius(18)
+                        
+                        Text(Email)
+                            .font(.system(size: 18))
+                            .frame(width: 300, height: 40)
+                            .background(Color.theme.Primary)
+                            .cornerRadius(18)
+                        Text("\(NNN)")
+                            .font(.system(size: 18))
+                            .frame(width: 300, height: 40)
+                            .background(Color.theme.Primary)
+                            .cornerRadius(18)
+                        Divider()
+                        Text("اذا كنت تريد حاسبة السعرات الحراريه \n اتجه الى القائمة الرئيسيه")
+                            .multilineTextAlignment(.center)
+                        //u معلومات المستخدم
+                        
+                        VStack{
+                          
+                            HStack{
+                                
+                                Text("الشروط والأحكام")
+                                
                                 Spacer()
-                                         .frame(height:1)
+                                
+                                Link("اضغط هنا", destination: URL(string: "https://www.youtube.com/watch?v=8TqH661a2Uc&list=RD38y_Znfe-rw&index=31")!)
+                                    .frame(width: 140, height: 40)
+        //                            .background(Color.white) .cornerRadius(50)
+                            }//HStack 2
+                            .padding()
+                            .background(.white .opacity(0.11))
                             
-                            Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
-                                .frame(width: 140, height: 40)
-    //                            .background(Color.white) .cornerRadius(50)
-                            }
-                            VStack{
-                            Image("IN")
-                                    .resizable()
-                                    .frame(width: 30, height: 30 )
+                            HStack{
+                                Text("سياسة التطبيق")
+                                
                                 Spacer()
-                                         .frame(height:1)
+                                
+                                Link("اضغط هنا", destination: URL(string: "https://www.youtube.com/watch?v=8TqH661a2Uc&list=RD38y_Znfe-rw&index=31")!)
+                                    .frame(width: 140, height: 40)
+        //                            .background(Color.white) .cornerRadius(50)
+                            }//HStack 2
+                            .padding()
+                            .background(.white .opacity(0.11))
+                            
+                            HStack{
+                                VStack{
+                               Image("TW")
+                                        .resizable()
+                                        .frame(width: 30, height: 30 )
+                                    Spacer()
+                                             .frame(height:1)
+                                
+                                Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
+                                    .frame(width: 140, height: 40)
+        //                            .background(Color.white) .cornerRadius(50)
+                                }
+                                VStack{
+                                Image("IN")
+                                        .resizable()
+                                        .frame(width: 30, height: 30 )
+                                    Spacer()
+                                             .frame(height:1)
+                               
+                                
+                                Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
+                                    .frame(width: 140, height: 40)
+        //                            .background(Color.white) .cornerRadius(50)
+                                }
+                                VStack{
+                               Image("WW")
+                                        .resizable()
+                                        .frame(width: 30, height: 30)
+                               Spacer()
+                                        .frame(height:1)
+                                
+                                Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
+                                    .frame(width: 140, height: 40)
+        //                            .background(Color.white) .cornerRadius(50)
+                                }
+                            }//HStack 2
+                            .padding()
+                            .background(.white .opacity(0.11))
+                            Spacer()
+                                .frame(height: 20)
                            
-                            
-                            Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
-                                .frame(width: 140, height: 40)
-    //                            .background(Color.white) .cornerRadius(50)
-                            }
-                            VStack{
-                           Image("WW")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                           Spacer()
-                                    .frame(height:1)
-                            
-                            Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
-                                .frame(width: 140, height: 40)
-    //                            .background(Color.white) .cornerRadius(50)
-                            }
-                        }//HStack 2
+                        }//VStack 2
                         .padding()
-                        .background(.white .opacity(0.11))
-                        Spacer()
-                            .frame(height: 20)
-                       
-                    }//VStack 2
-                    .padding()
+                        
+                        .navigationBarTitle("ملفك الشخصي")
+                        .navigationBarTitleDisplayMode(.inline)
+
+                        .navigationBarItems(leading: Image("LogoDouble")
+                            .resizable() .frame(width: 80, height: 80), trailing:
+                                                NavigationLink(destination: {
+                            UpProfile()
+                        }, label: {
+                            Image(systemName:"person.crop.circle")
+
+                        })
+                        )
+                        
+
+                        
+                    }//VStack 1
+                    .frame(width:420)
                     
-                }//VStack 1
-                .frame(width:420)
-                
+                }
             }
         }//ZStack 1
         

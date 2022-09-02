@@ -26,23 +26,23 @@ struct HealthyView: View {
                     
                     VStack{
                         
-                        HStack{
-                            Spacer()
-                                .frame(width: 28, height: 0)
-                            
-                            Image("LogoDouble")
-                                .resizable()
-                                .frame(width: 80, height: 80)
-                            
-                            Spacer()
-                            
-                            Text("صحه")
-                                .font(.title)
-                                
-                            Image(systemName:"bolt.heart")
-                                .font(.system(size: 30))
-                            Spacer()
-                        }//HStack 1
+//                        HStack{
+//                            Spacer()
+//                                .frame(width: 28, height: 0)
+//
+//                            Image("LogoDouble")
+//                                .resizable()
+//                                .frame(width: 80, height: 80)
+//
+//                            Spacer()
+//
+//                            Text("صحه")
+//                                .font(.title)
+//
+//                            Image(systemName:"bolt.heart")
+//                                .font(.system(size: 30))
+//                            Spacer()
+//                        }//HStack 1
                         
                         Divider()
                         
@@ -82,7 +82,17 @@ struct HealthyView: View {
                         }
                         
                         
+                        .navigationBarTitle("صحه")
+                        .navigationBarTitleDisplayMode(.inline)
+
+                        .navigationBarItems(leading: Image("LogoDouble")
+                            .resizable() .frame(width: 80, height: 80), trailing:
+                                                
+                                                Image(systemName:"bolt.heart")
                         
+                        )
+
+
                         
                         
         //                TabView(){

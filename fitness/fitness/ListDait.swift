@@ -10,7 +10,7 @@ import SwiftUI
 struct ListDait: View {
     var body: some View {
     
-        NavigationView {
+   
             ZStack{
                     Color.theme.Primary .ignoresSafeArea()
                                                 List {
@@ -32,7 +32,7 @@ struct ListDait: View {
                                     Image(systemName:"gear")
             )
             }
-        }
+        
             
     }
 }

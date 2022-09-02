@@ -10,9 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var selesctedIndex = 1
+    @State var selesctedIndex: String
 
-    var IconTabBarView = ["house","bolt.heart", "location.circle", "person.crop.circle"]
+    var IconTabBarView = ["house","bolt.heart","cart", "location.circle", "person.crop.circle"]
     var body: some View {
         
         ZStack {
@@ -28,9 +28,13 @@ struct ContentView: View {
                             HealthyView()
                         }
                     case 2:
-                        NavigationView{
-                            NadiView()
-                            
+                                        VStack{
+                                            
+                                        }
+                    case 3:
+                     NavigationView{
+                        NadiView()
+                                            
                         }
                     default:
                         NavigationView{
@@ -44,19 +48,28 @@ struct ContentView: View {
                 
                 Spacer()
                 HStack {
-                    ForEach(0..<4) { num in
+                    ForEach(0..<5) { num in
                         Button {
                            selesctedIndex = num
                         } label: {
                             Spacer()
                             
-                            
+//                            "\(image)\(selectedTab == image ? ".fill" : "")")
+//                            "\(IconTabBarView)\(selesctedIndex = IconTabBarView ? ".fill" : "")")
+
                             if num == 1 {
-                                Image(systemName: IconTabBarView[num])
-                                    .font(.system(size: 34, weight: .bold))
+                                Image(systemName: IconTabBarView[num])                    .font(.system(size: 34, weight: .bold))
                                     .foregroundColor(.red)
                             }
                             else if num == 2 {
+                                Image(systemName: IconTabBarView[num])
+                                    .font(.system(size: 40, weight: .bold))
+                                    .foregroundColor(.white)
+                                    .background(.blue)
+                                    .cornerRadius(14)
+                            }
+
+                            else if num == 3 {
                                 Image(systemName: IconTabBarView[num])
                                     .font(.system(size: 34, weight: .bold))
                                     .foregroundColor(.red)
