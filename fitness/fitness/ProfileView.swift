@@ -144,8 +144,10 @@ struct ProfileView: View {
                        
                     }//VStack 2
                     .padding()
+                    
                 }//VStack 1
                 .frame(width:420)
+                
             }
         }//ZStack 1
         

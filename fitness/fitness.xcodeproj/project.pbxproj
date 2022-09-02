@@ -15,6 +15,9 @@
 		8B54A8BE28B6DAB100FECA15 /* ViewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */; };
 		8B7258CF28C07D66000F0CA2 /* ListDait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7258CE28C07D66000F0CA2 /* ListDait.swift */; };
 		8B9030CD28BD936500517FC5 /* NadiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9030CC28BD936500517FC5 /* NadiView.swift */; };
+		8BB1B60C28C1CDB90020A4B7 /* HealthyView0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */; };
+		8BB1B60E28C1D03C0020A4B7 /* HealthyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60D28C1D03C0020A4B7 /* HealthyInfo.swift */; };
+		8BB1B61028C1DBBD0020A4B7 /* List10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60F28C1DBBD0020A4B7 /* List10.swift */; };
 		8BB3DA6E28BB17C0002DBC86 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3DA6D28BB17C0002DBC86 /* AppView.swift */; };
 		8BB76E2A28B95B0800375CFC /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB76E2928B95B0800375CFC /* ColorTheme.swift */; };
 		8BBAD18F28BC51F40013C5DC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAD18E28BC51F40013C5DC /* ProfileView.swift */; };
@@ -35,6 +38,9 @@
 		8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogin.swift; sourceTree = "<group>"; };
 		8B7258CE28C07D66000F0CA2 /* ListDait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDait.swift; sourceTree = "<group>"; };
 		8B9030CC28BD936500517FC5 /* NadiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiView.swift; sourceTree = "<group>"; };
+		8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyView0.swift; sourceTree = "<group>"; };
+		8BB1B60D28C1D03C0020A4B7 /* HealthyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyInfo.swift; sourceTree = "<group>"; };
+		8BB1B60F28C1DBBD0020A4B7 /* List10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List10.swift; sourceTree = "<group>"; };
 		8BB3DA6D28BB17C0002DBC86 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		8BB76E2928B95B0800375CFC /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		8BBAD18E28BC51F40013C5DC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -93,7 +99,10 @@
 				8B4A658A28BD9C6200D7075C /* UpNadi.swift */,
 				8BBAD18E28BC51F40013C5DC /* ProfileView.swift */,
 				8BBAD19028BC78430013C5DC /* HealthyView.swift */,
+				8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */,
 				8B7258CE28C07D66000F0CA2 /* ListDait.swift */,
+				8BB1B60F28C1DBBD0020A4B7 /* List10.swift */,
+				8BB1B60D28C1D03C0020A4B7 /* HealthyInfo.swift */,
 			);
 			path = fitness;
 			sourceTree = "<group>";
@@ -177,17 +186,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB1B60C28C1CDB90020A4B7 /* HealthyView0.swift in Sources */,
 				8B9030CD28BD936500517FC5 /* NadiView.swift in Sources */,
 				8B4A658F28BDB11B00D7075C /* NadiInfo.swift in Sources */,
 				8BC4F24A28B523DA000A1610 /* ContentView.swift in Sources */,
 				8BC4F24828B523DA000A1610 /* fitnessApp.swift in Sources */,
 				8BB3DA6E28BB17C0002DBC86 /* AppView.swift in Sources */,
 				8B1F7CF728B9790B00654C23 /* ViewSignup.swift in Sources */,
+				8BB1B60E28C1D03C0020A4B7 /* HealthyInfo.swift in Sources */,
 				8B54A8BE28B6DAB100FECA15 /* ViewLogin.swift in Sources */,
 				8B7258CF28C07D66000F0CA2 /* ListDait.swift in Sources */,
 				8BCF366A28BF8E9E00E1A3FC /* FirstView.swift in Sources */,
 				8BBAD18F28BC51F40013C5DC /* ProfileView.swift in Sources */,
 				8BBAD19128BC78430013C5DC /* HealthyView.swift in Sources */,
+				8BB1B61028C1DBBD0020A4B7 /* List10.swift in Sources */,
 				8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */,
 				8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */,
 				8BB76E2A28B95B0800375CFC /* ColorTheme.swift in Sources */,

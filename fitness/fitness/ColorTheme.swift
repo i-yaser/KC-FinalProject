@@ -107,3 +107,74 @@ struct DaitLOL: Identifiable {
 }
 
 var ourDait = [DaitLOL(photo1: "photo2500", photo2: "photo2400", photo3: "photo2300", photo4: "photo2200", photo5: "photo2100", photo6: "photo2000", photo7: "photo1900", photo8: "photo1800", photo9: "photo1700", photo10: "photo1600", photo11: "photo1500", photo12: "photo1400", photo13: "photo1300", photo14: "photo1200")]
+
+//Dait no ?//
+
+//struct HealehyDait: Identifiable{
+//    let id = UUID()
+//    var PhotoDait: String
+////    var NumDait: String
+////    var F6or204040: String
+////    var F6or502030: String
+////    var F6or305020: String
+//
+//
+//}
+//
+//var ForDait = [
+//HealehyDait(PhotoDait: "photo2500"),
+//HealehyDait(PhotoDait: "photo2400"),
+//HealehyDait(PhotoDait: "photo2300"),
+//HealehyDait(PhotoDait: "photo2400"),
+//HealehyDait(PhotoDait: "photo2100"),
+//HealehyDait(PhotoDait: "photo2000"),
+//HealehyDait(PhotoDait: "photo1900"),
+//HealehyDait(PhotoDait: "photo1800"),
+//HealehyDait(PhotoDait: "photo1700"),
+//HealehyDait(PhotoDait: "photo1600"),
+//HealehyDait(PhotoDait: "photo1500"),
+//HealehyDait(PhotoDait: "photo1400"),
+//HealehyDait(PhotoDait: "photo1300"),
+//HealehyDait(PhotoDait: "photo1200"),
+// ]
+
+
+struct DaitListModel: Identifiable{
+    let id = UUID()
+    var PhotoDait: String
+        var F6or204040: String
+        var F6or502030: String
+        var F6or305020: String
+    var SnakF6or204040: String
+    var SnakF6or502030: String
+    var SnakF6or305020: String
+    var kda204040: String
+    var kda502030: String
+    var kda305020: String
+var Snakkda204040: String
+var Snakkda502030: String
+var Snakkda305020: String
+    var asa204040: String
+    var asa502030: String
+    var asa305020: String
+
+}
+
+var OurInList = [
+    DaitListModel(PhotoDait: "calories2500"
+                  , F6or204040: "2 بيض مسلوق. \n كوب واحد من الحليب. \n كوب من عصير التو الازرق \n طبق صغير من الشوفان."
+                  , F6or502030: "4بيض مسلوق. \n . \n شريحتان من التوست. \n ربع كوب من عصير الأفوكادو أو الحليب."
+                  , F6or305020: "فطيرة صغيرة. \n كوب من اللبن. \n شريحتين من اللحم المقدد. \n كوب من الحليب."
+                  , SnakF6or204040: "تفاحة واحدة. كوب واحد من اللبن."
+                  , SnakF6or502030: "ثلث كوب عصير لوز."
+                  , SnakF6or305020:"موزة واحدة. طبق صغير من الشوفان."
+                  , kda204040: "صدر دجاج شرائح . \n كوب بروكلي واحد. \n طبق صغير للغايه من الأرز البني."
+                  , kda502030: "خمس ملاعق من اللحمة المفرومة. \n طبق كبير من السلطة. \n إضافة ملعقة من الزيت الزيتون وصلصة الحمراء على السلطة. \n  قطعتين من الجبن الشيدر."
+                  , kda305020: "ثلاث شرائح من الديك الرومي. \n واحد من الخبز. \n قطعة من جبن شدر. \n طبق سلطة كبير."
+                  , Snakkda204040: "قطعة جبن شيدر. \n كوب لبن.  \n برتقالة."
+                  , Snakkda502030: "ملعقتين من زبدة الفول السوداني. \n تفاحة. \n علبة زبادي صغير."
+                  , Snakkda305020: "‏علبة زبادي. \n كوب من التوت البري. \n حبة خبز."
+                  , asa204040: "‏6 رقائق من شريحة اللحم الصغيرة. \n واحد بطاطا صغيرة. \n كوب من عصير الجزر او اثنين جزر. \n ملعقة من زيت الزيتون ويمكنك إضافتها على البطاط."
+                  , asa502030: "‏ست قطع متوسطة الحجم من سمك السلمون. \n طبق صغير من الفاصولياء الخضراء. \n كوب واحد من الزبادي."
+                  , asa305020: "‏قطع صغيرة من صدور الدجاج. \n طبق صغير من الأرز الأبيض. \n طبق سلطة خضراء متوسطة الحجم. \n ملعقة من صلصة الصويا. \n بيضة.")
+]
