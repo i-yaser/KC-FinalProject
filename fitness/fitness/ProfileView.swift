@@ -16,16 +16,21 @@ struct ProfileView: View {
         
         NavigationView {
             ZStack{
-                Color.theme.Primary .ignoresSafeArea()
+                Color.theme.Bg .ignoresSafeArea()
                 
                 Ellipse()
                     .scale(1.1)
-                    .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
-                    
-                Ellipse()
-                    .scale()
-                    .foregroundColor(Color.theme.PrimaryContainer)
-                    
+                    .foregroundColor(Color.theme.OnBg .opacity(0.15))
+//                Color.theme.Primary .ignoresSafeArea()
+//
+//                Ellipse()
+//                    .scale(1.1)
+//                    .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
+//
+//                Ellipse()
+//                    .scale()
+//                    .foregroundColor(Color.theme.PrimaryContainer)
+//
                 VStack {
                     
                     VStack{
@@ -149,7 +154,7 @@ struct ProfileView: View {
                         .navigationBarTitle("ملفك الشخصي")
                         .navigationBarTitleDisplayMode(.inline)
 
-                        .navigationBarItems(leading: Image("LogoDouble")
+                        .navigationBarItems(leading: Image("LOGO2")
                             .resizable() .frame(width: 80, height: 80), trailing:
                                                 NavigationLink(destination: {
                             UpNadi()
@@ -175,8 +180,13 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
-            .previewDevice("iPhone 11")
-            .preferredColorScheme(.dark)
+        Group {
+            ProfileView()
+                .previewDevice("iPhone 11")
+                .preferredColorScheme(.light)
+            ProfileView()
+                .previewDevice("iPhone 11")
+                .preferredColorScheme(.dark)
+        }
     }
 }

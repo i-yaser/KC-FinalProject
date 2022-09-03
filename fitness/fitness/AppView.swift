@@ -11,16 +11,16 @@ struct AppView: View {
     var body: some View {
         NavigationView {
         ZStack{
-            Color.theme.Primary .ignoresSafeArea()
+            Color.theme.Bg .ignoresSafeArea()
             
             Ellipse()
                 .scale(1.1)
-                .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
-                
-            Ellipse()
-                .scale(1)
-                .foregroundColor(Color.theme.PrimaryContainer)
-            
+                .foregroundColor(Color.theme.OnBg .opacity(0.15))
+//                
+//            Ellipse()
+//                .scale(1)
+//                .foregroundColor(Color.theme.OnBg2)
+//            
             VStack{
                 //                Image("LOGO")
                 //                    .resizable()
@@ -69,7 +69,7 @@ struct AppView: View {
                 VStack{
                     Text("القوائم المهمه")
                         .font(.title3)
-                        .foregroundColor(Color.theme.Background)
+                        .foregroundColor(Color.theme.Bg)
                         
                     
                     
@@ -156,8 +156,13 @@ struct AppView: View {
 
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {
-        AppView()
-            .preferredColorScheme(.light)
+        Group {
+            AppView()
+                .preferredColorScheme(.light)
             .previewDevice("iPhone 11")
+            AppView()
+                .preferredColorScheme(.dark)
+                .previewDevice("iPhone 11")
+        }
     }
 }

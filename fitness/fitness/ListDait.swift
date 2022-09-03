@@ -12,13 +12,14 @@ struct ListDait: View {
     
    
             ZStack{
-                    Color.theme.Primary .ignoresSafeArea()
+                    Color.theme.OnBg .ignoresSafeArea()
                                                 List {
                                                     ForEach(OurInList){ For in
                                                         NavigationLink(destination: {
                                                             HealthyView0(ourList: For)
                                                         }, label: {
                                                             List10(For: For.PhotoDait)
+                                                                .opacity(100)
                                                         })                                                        
                                                         
                                 }                                }
@@ -43,7 +44,12 @@ struct ListDait: View {
 //ListDait
 struct ListDait_Previews: PreviewProvider {
     static var previews: some View {
-        ListDait()
+        Group {
+            ListDait()
+                .preferredColorScheme(.light)
+            ListDait()
+                .preferredColorScheme(.dark)
+        }
     }
 }
 

@@ -101,9 +101,14 @@ struct ContentView: View {
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .preferredColorScheme(.light)
+        Group {
+            ContentView()
+                .preferredColorScheme(.light)
             .previewDevice("iPhone 11")
+            ContentView()
+                .preferredColorScheme(.dark)
+                .previewDevice("iPhone 11")
+        }
     }
 }
 

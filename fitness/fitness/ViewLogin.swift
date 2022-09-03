@@ -13,26 +13,26 @@ struct TheFirst: View {
     @State private var LogIn = ""
 
     var body: some View {
-        NavigationView {
+      
             ZStack{
-                Color.theme.Colorf .opacity(0.8) .ignoresSafeArea()
+                Color.theme.OnBg2 .opacity(0.8) .ignoresSafeArea()
                 
                 Circle()
                     .scale(1.7)
-                    .foregroundColor(Color.theme.Colorjj .opacity(0.15))
+                    .foregroundColor(Color.theme.iColor .opacity(0.15))
                 Circle()
                     .scale(1.35)
-                    .foregroundColor(Color.theme.Colorjj)
+                    .foregroundColor(Color.theme.PrimaryOn)
                 
                 VStack{
                     
-                    Image("LOGO2")
+                    Image("FullLogo")
                         .resizable()
                         .frame(width: 180, height: 180)
                     
                     Text("تسجيل الدخول")
                         .font(.largeTitle)
-                        .foregroundColor(.black)
+                        .foregroundColor(Color.theme.Outline)
                         .padding()
                     TextField("اكتب الايميل", text: $Email)
                         .keyboardType(.emailAddress)
@@ -52,7 +52,7 @@ struct TheFirst: View {
                         Text("تسجيل الدخول")
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
-                    .background(Color.theme.Colorf .opacity(0.8))
+                    .background(Color.theme.Primary .opacity(0.8))
                     .cornerRadius(10)
                     }
                     
@@ -61,7 +61,7 @@ struct TheFirst: View {
                         
                     }
                     .font(.system(size: 14))
-                    .foregroundColor(Color.theme.Colorf .opacity(0.8))
+                    .foregroundColor(Color.theme.Primary .opacity(0.8))
                     .frame(width: 200, height: 20)
                     
                     Spacer()
@@ -69,15 +69,20 @@ struct TheFirst: View {
                 }
                 
             }
-        }
+        
         }
     
 }
 
 struct TheFirst_Previews: PreviewProvider {
     static var previews: some View {
-        TheFirst()
-            .preferredColorScheme(.light)
+        Group {
+            TheFirst()
+                .preferredColorScheme(.light)
             .previewDevice("iPhone 11")
+            TheFirst()
+                .preferredColorScheme(.dark)
+                .previewDevice("iPhone 11")
+        }
     }
 }

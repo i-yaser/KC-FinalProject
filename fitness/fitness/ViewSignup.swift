@@ -20,56 +20,56 @@ struct ViewSignup: View {
     @State var LogInIs = false
     var body: some View {
         ZStack{
-            Color.theme.Colorf .opacity(0.8) .ignoresSafeArea()
+            Color.theme.OnBg2 .opacity(0.8) .ignoresSafeArea()
             
-            Circle()
-                .scale(1.7)
-                .foregroundColor(.white .opacity(0.15))
-                .offset(y: -70)
-            Circle()
-                .scale(1.35)
-                .foregroundColor(.white)
-                .offset(y: -70)
+            Ellipse()
+                .scale(1)
+                .foregroundColor(Color.theme.Primary .opacity(0.15))
+                .offset(y: -10)
+//            Ellipse()
+//                .scale(0.8)
+//                .foregroundColor(Color.theme.OnBg2 .opacity(0.9))
+//                .offset(y: -10)
             
             VStack{
                 
                 
                 
-                Image("LogoDouble")
+                Image("FullLogo2")
                     .resizable()
                     .frame(width: 180, height: 180)
-                    .offset(y: 60)
+                    .offset(y: 50)
                 
-                Picker(selection: $LogInIs,  label: Text("LOL")){
-                    Text("ذكر")
-                        .tag(true)
-                    Text("انثى")
-                        .tag(false)
-                }.pickerStyle(SegmentedPickerStyle())
+//                Picker(selection: $LogInIs,  label: Text("LOL")){
+//                    Text("ذكر")
+//                        .tag(true)
+//                    Text("انثى")
+//                        .tag(false)
+//                }.pickerStyle(SegmentedPickerStyle())
+//                    .padding()
+//
+//
+                
+                Text("إنشاء حساب جديد")
+                    .font(.largeTitle)
+                    .foregroundColor(.black)
                     .padding()
-                
-                
-                
-//                Text("إنشاء حساب جديد")
-//                    .font(.largeTitle)
-//                    .foregroundColor(.black)
-//                    .padding()
-//
-//                TextField("اكتب اسمك", text: $Name)
-//                    .padding()
-//                    .frame(width: 300, height: 50)
-//                    .background(Color.black.opacity(0.05))
-//                    .cornerRadius(10)
-//                    .foregroundColor(.black)
-//
-//                TextField("اكتب الايميل", text: $Email)
-//                    .keyboardType(.emailAddress)
-//                    .padding()
-//                    .frame(width: 300, height: 50)
-//                    .background(Color.black.opacity(0.05))
-//                    .cornerRadius(10)
-//                    .foregroundColor(.black)
-//
+
+                TextField("اكتب اسمك", text: $Name)
+                    .padding()
+                    .frame(width: 300, height: 50)
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    .foregroundColor(.black)
+
+                TextField("اكتب الايميل", text: $Email)
+                    .keyboardType(.emailAddress)
+                    .padding()
+                    .frame(width: 300, height: 50)
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    .foregroundColor(.black)
+
                 SecureField("اكتب كلمة المرور", text: $Password)
                     .padding()
                     .frame(width: 300, height: 50)
@@ -119,7 +119,7 @@ struct ViewSignup: View {
                                 } label: {
                                     Text("شديد النشاط")
                                         .frame(width: 100, height: 40)
-                                        .background(Color.theme.Colorf)
+                                        .background(Color.theme.Bg)
                                         .cornerRadius(30)
                                         .padding()
 
@@ -133,7 +133,7 @@ struct ViewSignup: View {
                                 } label: {
                                     Text("نشيط")
                                         .frame(width: 100, height: 40)
-                                        .background(Color.theme.Colorf)
+                                        .background(Color.theme.Bg)
                                         .cornerRadius(30)
                                         .padding()
 
@@ -148,7 +148,8 @@ struct ViewSignup: View {
                                                     } label: {
                                                         Text("متوسط النّشاط")
                                                             .frame(width: 100, height: 40)
-                                                            .background(Color.theme.Colorf)
+                                                            .background(Color.theme.Bg
+                                                )
                                                             .cornerRadius(30)
                                                             .padding()
                                                            
@@ -163,7 +164,8 @@ struct ViewSignup: View {
                                                    } label: {
                                                        Text("خفيف النشاط")
                                                            .frame(width: 100, height: 40)
-                                                           .background(Color.theme.Colorf)
+                                                           .background(Color.theme.Bg
+                                                           )
                                                            .cornerRadius(30)
                                                            .padding()
                                                           
@@ -180,7 +182,7 @@ struct ViewSignup: View {
                                                     } label: {
                                                         Text(" خامل")
                                                             .frame(width: 100, height: 40)
-                                                            .background(Color.theme.Colorf)
+                                                            .background(Color.theme.Bg)
                                                             .cornerRadius(30)
                                                             .padding()
                                                             
@@ -200,7 +202,7 @@ struct ViewSignup: View {
                             
                         
                        
-                            } .background(Color.theme.Colorjj) .cornerRadius(20)
+                            } .background(Color.theme.Primary) .cornerRadius(20)
                             
                         }
                         VStack{
@@ -217,7 +219,7 @@ struct ViewSignup: View {
        
                             } .foregroundColor(.white)
                                     .frame(width: 300, height: 50)
-                                    .background(Color.black .opacity(0.8))
+                                    .background(Color.theme.Primary .opacity(0.8))
                                     .cornerRadius(10)
                             
                             
@@ -262,9 +264,15 @@ struct ViewSignup: View {
 }
 struct ViewSignup_Previews: PreviewProvider {
     static var previews: some View {
-        ViewSignup()
-            .preferredColorScheme(.light)
-            .previewDevice("iPhone 11")
+        Group {
+            ViewSignup()
+                .preferredColorScheme(.light)
+                .previewDevice("iPhone 11")
             .previewInterfaceOrientation(.portrait)
+            ViewSignup()
+                .preferredColorScheme(.dark)
+                .previewDevice("iPhone 11")
+                .previewInterfaceOrientation(.portrait)
+        }
     }
 }

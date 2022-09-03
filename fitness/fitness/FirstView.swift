@@ -16,16 +16,17 @@ struct FirstView: View {
         NavigationView {
             ZStack{
                 
-                Color.theme.Colorf                    .ignoresSafeArea()
+                Color.theme.Bg                    .ignoresSafeArea()
                 
-                Circle()
+                Ellipse()
                     .scale(1)
-                    .offset(y: -140)
-                    .foregroundColor(.white .opacity(0.9))
+                    .offset(y: -60)
+                    .foregroundColor(Color.theme.OnBg .opacity(0.95))
                 
-                Circle()
+                Ellipse()
                     .scale(0.4)
-                    .offset(y: -155)
+                    .offset(y: -60)
+                    .foregroundColor(Color.theme.Bg)
                 
 //                //
 //                VStack{
@@ -55,19 +56,20 @@ struct FirstView: View {
                     
                    Spacer()
                     
-                    Image("LOGO2")
+                    Image("LOGO")
                         .resizable()
                         .frame(width: 190, height: 190)
                         .cornerRadius(550)
+                        .offset(y: 70)
                     
-                    
+                
                     
                     Text("اهلا بك \n خيارك الأفضل لصحه")
                         .multilineTextAlignment(.center)
-                        .foregroundColor(.black)
+                        .foregroundColor(Color.theme.Outline3)
                         
                         .frame(width: 200, height: 80)
-                        
+                        .padding()
                     Spacer()
                     
                     NavigationLink(destination: TheFirst()){
@@ -89,7 +91,7 @@ struct FirstView: View {
                     }
       
                         Spacer()
-                    
+                        .frame(height: 190)
                     
 
 //                    Button {
@@ -119,6 +121,12 @@ struct FirstView: View {
 
 struct FirstView_Previews: PreviewProvider {
     static var previews: some View {
-        FirstView()
+        Group {
+            FirstView()
+                .preferredColorScheme(.light)
+            FirstView()
+                .preferredColorScheme(.dark)
+        }
+            
     }
 }

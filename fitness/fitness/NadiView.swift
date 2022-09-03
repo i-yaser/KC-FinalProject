@@ -12,8 +12,13 @@ struct NadiView: View {
         NavigationView{
             
             ZStack{
-                Color.theme.Primary .ignoresSafeArea()
+                Color.theme.Bg .ignoresSafeArea()
                 
+                Ellipse()
+                    .scale(1.1)
+                    .foregroundColor(Color.theme.OnBg .opacity(0.15))
+//                Color.theme.Primary .ignoresSafeArea()
+//
 //                Ellipse()
 //                    .scale(1.1)
 //                    .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
@@ -65,15 +70,8 @@ struct NadiView: View {
                         .navigationBarTitle("قائمة نوادي الكويت")
                         .navigationBarTitleDisplayMode(.inline)
 
-                        .navigationBarItems(leading:
-                                                NavigationLink(destination: {
-                            AppView()
-                        }, label: {
-                            Image(systemName: "house")
-                        })
-                                                
-                                                
-                                                , trailing:
+                        .navigationBarItems(leading:Image("LOGO") .resizable() .frame(width: 80, height: 80)
+                                            , trailing:
                                                 NavigationLink(destination: UpNadi()){
                             Image(systemName:"info.circle")
                                                          })
@@ -91,6 +89,8 @@ struct NadiView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             NadiView()
+            NadiView()
+                .preferredColorScheme(.dark)
  
         }
     }

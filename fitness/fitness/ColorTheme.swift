@@ -13,18 +13,26 @@ extension Color {
 }
 
 struct ColorTheme{
-    let Background = Color("Background")
+    let Bg = Color("Bg")
+    let OnBg = Color("OnBg")
+    let OnBg2 = Color("OnBg2")
     let coloA = Color("colorA")
     let coloB = Color("colorB")
     let Colorf = Color("Colorf")
     let Colorjj = Color("Colorjj")
+    //Color App👇🏻
     let Primary = Color("Primary")
     let PrimaryOn = Color("PrimaryOn")
     let PrimaryContainer = Color("PrimaryContainer")
     let OnPrimaryContainer = Color("OnPrimaryContainer")
+    //Color App👆🏻
     let For40 = Color("For40")
     let iColor = Color("iColor")
-
+//Color line👇🏻
+    let Outline = Color("Outline")
+    let Outline2 = Color("Outline2")
+    let Outline3 = Color("Outline3")
+    //Color line👆🏻
 }
 
 
