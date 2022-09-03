@@ -16,7 +16,7 @@ struct ListDait: View {
                                                 List {
                                                     ForEach(OurInList){ For in
                                                         NavigationLink(destination: {
-                                                            HealthyView0(ourList: For)
+                                                            HealthyNotView(ourList: For)
                                                         }, label: {
                                                             List10(For: For.PhotoDait)
                                                                 .opacity(100)

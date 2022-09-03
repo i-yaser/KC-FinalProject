@@ -14,14 +14,14 @@ struct HealthyView0: View {
         ZStack {
             Color.theme.iColor .ignoresSafeArea()
             VStack {
-                HStack{
-                    Image(ourList.PhotoDait)
-                        .resizable()
-                        .frame(width: 100, height: 60)
-                        .cornerRadius(39)
-                        .offset(x: -90)
-                Text("سعره حراريه2500")
-                }
+////                HStack{
+////                    Image(ourList.PhotoDait)
+////                        .resizable()
+////                        .frame(width: 100, height: 60)
+////                        .cornerRadius(39)
+////                        .offset(x: -140)
+////
+//                }
                 VStack{
                     Text("•نسبة 20/40/40: هو نظام قليل جداً من الدسم، ويحتوي في الوقت نفسه علي البروتينات.")
                         .multilineTextAlignment(.center)
@@ -188,6 +188,23 @@ struct HealthyView0: View {
                     }
                 }
             }
+            //                    Text("سعره حراريه")
+            //
+//                                .navigationBarTitle("سعره حراريه")
+//                                .navigationBarTitleDisplayMode(.automatic)
+//
+                                .navigationBarItems(leading:
+//                                                        Image("LOGO")
+//                                    .resizable() .frame(width: 80, height: 80)
+                                                    Image(ourList.PhotoDait)
+                                                        .resizable()
+                                                        .frame(width: 100, height: 60)
+                                                        .cornerRadius(39)
+//                                                        .offset(x: 20)
+
+//                                                    , trailing:                Image(systemName:"house")
+                                )
+    
         }
         
     }

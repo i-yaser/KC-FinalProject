@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppView: View {
     var body: some View {
-        NavigationView {
+//        NavigationView {
         ZStack{
             Color.theme.Bg .ignoresSafeArea()
             
@@ -48,7 +48,8 @@ struct AppView: View {
             
             
             
-                
+                Spacer()
+                VStack{
                     ScrollView(.horizontal){
                         HStack{
                     ForEach(AdAdAd){ Ad in
@@ -62,9 +63,15 @@ struct AppView: View {
                     
                     }//HStack 2
                         .background(Color.black)
+//                        .frame(width: 380, height: 180)
                     
                 }//ScrollView 1
-                
+                    .frame(width: 380, height: 180)
+                }
+                .frame(width: 400, height: 220)
+                .background(Color.theme.OnBg2)
+                .cornerRadius(15)
+            
                 Divider()
                 VStack{
                     Text("القوائم المهمه")
@@ -80,16 +87,21 @@ struct AppView: View {
                                     ForEach(HomePhoto){ Qphoto in
                                         
                                         HStack{
-                                            
+                                        
                                             Image(Qphoto.photo1)
                                                 .resizable()
                                                 .frame(width: 200, height: 200)
                                                 .cornerRadius(38)
                                             
+                                            
+                                            
+                                         
                                         Image(Qphoto.photo2)
                                             .resizable()
                                             .frame(width: 200, height: 200)
                                             .cornerRadius(38)
+                                                
+                                           
                                     }
                                     
                                     
@@ -100,9 +112,11 @@ struct AppView: View {
                             
  
                             
-                        }.frame(width: 420, height: 300)
+                        }.frame(width: 420, height: 350)
+                            .background(Color.theme.OnBg2)
+                            .cornerRadius(25)
                     Spacer()
-                        .frame(height: 190)
+                        .frame(height: 120)
 //                    لازم اعدل وافهم شلون تشتغل //
 //                    TabView(){
 //
@@ -148,7 +162,7 @@ struct AppView: View {
             
             }//ZStack 1
             
-        }//Navig
+//        }//Navig
         
         
     }

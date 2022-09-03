@@ -17,7 +17,9 @@ struct ContentView: View {
         
         ZStack {
             
+            
             VStack{
+                
                                     switch selesctedIndex{
                     case 0:
                         NavigationView{

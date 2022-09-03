@@ -30,6 +30,79 @@ struct HealthyView: View {
 
                     
                     VStack{
+                        VStack{
+                            Text("جدولك الصحي")
+                                .font(.title3)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.theme.Outline3)
+                            HStack{
+                                Circle()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.gray .opacity(0.4))
+                                    .offset(x:-20 ,y:35)
+                                Circle()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.gray .opacity(0.4))
+                                    .offset(x:-8 ,y:35)
+                                Circle()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.gray .opacity(0.4))
+                                    .offset(x:0 ,y:35)
+                                Circle()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(Color.red .opacity(0.4))
+                                    .offset(x:8 ,y:35)
+                                Circle()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.gray .opacity(0.4))
+                                    .offset(x:15 ,y:35)
+                                Circle()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.gray .opacity(0.4))
+                                    .offset(x:20 ,y:35)
+                                Circle()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.gray .opacity(0.4))
+                                    .offset(x:20 ,y:35)
+
+                            }.padding()
+                                .frame(width: 1, height: 1)
+                            HStack{
+                                
+                                
+                                Text("14")
+                                    .padding()
+                                    .foregroundColor(Color.theme.Outline)
+                                Text("13")
+                                    .padding()
+                                    .foregroundColor(Color.theme.Outline)
+                                Text("12")
+                                    .padding()
+                                    .foregroundColor(Color.theme.Outline)
+                                Text("11")
+                                    .padding()
+                                    .foregroundColor(Color.theme.Outline)
+                                Text("10")
+                                    .padding()
+                                    .foregroundColor(Color.theme.Outline)
+                                Text("9")
+                                    .padding()
+                                    .foregroundColor(Color.theme.Outline)
+                                Text("8")
+                                    .padding()
+                                    .foregroundColor(Color.theme.Outline)
+
+                                
+                                
+                                
+                                
+                                
+                                
+                            }
+                        }
+                        .frame(width: 380, height: 150)
+                        .background(Color.theme.iColor)
+                            .cornerRadius(20)
                         
 //                        HStack{
 //                            Spacer()
@@ -133,7 +206,7 @@ struct HealthyView_Previews: PreviewProvider {
         Group {
             HealthyView()
                 .previewDevice("iPhone 11")
-            .preferredColorScheme(.light)
+                .preferredColorScheme(.light)
             HealthyView()
                 .previewDevice("iPhone 11")
                 .preferredColorScheme(.dark)
