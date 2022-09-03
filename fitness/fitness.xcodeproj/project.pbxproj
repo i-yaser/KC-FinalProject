@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B1F7CF728B9790B00654C23 /* ViewSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F7CF628B9790B00654C23 /* ViewSignup.swift */; };
-		8B1F7CF928B98E9900654C23 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F7CF828B98E9900654C23 /* Launch Screen.storyboard */; };
 		8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658A28BD9C6200D7075C /* UpNadi.swift */; };
 		8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658C28BDA9EA00D7075C /* NadiList.swift */; };
 		8B4A658F28BDB11B00D7075C /* NadiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658E28BDB11B00D7075C /* NadiInfo.swift */; };
@@ -28,11 +27,11 @@
 		8BC4F24C28B523DC000A1610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4F24B28B523DC000A1610 /* Assets.xcassets */; };
 		8BC4F24F28B523DC000A1610 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4F24E28B523DC000A1610 /* Preview Assets.xcassets */; };
 		8BCF366A28BF8E9E00E1A3FC /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF366928BF8E9E00E1A3FC /* FirstView.swift */; };
+		8BDF0FCE28C3653D003AA3C2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDF0FCD28C3653D003AA3C2 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B1F7CF628B9790B00654C23 /* ViewSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSignup.swift; sourceTree = "<group>"; };
-		8B1F7CF828B98E9900654C23 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		8B4A658A28BD9C6200D7075C /* UpNadi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpNadi.swift; sourceTree = "<group>"; };
 		8B4A658C28BDA9EA00D7075C /* NadiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiList.swift; sourceTree = "<group>"; };
 		8B4A658E28BDB11B00D7075C /* NadiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiInfo.swift; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		8BC4F24B28B523DC000A1610 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BC4F24E28B523DC000A1610 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8BCF366928BF8E9E00E1A3FC /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		8BDF0FCD28C3653D003AA3C2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 				8BC4F24728B523DA000A1610 /* fitnessApp.swift */,
 				8BC4F24928B523DA000A1610 /* ContentView.swift */,
 				8BCF366928BF8E9E00E1A3FC /* FirstView.swift */,
-				8B1F7CF828B98E9900654C23 /* Launch Screen.storyboard */,
+				8BDF0FCD28C3653D003AA3C2 /* Launch Screen.storyboard */,
 				8BC4F24B28B523DC000A1610 /* Assets.xcassets */,
 				8BC4F24D28B523DC000A1610 /* Preview Content */,
 				8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */,
@@ -176,7 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1F7CF928B98E9900654C23 /* Launch Screen.storyboard in Resources */,
+				8BDF0FCE28C3653D003AA3C2 /* Launch Screen.storyboard in Resources */,
 				8BC4F24F28B523DC000A1610 /* Preview Assets.xcassets in Resources */,
 				8BC4F24C28B523DC000A1610 /* Assets.xcassets in Resources */,
 			);
@@ -340,6 +340,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -368,6 +369,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
