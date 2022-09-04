@@ -15,6 +15,9 @@
 		8B7258CF28C07D66000F0CA2 /* ListDait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7258CE28C07D66000F0CA2 /* ListDait.swift */; };
 		8B81159028C328D300BC8DAF /* HealthyNotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81158F28C328D300BC8DAF /* HealthyNotView.swift */; };
 		8B9030CD28BD936500517FC5 /* NadiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9030CC28BD936500517FC5 /* NadiView.swift */; };
+		8B98F40E28C47942003894F4 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98F40D28C47942003894F4 /* TaskViewModel.swift */; };
+		8B98F41028C47950003894F4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98F40F28C47950003894F4 /* Task.swift */; };
+		8B98F41328C47976003894F4 /* HomeOnHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98F41228C47976003894F4 /* HomeOnHealth.swift */; };
 		8BAF9E2028C2101800B3DCBF /* UpProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */; };
 		8BB1B60C28C1CDB90020A4B7 /* HealthyView0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */; };
 		8BB1B61028C1DBBD0020A4B7 /* List10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60F28C1DBBD0020A4B7 /* List10.swift */; };
@@ -39,6 +42,9 @@
 		8B7258CE28C07D66000F0CA2 /* ListDait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDait.swift; sourceTree = "<group>"; };
 		8B81158F28C328D300BC8DAF /* HealthyNotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyNotView.swift; sourceTree = "<group>"; };
 		8B9030CC28BD936500517FC5 /* NadiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiView.swift; sourceTree = "<group>"; };
+		8B98F40D28C47942003894F4 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		8B98F40F28C47950003894F4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		8B98F41228C47976003894F4 /* HomeOnHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOnHealth.swift; sourceTree = "<group>"; };
 		8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpProfile.swift; sourceTree = "<group>"; };
 		8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyView0.swift; sourceTree = "<group>"; };
 		8BB1B60F28C1DBBD0020A4B7 /* List10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List10.swift; sourceTree = "<group>"; };
@@ -66,6 +72,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B98F40A28C4789F003894F4 /* GoodView */ = {
+			isa = PBXGroup;
+			children = (
+				8B98F40C28C478E8003894F4 /* ViewModel */,
+				8B98F40B28C478D2003894F4 /* Model */,
+				8B98F41228C47976003894F4 /* HomeOnHealth.swift */,
+			);
+			path = GoodView;
+			sourceTree = "<group>";
+		};
+		8B98F40B28C478D2003894F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B98F40F28C47950003894F4 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B98F40C28C478E8003894F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B98F40D28C47942003894F4 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8BC4F23B28B523DA000A1610 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +117,8 @@
 		8BC4F24628B523DA000A1610 /* fitness */ = {
 			isa = PBXGroup;
 			children = (
+				8B98F40A28C4789F003894F4 /* GoodView */,
+				8BDF0FCF28C36C3B003AA3C2 /* View */,
 				8BC4F24728B523DA000A1610 /* fitnessApp.swift */,
 				8BC4F24928B523DA000A1610 /* ContentView.swift */,
 				8BCF366928BF8E9E00E1A3FC /* FirstView.swift */,
@@ -116,6 +150,13 @@
 				8BC4F24E28B523DC000A1610 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BDF0FCF28C36C3B003AA3C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +241,9 @@
 				8B7258CF28C07D66000F0CA2 /* ListDait.swift in Sources */,
 				8BCF366A28BF8E9E00E1A3FC /* FirstView.swift in Sources */,
 				8B81159028C328D300BC8DAF /* HealthyNotView.swift in Sources */,
+				8B98F41328C47976003894F4 /* HomeOnHealth.swift in Sources */,
+				8B98F40E28C47942003894F4 /* TaskViewModel.swift in Sources */,
+				8B98F41028C47950003894F4 /* Task.swift in Sources */,
 				8BBAD18F28BC51F40013C5DC /* ProfileView.swift in Sources */,
 				8BBAD19128BC78430013C5DC /* HealthyView.swift in Sources */,
 				8BB1B61028C1DBBD0020A4B7 /* List10.swift in Sources */,
@@ -335,6 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fitness/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -364,6 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fitness/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

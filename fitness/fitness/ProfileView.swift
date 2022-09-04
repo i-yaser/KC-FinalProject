@@ -40,7 +40,7 @@ struct ProfileView: View {
     //                        Spacer()
     //                            .frame(width: 28, height: 0)
     //
-    //                        Image("LogoDouble")
+    //                        Image("LOGO")
     //                            .resizable()
     //                            .frame(width: 80, height: 80)
     //
@@ -154,7 +154,7 @@ struct ProfileView: View {
                         .navigationBarTitle("ملفك الشخصي")
                         .navigationBarTitleDisplayMode(.inline)
 
-                        .navigationBarItems(leading: Image("LOGO2")
+                        .navigationBarItems(leading: Image("LOGO")
                             .resizable() .frame(width: 80, height: 80), trailing:
                                                 NavigationLink(destination: {
                             UpNadi()
