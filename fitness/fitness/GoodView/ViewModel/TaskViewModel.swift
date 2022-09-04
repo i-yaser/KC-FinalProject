@@ -75,6 +75,8 @@ class TaskViewModel: ObservableObject{
                 currenWeek.append(weekday)
             }
         }
+
+
     }
     
     func extractDate(date: Date,format: String) -> String{

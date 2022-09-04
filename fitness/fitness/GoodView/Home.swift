@@ -223,7 +223,7 @@ struct Homei: View {
         }
         .padding()
         .padding(.top,getSafeArea().top)
-        .background(Color.white)
+        .background(Color.theme.iColor)
     }
 }
 

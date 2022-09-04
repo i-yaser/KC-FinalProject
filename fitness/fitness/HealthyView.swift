@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HealthyView: View {
+
     var body: some View {
         NavigationView {
   
@@ -104,71 +105,177 @@ struct HealthyView: View {
                         .background(Color.theme.iColor)
                             .cornerRadius(20)
                         
-//                        HStack{
-//                            Spacer()
-//                                .frame(width: 28, height: 0)
-//
-//                            Image("LogoDouble")
-//                                .resizable()
-//                                .frame(width: 80, height: 80)
-//
-//                            Spacer()
-//
-//                            Text("صحه")
-//                                .font(.title)
-//
-//                            Image(systemName:"bolt.heart")
-//                                .font(.system(size: 30))
-//                            Spacer()
-//                        }//HStack 1
-                        
                         Divider()
                         
-                        ScrollView {
+                        HStack {
                             
-                            
-                            ForEach(HealthyPhoto0){ Healthy in
+                            ScrollView {
                                 
-                                NavigationLink(destination: Homei()) {
-                                    Image(Healthy.category1)
-                                        .resizable()
-                                        .cornerRadius(40)
-                                    .frame(width: 420, height: 200)
-                                }
-                            }
-                            Divider()
-                            
-                            ForEach(HealthyPhoto1){ Healthy1 in
                                 
-                                Image(Healthy1.category1)
-                                    .resizable()
-                                    .cornerRadius(40)
-                                    .frame(width: 420, height: 200)
-                            }
-                            Divider()
-                            
-                            ForEach(HealthyPhoto2){ Healthy2 in
-                                
-                                Image(Healthy2.category1)
-                                    .resizable()
-                                    .cornerRadius(40)
-                                    .frame(width: 420, height: 200)
-                                
-                            }
-                         
-                            
-                        }
-                        
-                        
-                        .navigationBarTitle("صحه")
-                        .navigationBarTitleDisplayMode(.inline)
-                        
-                        .navigationBarItems(leading: Image("LogoDouble")
-                            .resizable() .frame(width: 80, height: 80), trailing:
-                                                
-                                                Image(systemName:"bolt.heart")
+                                HStack(alignment: .top, spacing: 30){
+                                    VStack(spacing: 10){
+                                        Circle()
+                                        .fill(.black)
+                                        .frame(width: 15, height: 15)
+                                        .background(
+                                        
+                                        Circle()
+                                            .stroke(.black,lineWidth: 1)
+                                            .padding(-3)
+                                        )
+                                        
+                                        Rectangle()
+                                            .fill()
+                                            .frame(width: 3)
+                                        
+                                    }
+
+                                    VStack(spacing: 10){
+                                        Text("التغذيه")
+                                            .font(.system(size: 26))
+                                        Image("DIET PLAN")
+                                            .resizable()
+                                            .frame(width: 160, height: 130)
+                                    }
+                                    Text("")
+                                    VStack {
+                                        Spacer().frame(height: 15)
+                                        NavigationLink(destination: Homei()) {
+                                            Image(systemName: "arrow.forward")
+                                                .foregroundStyle(.white)
+                                                .padding(10)
+                                                .background(Color.black,in: RoundedRectangle(cornerRadius: 10))
                                             
+                                                
+                                        }
+                                    }//End nav
+                                }
+                                
+                                    .padding()
+                                    .frame(width: 380, height: 200, alignment: .top)
+                                    .background(.white)
+                                    .cornerRadius(25)
+                                /////////// //
+                                HStack(alignment: .top, spacing: 30){
+                                    VStack(spacing: 10){
+                                        Circle()
+                                        .fill(.black)
+                                        .frame(width: 15, height: 15)
+                                        .background(
+                                        
+                                        Circle()
+                                            .stroke(.black,lineWidth: 1)
+                                            .padding(-3)
+                                        )
+                                        
+                                        Rectangle()
+                                            .fill()
+                                            .frame(width: 3)
+                                        
+                                    }
+
+                                    VStack(spacing: 10){
+                                        Text("تمارين")
+                                            .font(.system(size: 26))
+                                        Image("HealthyNo")
+                                            .resizable()
+                                            .frame(width: 160, height: 145)
+                                    }
+                                    Text("")
+                                    VStack {
+                                        Spacer().frame(height: 15)
+                                        NavigationLink(destination: TmarinView()) {
+                                            Image(systemName: "arrow.forward")
+                                                .foregroundStyle(.white)
+                                                .padding(10)
+                                                .background(Color.black,in: RoundedRectangle(cornerRadius: 10))
+                                                
+                                        }
+                                    }//End nav
+                                }
+                                
+                                    .padding()
+                                    .frame(width: 380, height: 200, alignment: .top)
+                                    .background(.white)
+                                    .cornerRadius(25)
+                                
+                                HStack(alignment: .top, spacing: 30){
+                                    VStack(spacing: 10){
+                                        Circle()
+                                        .fill(.black)
+                                        .frame(width: 15, height: 15)
+                                        .background(
+                                        
+                                        Circle()
+                                            .stroke(.black,lineWidth: 1)
+                                            .padding(-3)
+                                        )
+                                        
+                                        Rectangle()
+                                            .fill()
+                                            .frame(width: 3)
+                                        
+                                    }
+
+                                    VStack(spacing: 10){
+                                        Text("التغذيه")
+                                            .font(.system(size: 26))
+                                        Image("DIET PLAN")
+                                            .resizable()
+                                            .frame(width: 160, height: 130)
+                                    }
+                                    Text("")
+                                    VStack {
+                                        Spacer().frame(height: 15)
+                                        NavigationLink(destination: Homei()) {
+                                            Image(systemName: "arrow.forward")
+                                                .foregroundStyle(.white)
+                                                .padding(10)
+                                                .background(Color.black,in: RoundedRectangle(cornerRadius: 10))
+                                                
+                                        }
+                                    }//End nav
+                                }
+                                
+                                    .padding()
+                                    .frame(width: 380, height: 200, alignment: .top)
+                                    .background(.white)
+                                    .cornerRadius(25)
+    //
+    //                            Divider()
+    //
+    //                            ForEach(HealthyPhoto1){ Healthy1 in
+    //
+    //                                Image(Healthy1.category1)
+    //                                    .resizable()
+    //                                    .cornerRadius(40)
+    //                                    .frame(width: 420, height: 200)
+    //                            }
+    //                            Divider()
+    //
+    //                            ForEach(HealthyPhoto2){ Healthy2 in
+    //
+    //                                Image(Healthy2.category1)
+    //                                    .resizable()
+    //                                    .cornerRadius(40)
+    //                                    .frame(width: 420, height: 200)
+    //
+    //                            }
+                             
+                                
+                            }
+                            
+                            
+                            .navigationBarTitle("صحه")
+                            .navigationBarTitleDisplayMode(.inline)
+                            
+                            .navigationBarItems(leading: Image("LOGO")
+                                .resizable() .frame(width: 80, height: 80), trailing:
+                                                    
+                                                    Image(systemName:"bolt.heart")
+                                                
                         )
+                        }
 
 
                         
@@ -213,3 +320,6 @@ struct HealthyView_Previews: PreviewProvider {
         }
     }
 }
+
+
+//            .frame(maxWidth: .infinity, alignment: .leading)

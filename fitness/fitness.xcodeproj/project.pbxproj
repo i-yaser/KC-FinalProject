@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B03A3A528C4F72B0026209E /* TmarinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B03A3A428C4F72B0026209E /* TmarinView.swift */; };
 		8B1F7CF728B9790B00654C23 /* ViewSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F7CF628B9790B00654C23 /* ViewSignup.swift */; };
 		8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658A28BD9C6200D7075C /* UpNadi.swift */; };
 		8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658C28BDA9EA00D7075C /* NadiList.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B03A3A428C4F72B0026209E /* TmarinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmarinView.swift; sourceTree = "<group>"; };
 		8B1F7CF628B9790B00654C23 /* ViewSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSignup.swift; sourceTree = "<group>"; };
 		8B4A658A28BD9C6200D7075C /* UpNadi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpNadi.swift; sourceTree = "<group>"; };
 		8B4A658C28BDA9EA00D7075C /* NadiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiList.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				8B81158F28C328D300BC8DAF /* HealthyNotView.swift */,
 				8B7258CE28C07D66000F0CA2 /* ListDait.swift */,
 				8BB1B60F28C1DBBD0020A4B7 /* List10.swift */,
+				8B03A3A428C4F72B0026209E /* TmarinView.swift */,
 			);
 			path = fitness;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */,
 				8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */,
 				8BAF9E2028C2101800B3DCBF /* UpProfile.swift in Sources */,
+				8B03A3A528C4F72B0026209E /* TmarinView.swift in Sources */,
 				8B85EB2428C48E8200CED843 /* Task.swift in Sources */,
 				8BB76E2A28B95B0800375CFC /* ColorTheme.swift in Sources */,
 			);
