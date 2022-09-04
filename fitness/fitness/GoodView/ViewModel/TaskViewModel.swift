@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 class TaskViewModel: ObservableObject{
     
     // Sample Task
@@ -67,7 +69,7 @@ class TaskViewModel: ObservableObject{
             return
         }
         
-        (1...7).forEach { day in
+        (-1...9).forEach { day in
             
             if let weekday = calender.date(byAdding: .day, value: day, to: firstWeekDay){
                 currenWeek.append(weekday)

@@ -84,14 +84,20 @@ struct detailsNadi: Identifiable{
     var logo: String
     var Prices: String
     var ourPhotoNadi: [String]
+    var msb7: String
     var Place: String
+    var l97: String
+    var l56a: String
     
 }
 
 var ourGYM = [
-    detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "8K.D/1day \n 50K.D/1m \n 140K.D/3m \n 240K.D/6m \n 440K.D/1y", ourPhotoNadi: ["O2-1", "O2-2", "O2-3", "O2-4", "O2-5"], Place: "العديليه - المنقف \n الجابريه - صباح السالم")
+    detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "8K.D/1day \n 50K.D/1m \n 140K.D/3m \n 240K.D/6m \n 440K.D/1y", ourPhotoNadi: ["O2-1", "O2-2", "O2-3", "O2-4", "O2-5"], msb7: "مسبح + رجالي + نسائي:", Place: "العديليه - المنقف \n الجابريه - صباح السالم", l97: "checkmark.square.fill", l56a: "xmark.square.fill")
 ,
-    detailsNadi(Name: "Platinum Health Club", logo: "Platinum Health Club", Prices: "50K.D/m", ourPhotoNadi: ["P-1","P-2","P-3","P-4","P-5","P-6","P-7",], Place: "كيفان - صباح السالم \n المهبولة - شرق \n الخيران")
+    detailsNadi(Name: "Platinum Health Club", logo: "Platinum Health Club", Prices: "7K.D/1d \n 20K.D/1w \n 40K.D/1m \n 75K.D/2m \n 200K.D/6m+1m مجاناً \n 390K.D/1y+2m مجاناً", ourPhotoNadi: ["P-1","P-2","P-3","P-4","P-5","P-6","P-7",],
+                msb7: "مسبح + رجالي + نسائي:", Place: "كيفان - صباح السالم \n المهبولة - شرق \n الخيران", l97: "checkmark.square.fill", l56a: "xmark.square.fill")
+    ,
+    detailsNadi(Name: "Flare فلير", logo: "Flare فلير", Prices: "10K.D/1Day \n 85K.D/1month \n لتفاصيل اكثر توجه لموقع النادي", ourPhotoNadi: ["F-1","F-2","F-3","F-4","F-5","F-6","F-7","F-8"], msb7: "مسبح + رجالي + نسائي:", Place: "الجابرية رجال+نساء \n شويخ رجال+نساء \n شرق رجال+نساء", l97: "checkmark.square.fill", l56a: "xmark.square.fill")
 ,
     
 ]

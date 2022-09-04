@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct HomeOnHealthy: View {
+struct Homei: View {
     @StateObject var taskModel: TaskViewModel = TaskViewModel()
     @Namespace var animation
-    var ourList: DaitListModel
     
     var body: some View {
        
@@ -63,6 +62,7 @@ struct HomeOnHealthy: View {
                             }
                         }
                         .padding(.horizontal)
+                        
                     }
                     
                     TasksView()
@@ -84,7 +84,9 @@ struct HomeOnHealthy: View {
             if let tasks = taskModel.filteredTasks{
                 
                 if tasks.isEmpty{
+                    //
                     
+                    //
                     Text("لا يوجد وصفات اليوم")
                         .font(.system(size: 16))
                         .fontWeight(.light)
@@ -97,8 +99,9 @@ struct HomeOnHealthy: View {
                         ForEach(tasks){task in
                             taskCardView(task: task)
                             
+                            
                         }
-                        
+    
                     }
                 }
             }
@@ -224,9 +227,9 @@ struct HomeOnHealthy: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct Homei_Previews: PreviewProvider {
     static var previews: some View {
-        HomeOnHealthy(ourList: DaitListModel(PhotoDait: "For00", F6or204040: "age"))
+        Homei()
     }
 }
 
@@ -259,3 +262,4 @@ extension View{
         return safeArea
     }
 }
+

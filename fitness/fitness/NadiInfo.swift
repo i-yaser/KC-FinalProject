@@ -33,12 +33,25 @@ struct NadiInfo: View {
                             .resizable()
                             .frame(width: 120, height: 120)
                         Spacer()
+                        VStack{
                         Text(ourNadi.logo)
                             .font(.title3)
                             .multilineTextAlignment(.center)
                             .padding()
                             .foregroundColor(Color.theme.Primary)
                             .frame(width: 182,height: 160)
+                        
+                            HStack{
+                                Button {
+                                    
+                                } label: {
+                                    Image(systemName: ourNadi.l97)
+                                        .font(.system(size: 35))
+                                }
+                                Text(ourNadi.msb7)
+                                           
+                            }
+                        }
                        }//HStack 1
                     .padding()
                 .background(.white .opacity(0.3))
@@ -142,9 +155,9 @@ struct NadiInfo: View {
 struct NadiInfo_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            NadiInfo(ourNadi: detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "8K.D/1day \n 50K.D/1m \n 140K.D/3m \n 240K.D/6m \n 440K.D/1y", ourPhotoNadi: ["O2-1", "O2-2", "O2-3", "O2-4", "O2-5"], Place: "العديليه - المنقف \n الجابريه - صباح السالم"))
+            NadiInfo(ourNadi: detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "8K.D/1day \n 50K.D/1m \n 140K.D/3m \n 240K.D/6m \n 440K.D/1y", ourPhotoNadi: ["O2-1", "O2-2", "O2-3", "O2-4", "O2-5"], msb7: "Yes", Place: "العديليه - المنقف \n الجابريه - صباح السالم", l97: "checkmark.square.fill", l56a: "xmark.square.fill"))
                 .preferredColorScheme(.light)
-            NadiInfo(ourNadi: detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "8K.D/1day \n 50K.D/1m \n 140K.D/3m \n 240K.D/6m \n 440K.D/1y", ourPhotoNadi: ["O2-1", "O2-2", "O2-3", "O2-4", "O2-5"], Place: "العديليه - المنقف \n الجابريه - صباح السالم"))
+            NadiInfo(ourNadi: detailsNadi(Name: "OXYGEN GYMS | اوكسجين جيم", logo: "OXYGEN GYMS | اوكسجين جيم", Prices: "8K.D/1day \n 50K.D/1m \n 140K.D/3m \n 240K.D/6m \n 440K.D/1y", ourPhotoNadi: ["O2-1", "O2-2", "O2-3", "O2-4", "O2-5"], msb7: "Yes", Place: "العديليه - المنقف \n الجابريه - صباح السالم", l97: "checkmark.square.fill", l56a: "xmark.square.fill"))
                 .preferredColorScheme(.dark)
         }
     }

@@ -35,7 +35,6 @@ struct ProfileView: View {
                     
                     VStack{
                         
-                        
     //                    HStack{
     //                        Spacer()
     //                            .frame(width: 28, height: 0)

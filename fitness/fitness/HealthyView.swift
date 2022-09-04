@@ -129,7 +129,7 @@ struct HealthyView: View {
                             
                             ForEach(HealthyPhoto0){ Healthy in
                                 
-                                NavigationLink(destination: ListDait()) {
+                                NavigationLink(destination: Homei()) {
                                     Image(Healthy.category1)
                                         .resizable()
                                         .cornerRadius(40)

@@ -14,6 +14,9 @@
 		8B54A8BE28B6DAB100FECA15 /* ViewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */; };
 		8B7258CF28C07D66000F0CA2 /* ListDait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7258CE28C07D66000F0CA2 /* ListDait.swift */; };
 		8B81159028C328D300BC8DAF /* HealthyNotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81158F28C328D300BC8DAF /* HealthyNotView.swift */; };
+		8B85EB2228C48E8200CED843 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85EB1E28C48E8200CED843 /* TaskViewModel.swift */; };
+		8B85EB2328C48E8200CED843 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85EB1F28C48E8200CED843 /* Home.swift */; };
+		8B85EB2428C48E8200CED843 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85EB2128C48E8200CED843 /* Task.swift */; };
 		8B9030CD28BD936500517FC5 /* NadiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9030CC28BD936500517FC5 /* NadiView.swift */; };
 		8BAF9E2028C2101800B3DCBF /* UpProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */; };
 		8BB1B60C28C1CDB90020A4B7 /* HealthyView0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */; };
@@ -38,6 +41,9 @@
 		8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogin.swift; sourceTree = "<group>"; };
 		8B7258CE28C07D66000F0CA2 /* ListDait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDait.swift; sourceTree = "<group>"; };
 		8B81158F28C328D300BC8DAF /* HealthyNotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyNotView.swift; sourceTree = "<group>"; };
+		8B85EB1E28C48E8200CED843 /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		8B85EB1F28C48E8200CED843 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		8B85EB2128C48E8200CED843 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8B9030CC28BD936500517FC5 /* NadiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiView.swift; sourceTree = "<group>"; };
 		8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpProfile.swift; sourceTree = "<group>"; };
 		8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyView0.swift; sourceTree = "<group>"; };
@@ -66,6 +72,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B85EB1C28C48E8200CED843 /* GoodView */ = {
+			isa = PBXGroup;
+			children = (
+				8B85EB1D28C48E8200CED843 /* ViewModel */,
+				8B85EB1F28C48E8200CED843 /* Home.swift */,
+				8B85EB2028C48E8200CED843 /* Model */,
+			);
+			path = GoodView;
+			sourceTree = "<group>";
+		};
+		8B85EB1D28C48E8200CED843 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B85EB1E28C48E8200CED843 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B85EB2028C48E8200CED843 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B85EB2128C48E8200CED843 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8BC4F23B28B523DA000A1610 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +117,7 @@
 		8BC4F24628B523DA000A1610 /* fitness */ = {
 			isa = PBXGroup;
 			children = (
+				8B85EB1C28C48E8200CED843 /* GoodView */,
 				8BC4F24728B523DA000A1610 /* fitnessApp.swift */,
 				8BC4F24928B523DA000A1610 /* ContentView.swift */,
 				8BCF366928BF8E9E00E1A3FC /* FirstView.swift */,
@@ -200,12 +233,15 @@
 				8B7258CF28C07D66000F0CA2 /* ListDait.swift in Sources */,
 				8BCF366A28BF8E9E00E1A3FC /* FirstView.swift in Sources */,
 				8B81159028C328D300BC8DAF /* HealthyNotView.swift in Sources */,
+				8B85EB2228C48E8200CED843 /* TaskViewModel.swift in Sources */,
 				8BBAD18F28BC51F40013C5DC /* ProfileView.swift in Sources */,
+				8B85EB2328C48E8200CED843 /* Home.swift in Sources */,
 				8BBAD19128BC78430013C5DC /* HealthyView.swift in Sources */,
 				8BB1B61028C1DBBD0020A4B7 /* List10.swift in Sources */,
 				8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */,
 				8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */,
 				8BAF9E2028C2101800B3DCBF /* UpProfile.swift in Sources */,
+				8B85EB2428C48E8200CED843 /* Task.swift in Sources */,
 				8BB76E2A28B95B0800375CFC /* ColorTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
