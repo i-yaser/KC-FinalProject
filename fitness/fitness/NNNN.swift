@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct TmarinView: View {
+struct iTmarinView: View {
     @StateObject var taskModel: iTaskViewModel = iTaskViewModel()
     @Namespace var animation
     @State var Photo1 = "Sport-1"
@@ -125,7 +125,8 @@ struct TmarinView: View {
                                }
                            }.frame(width: 413, height: 280)
                        }//mmmmmm
-                                          }
+                       
+                   }
                    
                    TasksView()
                    
@@ -144,15 +145,8 @@ struct TmarinView: View {
            
            if let tasks = taskModel.filteredTasks{
                
-               if tasks.isEmpty    {
-                   VStack{
-                       VStack{
-                           HStack{
-                               
-                           }.frame(width: 380, height: 200)
-                               .background(.white)
-                       }
-                   }
+               if tasks.isEmpty{
+                   
                    VStack {
                        VStack{
 
@@ -211,7 +205,7 @@ struct TmarinView: View {
                                                        }
                                                        Spacer()
                                                        VStack{
-
+    
                                                            Image(Photo1)
                                                                .resizable()
                                                                .frame(width: 120, height: 120)
@@ -448,10 +442,16 @@ struct TmarinView: View {
                                                          .cornerRadius(15)
                    //4
                }
-
                
                else{
                    
+                   VStack {
+                       ForEach(tasks){task in
+                           taskCardView(task: task)
+                           
+                       }
+                       
+                   }
                }
                    
            }
@@ -472,14 +472,97 @@ struct TmarinView: View {
    
    
    
+   func taskCardView(task: Task)->some View{
+         
+       HStack(alignment: .top, spacing: 30){
+           VStack(spacing: 10){
+               Text(task.taskTitle)
+
+               Circle()
+               .fill(.black)
+               .frame(width: 15, height: 15)
+               .background(
+               
+               Circle()
+                   .stroke(.black,lineWidth: 1)
+                   .padding(-3)
+               )
+               
+               Rectangle()
+                   .fill()
+                   .frame(width: 3)
+               
+           }
+           VStack{
+               HStack(alignment: .top, spacing: 10) {
+                                       
+                   VStack(alignment: .leading, spacing: 12){
+                       
+                       Text(task.taskTitle)
+                           .font(.title2.bold())
+                       
+                       Text(task.taskDescription)
+                           .font(.callout)
+                           .foregroundColor(.secondary)
+                   }
+                   .hLeading()
+                   
+                   Text(task.taskDate.formatted(date: .omitted, time: .shortened))
+                   
+               }
+             //g الساعه بوقتها
+               if taskModel.isCurrentHour(date: task.taskDate){
+                   HStack(spacing: 0){
+                       
+                       HStack(spacing: -10){
+                           ForEach(["For00","For99","For00"],id: \.self){user in
+                               
+                               Image(user)
+                                   .resizable()
+                                   .aspectRatio(contentMode: .fill)
+                                   .frame(width: 45, height: 45)
+                                   .clipShape(Circle())
+                                   .background(
+                                   Circle()
+                                       .stroke(.black,lineWidth: 5)
+                                   )
+                           }
+                           
+                       }
+                       .hLeading()
+                       
+                       Button {
+                           
+                       } label: {
+                           Image(systemName: "checkmark")
+                               .foregroundStyle(.black)
+                               .padding(10)
+                               .background(Color.white,in: RoundedRectangle(cornerRadius: 10))
+                       }
+
+                   }
+                   .padding(.top)
+               }
+           }
+           .foregroundStyle(.white)
+           .padding()
+           .hLeading()
+           .background(Color("black"))
+           .cornerRadius(25)
+       }
+       .hLeading()
+   }
+
 //   func HeaderView()->some View{
 //
 //}
-
 }
-struct TmarinView_Previews: PreviewProvider {
+
+struct iTmarinView_Previews: PreviewProvider {
     static var previews: some View {
-        TmarinView()
+        iTmarinView()
+    
+        
     }
 }
 
