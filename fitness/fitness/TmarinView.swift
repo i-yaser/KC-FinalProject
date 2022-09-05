@@ -11,9 +11,9 @@ import SwiftUI
 struct TmarinView: View {
     @StateObject var taskModel: TaskViewModel = TaskViewModel()
     @Namespace var animation
-    @State var Photo = "Sport-1"
-    @State var Title = "مشي 30د"
-    @State var Dis = "لا احد ينكر فادة المشي كل يوم ،ابدي صباح ب المشي القليل ل تكتسب الطاقه الكافيه لليوم..."
+    @State var Photo1 = "Sport-1"
+    @State var Title1 = "مشي 30د"
+    @State var Dis1 = "لا احد ينكر فادة المشي كل يوم ،ابدي صباح ب المشي القليل ل تكتسب الطاقه الكافيه لليوم..."
    var body: some View {
        
        ScrollView(.vertical, showsIndicators: false) {
@@ -106,9 +106,9 @@ struct TmarinView: View {
                            
                                                    HStack{
                                                        Button {
-                                                          Photo = "kkd"
-                                                           Title = "لمس القدم"
-                                                           Dis = "تمرين سهل الممارسة، حيث يتم ممارسته من خلال"
+                                                          Photo1 = "kkd"
+                                                           Title1 = "لمس القدم"
+                                                           Dis1 = "من أهم التمارين الرياضية البسيطة والصحية للجسم، هو تمرين لمس أصابع القدم، بحيث يجلس الشخص ويمدد قدميه أمامه ويقوم لفرد ذراعيه كي يلمس بيديه أطراف أصابع القدم مع فرد الظهر، ويستمر"
                                                        } label: {
                                                            HStack{
                                                                Text("تغير التمرين")
@@ -134,10 +134,10 @@ struct TmarinView: View {
                                                            .offset(y: -38)
 
                                                        VStack{
-                                                           Text(Title)
+                                                           Text(Title1)
                                                                .font(.system(size: 19))
                                                                .offset(x: 20,y: -30)
-                                                           Text(Dis)
+                                                           Text(Dis1)
                                                                .font(.system(size: 15))
                                                                .foregroundColor(.gray)
                                                                .multilineTextAlignment(.trailing)
@@ -150,7 +150,7 @@ struct TmarinView: View {
 //                                                               .resizable()
 //                                                               .frame(width: 120, height: 120)
 //                                                               .cornerRadius(15)
-                                                                                      Image(Photo)
+                                                                                      Image(Photo1)
                                                                                           .resizable()
                                                                                           .frame(width: 120, height: 120)
                                                                                           .cornerRadius(15)
