@@ -15,6 +15,8 @@
 		8B54A8BE28B6DAB100FECA15 /* ViewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */; };
 		8B7258CF28C07D66000F0CA2 /* ListDait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7258CE28C07D66000F0CA2 /* ListDait.swift */; };
 		8B80A4BA28C62E6900876F3B /* Model l.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80A4B928C62E6900876F3B /* Model l.swift */; };
+		8B80A4C228C66D7D00876F3B /* Dr Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80A4C128C66D7D00876F3B /* Dr Add.swift */; };
+		8B80A4C428C676B800876F3B /* Dr1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80A4C328C676B800876F3B /* Dr1.swift */; };
 		8B81159028C328D300BC8DAF /* HealthyNotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81158F28C328D300BC8DAF /* HealthyNotView.swift */; };
 		8B85EB2228C48E8200CED843 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85EB1E28C48E8200CED843 /* TaskViewModel.swift */; };
 		8B85EB2328C48E8200CED843 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85EB1F28C48E8200CED843 /* Home.swift */; };
@@ -43,6 +45,8 @@
 		8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogin.swift; sourceTree = "<group>"; };
 		8B7258CE28C07D66000F0CA2 /* ListDait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDait.swift; sourceTree = "<group>"; };
 		8B80A4B928C62E6900876F3B /* Model l.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model l.swift"; sourceTree = "<group>"; };
+		8B80A4C128C66D7D00876F3B /* Dr Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dr Add.swift"; sourceTree = "<group>"; };
+		8B80A4C328C676B800876F3B /* Dr1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr1.swift; sourceTree = "<group>"; };
 		8B81158F28C328D300BC8DAF /* HealthyNotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyNotView.swift; sourceTree = "<group>"; };
 		8B85EB1E28C48E8200CED843 /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		8B85EB1F28C48E8200CED843 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */,
 				8B1F7CF628B9790B00654C23 /* ViewSignup.swift */,
 				8BB3DA6D28BB17C0002DBC86 /* AppView.swift */,
+				8B80A4C128C66D7D00876F3B /* Dr Add.swift */,
+				8B80A4C328C676B800876F3B /* Dr1.swift */,
 				8BB76E2928B95B0800375CFC /* ColorTheme.swift */,
 				8B9030CC28BD936500517FC5 /* NadiView.swift */,
 				8B4A658C28BDA9EA00D7075C /* NadiList.swift */,
@@ -236,9 +242,11 @@
 				8B7258CF28C07D66000F0CA2 /* ListDait.swift in Sources */,
 				8BCF366A28BF8E9E00E1A3FC /* FirstView.swift in Sources */,
 				8B81159028C328D300BC8DAF /* HealthyNotView.swift in Sources */,
+				8B80A4C428C676B800876F3B /* Dr1.swift in Sources */,
 				8B85EB2228C48E8200CED843 /* TaskViewModel.swift in Sources */,
 				8BBAD18F28BC51F40013C5DC /* ProfileView.swift in Sources */,
 				8B85EB2328C48E8200CED843 /* Home.swift in Sources */,
+				8B80A4C228C66D7D00876F3B /* Dr Add.swift in Sources */,
 				8BBAD19128BC78430013C5DC /* HealthyView.swift in Sources */,
 				8BB1B61028C1DBBD0020A4B7 /* List10.swift in Sources */,
 				8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */,

@@ -16,61 +16,75 @@ struct AppView: View {
             Ellipse()
                 .scale(1.1)
                 .foregroundColor(Color.theme.OnBg .opacity(0.15))
-//                
-//            Ellipse()
-//                .scale(1)
-//                .foregroundColor(Color.theme.OnBg2)
-//            
-            VStack{
-                //                Image("LOGO")
-                //                    .resizable()
-                //                    .frame(width: 80, height: 80)
-
-//            HStack{
-//
-//                Spacer()
-//                    .frame(width: 28, height: 0)
-//
-//                Image("LOGO")
-//                    .resizable()
-//                    .frame(width: 80, height: 80)
-//
-//                Spacer()
-//
-//                Text("الصفحه الرئيسيه")
-//                    .font(.title)
-//                    .foregroundColor(Color.theme.Background)
-//                Image(systemName: "house")
-//                Spacer()
-//
-//            } //HStack 1
+            VStack(spacing: 10){
                 Divider()
             
             
             
                 Spacer()
-                VStack{
+                VStack(spacing: 10){
                     ScrollView(.horizontal){
-                        HStack{
-                    ForEach(AdAdAd){ Ad in
-                        
-                        
-                            Image(Ad.PhotoAd)
-                                .resizable()
-                                .frame(width: 310, height: 200)
-                        
-                        } // ForEach 1
-                    
-                    }//HStack 2
-                        .background(Color.black)
+                        HStack(spacing: 10) {
+                            VStack(spacing: 10){
+                               Text("اخصائين تغذيه")
+                                    .font(.system(size: 20))
+                                Text("")
+                                
+                                HStack(spacing: -10){
+                                    ForEach(["سامي زهير البدر","ليليان سليم زاهر","نور العمر"],id: \.self){user in
+                                        
+                                        Image(user)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width: 45, height: 45)
+                                            .clipShape(Circle())
+                                            .background(
+                                            Circle()
+                                                .stroke(.black,lineWidth: 5)
+                                            )
+                                    }
+                                    
+                                }
+                            }.padding()
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            VStack(spacing: 80){
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "arrow.up.forward.circle")
+                                    .font(.system(size: 29))
+                                    .foregroundColor(.red)
+                                
+                            }
+
+                                NavigationLink(destination: Dr_Add()) {
+                                    Image(systemName: "arrow.down.right.circle")
+                                        .font(.system(size: 29))
+                                        .foregroundColor(.black)
+
+                                }
+                            
+                            }
+
+                            
+                        }
 //                        .frame(width: 380, height: 180)
                     
-                }//ScrollView 1
+                }//ScrollV
+                    
                     .frame(width: 380, height: 180)
                 }
-                .frame(width: 400, height: 220)
-                .background(Color.theme.OnBg2)
-                .cornerRadius(15)
+                .frame(width: 390, height: 170)
+                .background(Color.white)
+                .cornerRadius(25)
             
                 Divider()
                 VStack{

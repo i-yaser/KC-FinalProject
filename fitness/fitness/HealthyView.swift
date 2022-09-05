@@ -10,7 +10,7 @@ import SwiftUI
 struct HealthyView: View {
 
     var body: some View {
-        NavigationView {
+//        NavigationView {
   
                 ZStack{
                     Color.theme.Bg .ignoresSafeArea()
@@ -18,92 +18,19 @@ struct HealthyView: View {
                     Ellipse()
                         .scale(1.1)
                         .foregroundColor(Color.theme.OnBg .opacity(0.15))
-//                    Color.theme.Primary .ignoresSafeArea()
-//
-//                    Ellipse()
-//                        .scale(1.1)
-//                        .foregroundColor(Color.theme.PrimaryOn .opacity(0.15))
-//
-//                    Ellipse()
-//                        .scale()
-//                        .foregroundColor(Color.theme.PrimaryContainer)
-                    
-
                     
                     VStack{
-                        VStack{
-                            Text("جدولك الصحي")
-                                .font(.title3)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.theme.Outline3)
-                            HStack{
-                                Circle()
-                                    .frame(width: 40, height: 40)
-                                    .foregroundColor(.gray .opacity(0.4))
-                                    .offset(x:-20 ,y:35)
-                                Circle()
-                                    .frame(width: 40, height: 40)
-                                    .foregroundColor(.gray .opacity(0.4))
-                                    .offset(x:-8 ,y:35)
-                                Circle()
-                                    .frame(width: 40, height: 40)
-                                    .foregroundColor(.gray .opacity(0.4))
-                                    .offset(x:0 ,y:35)
-                                Circle()
-                                    .frame(width: 40, height: 40)
-                                    .foregroundColor(Color.red .opacity(0.4))
-                                    .offset(x:8 ,y:35)
-                                Circle()
-                                    .frame(width: 40, height: 40)
-                                    .foregroundColor(.gray .opacity(0.4))
-                                    .offset(x:15 ,y:35)
-                                Circle()
-                                    .frame(width: 40, height: 40)
-                                    .foregroundColor(.gray .opacity(0.4))
-                                    .offset(x:20 ,y:35)
-                                Circle()
-                                    .frame(width: 40, height: 40)
-                                    .foregroundColor(.gray .opacity(0.4))
-                                    .offset(x:20 ,y:35)
-
-                            }.padding()
-                                .frame(width: 1, height: 1)
-                            HStack{
-                                
-                                
-                                Text("14")
-                                    .padding()
-                                    .foregroundColor(Color.theme.Outline)
-                                Text("13")
-                                    .padding()
-                                    .foregroundColor(Color.theme.Outline)
-                                Text("12")
-                                    .padding()
-                                    .foregroundColor(Color.theme.Outline)
-                                Text("11")
-                                    .padding()
-                                    .foregroundColor(Color.theme.Outline)
-                                Text("10")
-                                    .padding()
-                                    .foregroundColor(Color.theme.Outline)
-                                Text("9")
-                                    .padding()
-                                    .foregroundColor(Color.theme.Outline)
-                                Text("8")
-                                    .padding()
-                                    .foregroundColor(Color.theme.Outline)
-
-                                
-                                
-                                
-                                
-                                
-                                
+                        ScrollView(.horizontal) {
+                            VStack{
+                                Text("نصايح")
+                                    .font(.title3)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.theme.Outline3)
                             }
+                            .frame(width: 380, height: 150)
+                            .background(Color.theme.iColor)
+                        .cornerRadius(20)
                         }
-                        .frame(width: 380, height: 150)
-                        .background(Color.theme.iColor)
-                            .cornerRadius(20)
                         
                         Divider()
                         
@@ -137,7 +64,8 @@ struct HealthyView: View {
                                             .resizable()
                                             .frame(width: 160, height: 130)
                                     }
-                                    Text("")
+                                    Spacer()
+                                        .frame(width: 20)
                                     VStack {
                                         Spacer().frame(height: 15)
                                         NavigationLink(destination: Homei()) {
@@ -155,21 +83,25 @@ struct HealthyView: View {
                                     .frame(width: 380, height: 200, alignment: .top)
                                     .background(.white)
                                     .cornerRadius(25)
+                                    .frame(width: 383, height: 203)
+                                    .background(.black)
+                                    .cornerRadius(26)
+
                                 /////////// //
                                 HStack(alignment: .top, spacing: 30){
                                     VStack(spacing: 10){
                                         Circle()
-                                        .fill(.black)
+                                        .fill(.red)
                                         .frame(width: 15, height: 15)
                                         .background(
                                         
                                         Circle()
-                                            .stroke(.black,lineWidth: 1)
+                                            .stroke(.red,lineWidth: 1)
                                             .padding(-3)
                                         )
                                         
                                         Rectangle()
-                                            .fill()
+                                            .fill(.red)
                                             .frame(width: 3)
                                         
                                     }
@@ -177,18 +109,20 @@ struct HealthyView: View {
                                     VStack(spacing: 10){
                                         Text("تمارين")
                                             .font(.system(size: 26))
+                                            .foregroundColor(.red)
                                         Image("HealthyNo")
                                             .resizable()
                                             .frame(width: 160, height: 145)
                                     }
-                                    Text("")
+                                    Spacer()
+                                        .frame(width: 20)
                                     VStack {
                                         Spacer().frame(height: 15)
                                         NavigationLink(destination: TmarinView()) {
                                             Image(systemName: "arrow.forward")
                                                 .foregroundStyle(.white)
                                                 .padding(10)
-                                                .background(Color.black,in: RoundedRectangle(cornerRadius: 10))
+                                                .background(Color.red,in: RoundedRectangle(cornerRadius: 10))
                                                 
                                         }
                                     }//End nav
@@ -198,6 +132,10 @@ struct HealthyView: View {
                                     .frame(width: 380, height: 200, alignment: .top)
                                     .background(.white)
                                     .cornerRadius(25)
+                                    .frame(width: 383, height: 203)
+                                    .background(.red)
+                                    .cornerRadius(26)
+
                                 
                                 HStack(alignment: .top, spacing: 30){
                                     VStack(spacing: 10){
@@ -224,7 +162,8 @@ struct HealthyView: View {
                                             .resizable()
                                             .frame(width: 160, height: 130)
                                     }
-                                    Text("")
+                                    Spacer()
+                                        .frame(width: 20)
                                     VStack {
                                         Spacer().frame(height: 15)
                                         NavigationLink(destination: Homei()) {
@@ -241,27 +180,7 @@ struct HealthyView: View {
                                     .frame(width: 380, height: 200, alignment: .top)
                                     .background(.white)
                                     .cornerRadius(25)
-    //
-    //                            Divider()
-    //
-    //                            ForEach(HealthyPhoto1){ Healthy1 in
-    //
-    //                                Image(Healthy1.category1)
-    //                                    .resizable()
-    //                                    .cornerRadius(40)
-    //                                    .frame(width: 420, height: 200)
-    //                            }
-    //                            Divider()
-    //
-    //                            ForEach(HealthyPhoto2){ Healthy2 in
-    //
-    //                                Image(Healthy2.category1)
-    //                                    .resizable()
-    //                                    .cornerRadius(40)
-    //                                    .frame(width: 420, height: 200)
-    //
-    //                            }
-                             
+                                 
                                 
                             }
                             
@@ -304,7 +223,7 @@ struct HealthyView: View {
                     
                 }
             
-        }
+//        } nav
     }
 }
 
