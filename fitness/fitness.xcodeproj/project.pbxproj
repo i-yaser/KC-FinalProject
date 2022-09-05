@@ -21,7 +21,6 @@
 		8B85EB2428C48E8200CED843 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85EB2128C48E8200CED843 /* Task.swift */; };
 		8B9030CD28BD936500517FC5 /* NadiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9030CC28BD936500517FC5 /* NadiView.swift */; };
 		8BAF9E2028C2101800B3DCBF /* UpProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */; };
-		8BB1B60C28C1CDB90020A4B7 /* HealthyView0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */; };
 		8BB1B61028C1DBBD0020A4B7 /* List10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B60F28C1DBBD0020A4B7 /* List10.swift */; };
 		8BB3DA6E28BB17C0002DBC86 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3DA6D28BB17C0002DBC86 /* AppView.swift */; };
 		8BB76E2A28B95B0800375CFC /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB76E2928B95B0800375CFC /* ColorTheme.swift */; };
@@ -50,7 +49,6 @@
 		8B85EB2128C48E8200CED843 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8B9030CC28BD936500517FC5 /* NadiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiView.swift; sourceTree = "<group>"; };
 		8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpProfile.swift; sourceTree = "<group>"; };
-		8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyView0.swift; sourceTree = "<group>"; };
 		8BB1B60F28C1DBBD0020A4B7 /* List10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List10.swift; sourceTree = "<group>"; };
 		8BB3DA6D28BB17C0002DBC86 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		8BB76E2928B95B0800375CFC /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				8BBAD18E28BC51F40013C5DC /* ProfileView.swift */,
 				8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */,
 				8BBAD19028BC78430013C5DC /* HealthyView.swift */,
-				8BB1B60B28C1CDB90020A4B7 /* HealthyView0.swift */,
 				8B81158F28C328D300BC8DAF /* HealthyNotView.swift */,
 				8B7258CE28C07D66000F0CA2 /* ListDait.swift */,
 				8BB1B60F28C1DBBD0020A4B7 /* List10.swift */,
@@ -229,7 +226,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B80A4BA28C62E6900876F3B /* Model l.swift in Sources */,
-				8BB1B60C28C1CDB90020A4B7 /* HealthyView0.swift in Sources */,
 				8B9030CD28BD936500517FC5 /* NadiView.swift in Sources */,
 				8B4A658F28BDB11B00D7075C /* NadiInfo.swift in Sources */,
 				8BC4F24A28B523DA000A1610 /* ContentView.swift in Sources */,
