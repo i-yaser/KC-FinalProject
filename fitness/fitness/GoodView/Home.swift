@@ -15,7 +15,7 @@ struct Homei: View {
        
         ScrollView(.vertical, showsIndicators: false) {
             
-            LazyVStack(spacing: 15, pinnedViews: [.sectionHeaders]) {
+            LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]) {
                 
                 Section {
                     
@@ -31,16 +31,17 @@ struct Homei: View {
                                     Text(taskModel.extractDate(date: day, format: "dd"))
                                         .font(.system(size: 15))
                                         .fontWeight(.semibold)
+//                                        .foregroundColor(Color.theme.iColor)
                                     
                                     Text(taskModel.extractDate(date: day, format: "EEE"))
                                         .font(.system(size: 14))
-                                    
+//                                        .foregroundColor(Color.theme.iColor)
                                     Circle()
                                         .fill(.white)
                                         .frame(width: 8, height: 8)
                                         .opacity(taskModel.isTody(date: day) ? 1 : 0)
                                 }
-                                .foregroundStyle(taskModel.isTody(date: day) ? .primary : .secondary)
+                                .foregroundStyle(taskModel.isTody(date: day) ? Color.theme.iColor : .secondary)
                                 .foregroundColor(taskModel.isTody(date: day) ?  .white : .black)
                                 .frame(width: 45, height: 90)
                                 .background(
@@ -49,7 +50,7 @@ struct Homei: View {
                                   
                                         if taskModel.isTody(date: day){
                                             Capsule()
-                                                .fill(.black)
+                                                .fill(Color.theme.iiColor)
                                                 .matchedGeometryEffect(id: "CURRENTDAY", in: animation)
                                         }
                                     })
@@ -63,7 +64,7 @@ struct Homei: View {
                         }
                         .padding(.horizontal)
                         
-                    }
+                    }.background(Color.theme.iColor)
                     
                     TasksView()
                     
@@ -75,6 +76,7 @@ struct Homei: View {
             }
         }
         .ignoresSafeArea(.container, edges: .top)
+        .background(Color.theme.iiColor)
     }
     
     func TasksView()->some View{
@@ -84,13 +86,117 @@ struct Homei: View {
             if let tasks = taskModel.filteredTasks{
                 
                 if tasks.isEmpty{
-                    //
                     
+                    VStack {
+                        VStack{
+                                                    HStack{
+                                                        Button {
+                                                            
+                                                        } label: {
+                                                            HStack{
+                                                            Text("تغير التمرين")
+                                                            
+                                                            Image(systemName: "arrowshape.turn.up.backward.2")
+                                                            }
+                                                            .frame(width: 130, height: 30)
+                                                            .background(.red)
+                                                            .cornerRadius(20)
+                                                            .foregroundColor(.black)
+                                                        }
+
+                                                        
+                                                        Spacer()
+                                                        Text("تمرين الصباح")
+                                                        
+                                                    }.padding()
+                                                    Divider()
+                                                    HStack{
+                                                        Image(systemName: "plus.circle.fill")
+                                                            .font(.system(size: 35))
+                                                            .foregroundColor(.red)
+                                                            .offset(y: -38)
+
+                                                        VStack{
+                                                            Text("مشي 30د")
+                                                                .font(.system(size: 19))
+                                                                .offset(x: 20,y: -30)
+                                                            Text("لا احد ينكر فادة المشي كل يوم ،ابدي صباح ب المشي القليل ل تكتسب الطاقه الكافيه لليوم...")
+                                                                .font(.system(size: 15))
+                                                                .foregroundColor(.gray)
+                                                                .multilineTextAlignment(.trailing)
+                                                                .offset( y: -20)
+                                                                
+                                                        }
+                                                        Spacer()
+                                                        VStack{
+                                                            Image("Sport-1")
+                                                                .resizable()
+                                                                .frame(width: 120, height: 120)
+                                                                .cornerRadius(15)
+                                                        }
+                                                        
+                                                    }.padding()
+                                                    
+                                                }                .frame(width: 380, height: 210)
+                                                    .background(Color.white)
+                                                .cornerRadius(15)
+                    }
+                    .frame(width: 385, height: 215)
+                        .background(Color.red)
+                    .cornerRadius(15)
                     //
-                    Text("لا يوجد وصفات اليوم")
-                        .font(.system(size: 16))
-                        .fontWeight(.light)
-                        .offset(y: 100)
+                    VStack {
+                        VStack{
+                                                    HStack{
+                                                        HStack{
+                                                        Text("تغير التمرين")
+                                                        
+                                                        Image(systemName: "arrowshape.turn.up.backward.2")
+                                                        }
+                                                        .frame(width: 130, height: 30)
+                                                        .background(.red)
+                                                        .cornerRadius(20)
+                                                        
+                                                        Spacer()
+                                                        Text("تمرين الصباح")
+                                                        
+                                                    }.padding()
+                                                    Divider()
+                                                    HStack{
+                                                        Image(systemName: "plus.circle.fill")
+                                                            .font(.system(size: 35))
+                                                            .foregroundColor(.red)
+                                                            .offset(y: -38)
+
+                                                        VStack{
+                                                            Text("بيض اومليت + خبر ")
+                                                                .font(.system(size: 19))
+                                                                .offset(x: 20,y: -30)
+                                                            Text("الطماطم مصدر ممتاز لفيتامين ج ومضادات الأكسده أما البيض<<<")
+                                                                .font(.system(size: 15))
+                                                                .foregroundColor(.gray)
+                                                                .multilineTextAlignment(.trailing)
+                                                                .offset( y: -20)
+                                                                
+                                                        }
+                                                        Spacer()
+                                                        VStack{
+                                                            Image("For99")
+                                                                .resizable()
+                                                                .frame(width: 120, height: 120)
+                                                                .cornerRadius(15)
+                                                        }
+                                                        
+                                                    }.padding()
+                                                    
+                                                }                .frame(width: 380, height: 210)
+                                                    .background(Color.white)
+                                                .cornerRadius(15)
+                    }
+                    .frame(width: 385, height: 215)
+                        .background(Color.red)
+                    .cornerRadius(15)
+                    //
                 }
                 
                 else{
@@ -157,38 +263,6 @@ struct Homei: View {
                     
                 }
               //g الساعه بوقتها
-                if taskModel.isCurrentHour(date: task.taskDate){
-                    HStack(spacing: 0){
-                        
-                        HStack(spacing: -10){
-                            ForEach(["For00","For99","For00"],id: \.self){user in
-                                
-                                Image(user)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 45, height: 45)
-                                    .clipShape(Circle())
-                                    .background(
-                                    Circle()
-                                        .stroke(.black,lineWidth: 5)
-                                    )
-                            }
-                            
-                        }
-                        .hLeading()
-                        
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "checkmark")
-                                .foregroundStyle(.black)
-                                .padding(10)
-                                .background(Color.white,in: RoundedRectangle(cornerRadius: 10))
-                        }
-
-                    }
-                    .padding(.top)
-                }
             }
             .foregroundStyle(.white)
             .padding()
@@ -209,15 +283,16 @@ struct Homei: View {
             
             Text("اليوم")
                 .font(.largeTitle.bold())
+                .foregroundColor(Color.theme.iiColor)
             }
             .hLeading()
             
             Button {
                 
             } label: {
-                Image(systemName: "timer")
+                Image(systemName: "fork.knife")
                     .font(.system(size: 60))
-                    .foregroundColor(.black)
+                    .foregroundColor(Color.theme.iiColor)
             }
 
         }
@@ -229,7 +304,11 @@ struct Homei: View {
 
 struct Homei_Previews: PreviewProvider {
     static var previews: some View {
-        Homei()
+        Group {
+            Homei()
+            Homei()
+                .preferredColorScheme(.dark)
+        }
     }
 }
 

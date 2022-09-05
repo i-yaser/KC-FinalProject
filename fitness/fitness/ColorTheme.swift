@@ -28,6 +28,7 @@ struct ColorTheme{
     //Color App👆🏻
     let For40 = Color("For40")
     let iColor = Color("iColor")
+    let iiColor = Color("iiColor")
 //Color line👇🏻
     let Outline = Color("Outline")
     let Outline2 = Color("Outline2")
