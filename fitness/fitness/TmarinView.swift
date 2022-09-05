@@ -11,6 +11,9 @@ import SwiftUI
 struct TmarinView: View {
     @StateObject var taskModel: TaskViewModel = TaskViewModel()
     @Namespace var animation
+    @State var Photo = "Sport-1"
+    @State var Title = "مشي 30د"
+    @State var Dis = "لا احد ينكر فادة المشي كل يوم ،ابدي صباح ب المشي القليل ل تكتسب الطاقه الكافيه لليوم..."
    var body: some View {
        
        ScrollView(.vertical, showsIndicators: false) {
@@ -86,14 +89,31 @@ struct TmarinView: View {
                    
                    VStack {
                        VStack{
+//                           Image(Photo)
+//                               .resizable()
+//                               .frame(width: 120, height: 120)
+//                               .cornerRadius(15)
+//
+//                               Text(Title)
+//                               .font(.system(size: 19))
+//                               .offset(x: 20,y: -30)
+//
+//                           Text(Dis)
+//                               .font(.system(size: 15))
+//                               .foregroundColor(.gray)
+//                               .multilineTextAlignment(.trailing)
+//                               .offset( y: -20)
+                           
                                                    HStack{
                                                        Button {
-                                                           
+                                                          Photo = "kkd"
+                                                           Title = "لمس القدم"
+                                                           Dis = "تمرين سهل الممارسة، حيث يتم ممارسته من خلال"
                                                        } label: {
                                                            HStack{
-                                                           Text("تغير التمرين")
-                                                           
-                                                           Image(systemName: "arrowshape.turn.up.backward.2")
+                                                               Text("تغير التمرين")
+                                                               
+                                                               Image(systemName: "arrowshape.turn.up.backward.2")
                                                            }
                                                            .frame(width: 130, height: 30)
                                                            .background(.red)
@@ -114,10 +134,10 @@ struct TmarinView: View {
                                                            .offset(y: -38)
 
                                                        VStack{
-                                                           Text("مشي 30د")
+                                                           Text(Title)
                                                                .font(.system(size: 19))
                                                                .offset(x: 20,y: -30)
-                                                           Text("لا احد ينكر فادة المشي كل يوم ،ابدي صباح ب المشي القليل ل تكتسب الطاقه الكافيه لليوم...")
+                                                           Text(Dis)
                                                                .font(.system(size: 15))
                                                                .foregroundColor(.gray)
                                                                .multilineTextAlignment(.trailing)
@@ -126,10 +146,15 @@ struct TmarinView: View {
                                                        }
                                                        Spacer()
                                                        VStack{
-                                                           Image("Sport-1")
-                                                               .resizable()
-                                                               .frame(width: 120, height: 120)
-                                                               .cornerRadius(15)
+//                                                           Image("Sport-1")
+//                                                               .resizable()
+//                                                               .frame(width: 120, height: 120)
+//                                                               .cornerRadius(15)
+                                                                                      Image(Photo)
+                                                                                          .resizable()
+                                                                                          .frame(width: 120, height: 120)
+                                                                                          .cornerRadius(15)
+                                                           
                                                        }
                                                        
                                                    }.padding()
