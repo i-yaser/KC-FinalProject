@@ -20,12 +20,22 @@ struct ViewSignup: View {
     @State var LogInIs = false
     var body: some View {
         ZStack{
-            Color.theme.OnBg2 .opacity(0.8) .ignoresSafeArea()
             
-            Ellipse()
-                .scale(1)
-                .foregroundColor(Color.theme.Primary .opacity(0.15))
-                .offset(y: -10)
+            Color.black .ignoresSafeArea()
+            
+            RoundedRectangle(cornerRadius: 30,style: .continuous)
+                .foregroundStyle(.linearGradient(colors: [.pink,.red], startPoint: .topLeading, endPoint: .bottomLeading))
+                .frame(width: 1100, height: 470)
+                .rotationEffect(.degrees(135))
+                .offset( y: -350)
+
+            
+//            Color.theme.OnBg2 .opacity(0.8) .ignoresSafeArea()
+//
+//            Ellipse()
+//                .scale(1)
+//                .foregroundColor(Color.theme.Primary .opacity(0.15))
+//                .offset(y: -10)
 //            Ellipse()
 //                .scale(0.8)
 //                .foregroundColor(Color.theme.OnBg2 .opacity(0.9))

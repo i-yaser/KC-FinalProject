@@ -16,17 +16,25 @@ struct FirstView: View {
         NavigationView {
             ZStack{
                 
-                Color.theme.Bg                    .ignoresSafeArea()
+                Color.theme.Primary .ignoresSafeArea()
                 
-                Ellipse()
-                    .scale(1)
-                    .offset(y: -60)
-                    .foregroundColor(Color.theme.OnBg .opacity(0.95))
+                RoundedRectangle(cornerRadius: 30,style: .continuous)
+                    .foregroundStyle(.linearGradient(colors: [.pink, .red], startPoint: .topLeading, endPoint: .bottomLeading))
+                    .frame(width: 1120, height: 475)
+                    .rotationEffect(.degrees(135))
+                    .offset( y: -350)
                 
-                Ellipse()
-                    .scale(0.4)
-                    .offset(y: -60)
-                    .foregroundColor(Color.theme.Bg)
+                
+                
+//                Ellipse()
+//                    .scale(1)
+//                    .offset(y: -60)
+//                    .foregroundColor(Color.theme.OnBg .opacity(0.95))
+//
+//                Ellipse()
+//                    .scale(0.4)
+//                    .offset(y: -60)
+//                    .foregroundColor(Color.theme.Bg)
                 
 //                //
 //                VStack{
@@ -58,18 +66,19 @@ struct FirstView: View {
                     
                     Image("LOGO")
                         .resizable()
-                        .frame(width: 190, height: 190)
+                        .frame(width: 200, height: 200)
                         .cornerRadius(550)
-                        .offset(y: 70)
+                        .offset(x: -130,y: -20)
                     
                 
                     
                     Text("اهلا بك \n خيارك الأفضل لصحه")
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color.theme.Outline3)
-                        
+                        .foregroundColor(Color.theme.Bg)
+                        .font(.system(size: 23))
                         .frame(width: 200, height: 80)
                         .padding()
+                        .offset(x: -80, y: -20)
                     Spacer()
                     
                     NavigationLink(destination: TheFirst()){
@@ -83,8 +92,9 @@ struct FirstView: View {
                    
                     NavigationLink(destination: ViewSignup()){
                         Text("إنشاء حساب جديد")
-                        .foregroundColor(.white)
-                        .frame(width: 300, height: 50)
+                            .foregroundColor(.white)
+//                            .foregroundStyle(.linearGradient(colors: [.pink, .red], startPoint: .topLeading, endPoint: .bottomLeading))
+.frame(width: 300, height: 50)
                         .background(Color.black .opacity(0.8))
                         .cornerRadius(10)
                         
@@ -94,28 +104,12 @@ struct FirstView: View {
                         .frame(height: 190)
                     
 
-//                    Button {
-//                        NNN = BMR(Toool: Double(tol) ?? 0.0 / 100, Wzzen: (Double(wzin) ?? 0.0), Age10: Double(age) ?? 0.0 )
-//                    } label: {
-//                       Text("اضغط هنا عند الانتهاء")
-//                           .padding()
-//                            .background(Color(#colorLiteral(red: 0.3598182797, green: 0.4255274534, blue: 0.883906424, alpha: 1)))
-//                            .cornerRadius(30)
-//                            .frame(width: 300, height: 60)
-//                            .foregroundColor(.white)
-//                    }
-//
-//                    Text("\(NNN)")
-                    
-                    
+                    Spacer()
                 
                 }
             }.navigationTitle("Fitness")
-            
         }
             
-//    func BMR(Toool: Double, Wzzen: Double, Age10: Double) -> Double{
-//        return 66.5 + (13.75 * Wzzen) + (5.003 * Toool) - (6.75 * Age10)
     }
 }
 
@@ -124,6 +118,8 @@ struct FirstView_Previews: PreviewProvider {
         Group {
             FirstView()
                 .preferredColorScheme(.light)
+            FirstView()
+                .preferredColorScheme(.dark)
             FirstView()
                 .preferredColorScheme(.dark)
         }

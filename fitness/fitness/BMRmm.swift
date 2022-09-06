@@ -16,7 +16,13 @@ struct BMRmm: View {
 
     var body: some View {
         ZStack{
-            Color.theme.PrimaryContainer .ignoresSafeArea()
+            Color.theme.Primary .ignoresSafeArea()
+            
+            RoundedRectangle(cornerRadius: 30,style: .continuous)
+                .foregroundStyle(.linearGradient(colors: [.pink,.red], startPoint: .topLeading, endPoint: .bottomLeading))
+                .frame(width: 1100, height: 475)
+                .rotationEffect(.degrees(135))
+                .offset( y: -350)
             VStack{
                 
                 Image("BMR")
@@ -47,7 +53,7 @@ struct BMRmm: View {
                     .foregroundColor(.black)
                 
                 Spacer()
-                    .frame(width: 0, height: 10)
+                    .frame(width: 0, height: 20)
 
                 
                VStack {
@@ -55,6 +61,7 @@ struct BMRmm: View {
               
                         Text("ما هو نمط حياتك:")
                             .font(.body)
+                            .foregroundColor(.white)
                         ScrollView(.horizontal) {
                             HStack{
                             
@@ -147,16 +154,18 @@ struct BMRmm: View {
                             
                         
                        
-                            } .background(Color.theme.Primary) .cornerRadius(20)
+                            } .background(Color.red
+                            ) .cornerRadius(20)
                             
-                        }
+                        }.frame(width: 410, height: 80)
+                       .cornerRadius(20)
                         VStack{
                         Text("احتياجك اليومي لسعرات الحراريه")
-                           
+                                .foregroundColor(.white)
                         Text("\(MMM)")
                             .padding()
                             .frame(width: 300, height: 50)
-                            .background(Color.theme.Primary)
+                            .background(Color.theme.OnBg2)
                             .cornerRadius(15)
                             .foregroundColor(.black)
                             

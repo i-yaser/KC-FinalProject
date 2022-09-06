@@ -54,36 +54,39 @@ struct AppView: View {
                             
                             
                             Spacer() .frame(width: 60)
-                            
-                            VStack(spacing: 80){
-                                
-                                HStack {
-                                    Text("نبذه عن التغذية")
-                                        .font(.system(size: 18))
-                                    Button {
+                            NavigationLink(destination: takk()) {
+                                VStack(spacing: 80){
                                     
-                                    
-                                } label: {
-                                    Image(systemName: "arrow.up.forward.circle")
-                                        .font(.system(size: 29))
-                                        .foregroundColor(.black)
-                                    
-                            }
-                                }
-
-                                HStack {
-                                    Text("دكاترة التغذية")
-                                        .font(.system(size: 18))
-                                        .foregroundColor(.red)
-                                    NavigationLink(destination: Dr_Add()) {
-                                        Image(systemName: "arrow.down.right.circle")
+                                    HStack {
+                                        Text("نبذه عن التغذية")
+                                            .font(.system(size: 18))
+                                            .foregroundColor(.black)
+                                        Button {
+                                        
+                                        
+                                    } label: {
+                                        Image(systemName: "arrow.up.forward.circle")
                                             .font(.system(size: 29))
-                                            .foregroundColor(.red)
-
-                                    }
+                                            .foregroundColor(.black)
+                                        
                                 }
-                            
+                                    }
+                                    
+                                    HStack {
+                                        Text("دكاترة التغذية")
+                                            .font(.system(size: 18))
+                                            .foregroundColor(.red)
+                                        NavigationLink(destination: Dr_Add()) {
+                                            Image(systemName: "arrow.down.right.circle")
+                                                .font(.system(size: 29))
+                                                .foregroundColor(.red)
+
+                                        }
+                                    }
+                                
+                                }
                             }
+
 
                             
                         }
