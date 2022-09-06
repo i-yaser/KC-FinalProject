@@ -53,23 +53,34 @@ struct AppView: View {
                             
                             
                             
-                            
+                            Spacer() .frame(width: 60)
                             
                             VStack(spacing: 80){
-                            Button {
                                 
-                            } label: {
-                                Image(systemName: "arrow.up.forward.circle")
-                                    .font(.system(size: 29))
-                                    .foregroundColor(.red)
-                                
-                            }
-
-                                NavigationLink(destination: Dr_Add()) {
-                                    Image(systemName: "arrow.down.right.circle")
+                                HStack {
+                                    Text("نبذه عن التغذية")
+                                        .font(.system(size: 18))
+                                    Button {
+                                    
+                                    
+                                } label: {
+                                    Image(systemName: "arrow.up.forward.circle")
                                         .font(.system(size: 29))
                                         .foregroundColor(.black)
+                                    
+                            }
+                                }
 
+                                HStack {
+                                    Text("دكاترة التغذية")
+                                        .font(.system(size: 18))
+                                        .foregroundColor(.red)
+                                    NavigationLink(destination: Dr_Add()) {
+                                        Image(systemName: "arrow.down.right.circle")
+                                            .font(.system(size: 29))
+                                            .foregroundColor(.red)
+
+                                    }
                                 }
                             
                             }
@@ -97,33 +108,90 @@ struct AppView: View {
                    
                         ScrollView{
                             
-                            VStack{
-                                    ForEach(HomePhoto){ Qphoto in
-                                        
-                                        HStack{
-                                        
-                                            Image(Qphoto.photo1)
-                                                .resizable()
-                                                .frame(width: 200, height: 200)
-                                                .cornerRadius(38)
-                                            
-                                            
-                                            
-                                         
-                                        Image(Qphoto.photo2)
-                                            .resizable()
-                                            .frame(width: 200, height: 200)
-                                            .cornerRadius(38)
-                                                
-                                           
-                                    }
-                                    
-                                    
-                                }
-                                
-                                
-                            }
+//                            VStack{
+//                                    ForEach(HomePhoto){ Qphoto in
+//
+//                                        HStack{
+//
+//                                            Image(Qphoto.photo1)
+//                                                .resizable()
+//                                                .frame(width: 200, height: 200)
+//                                                .cornerRadius(38)
+//
+//
+//
+//
+//                                        Image(Qphoto.photo2)
+//                                            .resizable()
+//                                            .frame(width: 200, height: 200)
+//                                            .cornerRadius(38)
+//
+//
+//                                    }
+//
+//
+//
+//                                }
+//
+//
+//                            }
                             
+                            HStack(spacing: 10) {
+                                VStack(spacing: 10){
+                                    
+                                    Image("BBMRu")
+                                        .resizable()
+                                        .frame(width: 120, height: 120)
+                                        .cornerRadius(20)
+                                    
+                                    
+                                    
+                                    
+                                    
+                                }                            .padding()
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        Spacer() .frame(width: 5)
+                                NavigationLink(destination: BMR()) {
+                                    VStack(spacing: 20){
+                                        
+                                        HStack {
+                                            Text("حاسبة السعرات")
+                                                .font(.system(size: 18))
+                                                .foregroundColor(.black)
+                                            Button {
+                                            
+                                            
+                                        } label: {
+                                            Image(systemName: "arrow.up.forward.circle")
+                                                .font(.system(size: 29))
+                                                .foregroundColor(.black)
+                                            
+                                            
+                                        }
+                                            
+                                        }
+//                                                            Spacer() .frame( height:20)
+//                                                            Text("حاسبة السعرات الحرارية (BMR) هي عملية حسابية تقوم على حساب عدد السعرات الحرارية المستهلكة يوميا للشخص (ذكر /أنثى) بناء على عدة عوامل")
+//                                                                .multilineTextAlignment(.center)
+//                                                                .font(.system(size: 14))
+//
+
+                                    }.padding()
+            
+                                }
+                                                 
+
+                                                        
+                            }.background(Color.white)
+                                .accessibilityElement().frame(width: 390, height: 190)
+
+                                .cornerRadius(20)
  
                             
                         }.frame(width: 420, height: 350)
