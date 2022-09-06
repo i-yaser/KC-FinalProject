@@ -11,6 +11,8 @@
 		8B11E6B328C70FCE002ACD85 /* BMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6B228C70FCE002ACD85 /* BMR.swift */; };
 		8B11E6B528C712AE002ACD85 /* BMRmm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6B428C712AE002ACD85 /* BMRmm.swift */; };
 		8B11E6B728C71439002ACD85 /* BMRww.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6B628C71439002ACD85 /* BMRww.swift */; };
+		8B11E6B928C7197E002ACD85 /* Injaz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6B828C7197E002ACD85 /* Injaz.swift */; };
+		8B11E6BB28C725DC002ACD85 /* Timer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6BA28C725DC002ACD85 /* Timer1.swift */; };
 		8B1F7CF728B9790B00654C23 /* ViewSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F7CF628B9790B00654C23 /* ViewSignup.swift */; };
 		8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658A28BD9C6200D7075C /* UpNadi.swift */; };
 		8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658C28BDA9EA00D7075C /* NadiList.swift */; };
@@ -44,6 +46,8 @@
 		8B11E6B228C70FCE002ACD85 /* BMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMR.swift; sourceTree = "<group>"; };
 		8B11E6B428C712AE002ACD85 /* BMRmm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRmm.swift; sourceTree = "<group>"; };
 		8B11E6B628C71439002ACD85 /* BMRww.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRww.swift; sourceTree = "<group>"; };
+		8B11E6B828C7197E002ACD85 /* Injaz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injaz.swift; sourceTree = "<group>"; };
+		8B11E6BA28C725DC002ACD85 /* Timer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer1.swift; sourceTree = "<group>"; };
 		8B1F7CF628B9790B00654C23 /* ViewSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSignup.swift; sourceTree = "<group>"; };
 		8B4A658A28BD9C6200D7075C /* UpNadi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpNadi.swift; sourceTree = "<group>"; };
 		8B4A658C28BDA9EA00D7075C /* NadiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiList.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				8BC4F24B28B523DC000A1610 /* Assets.xcassets */,
 				8BC4F24D28B523DC000A1610 /* Preview Content */,
 				8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */,
+				8B11E6B828C7197E002ACD85 /* Injaz.swift */,
 				8B1F7CF628B9790B00654C23 /* ViewSignup.swift */,
 				8BB3DA6D28BB17C0002DBC86 /* AppView.swift */,
 				8B11E6B228C70FCE002ACD85 /* BMR.swift */,
@@ -157,6 +162,7 @@
 				8B7258CE28C07D66000F0CA2 /* ListDait.swift */,
 				8BB1B60F28C1DBBD0020A4B7 /* List10.swift */,
 				8B03A3A428C4F72B0026209E /* TmarinView.swift */,
+				8B11E6BA28C725DC002ACD85 /* Timer1.swift */,
 			);
 			path = fitness;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				8BCF366A28BF8E9E00E1A3FC /* FirstView.swift in Sources */,
 				8B81159028C328D300BC8DAF /* HealthyNotView.swift in Sources */,
 				8B80A4C428C676B800876F3B /* Dr1.swift in Sources */,
+				8B11E6BB28C725DC002ACD85 /* Timer1.swift in Sources */,
 				8B85EB2228C48E8200CED843 /* TaskViewModel.swift in Sources */,
 				8BBAD18F28BC51F40013C5DC /* ProfileView.swift in Sources */,
 				8B85EB2328C48E8200CED843 /* Home.swift in Sources */,
@@ -266,6 +273,7 @@
 				8B11E6B728C71439002ACD85 /* BMRww.swift in Sources */,
 				8B03A3A528C4F72B0026209E /* TmarinView.swift in Sources */,
 				8B85EB2428C48E8200CED843 /* Task.swift in Sources */,
+				8B11E6B928C7197E002ACD85 /* Injaz.swift in Sources */,
 				8BB76E2A28B95B0800375CFC /* ColorTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
