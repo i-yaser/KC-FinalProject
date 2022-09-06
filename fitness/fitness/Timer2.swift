@@ -1,5 +1,5 @@
 //
-//  Timer1.swift
+//  Timer2.swift
 //  fitness
 //
 //  Created by Yasr Alajmi on 06/09/2022.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct Timer1: View {
-    @State var DOownTimer = 30
+struct Timer2: View {
+    @State var DOownTimer = 60
     @State var Timerun = false
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View {
@@ -41,7 +41,7 @@ struct Timer1: View {
                        Spacer()
                     .frame(width: 50)
                     Button("اعادة"){
-                        DOownTimer = 30
+                        DOownTimer = 60
                     }.font(.system(size: 25))
                         .foregroundColor(.red)
                         .frame(width: 120, height: 40)
@@ -56,8 +56,8 @@ struct Timer1: View {
     }
 }
 
-struct Timer1_Previews: PreviewProvider {
+struct Timer2_Previews: PreviewProvider {
     static var previews: some View {
-        Timer1()
+        Timer2()
     }
 }

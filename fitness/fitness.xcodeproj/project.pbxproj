@@ -13,6 +13,8 @@
 		8B11E6B728C71439002ACD85 /* BMRww.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6B628C71439002ACD85 /* BMRww.swift */; };
 		8B11E6B928C7197E002ACD85 /* Injaz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6B828C7197E002ACD85 /* Injaz.swift */; };
 		8B11E6BB28C725DC002ACD85 /* Timer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6BA28C725DC002ACD85 /* Timer1.swift */; };
+		8B11E6BD28C73477002ACD85 /* Timer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6BC28C73477002ACD85 /* Timer2.swift */; };
+		8B11E6BF28C73500002ACD85 /* Timer3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11E6BE28C73500002ACD85 /* Timer3.swift */; };
 		8B1F7CF728B9790B00654C23 /* ViewSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F7CF628B9790B00654C23 /* ViewSignup.swift */; };
 		8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658A28BD9C6200D7075C /* UpNadi.swift */; };
 		8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658C28BDA9EA00D7075C /* NadiList.swift */; };
@@ -48,6 +50,8 @@
 		8B11E6B628C71439002ACD85 /* BMRww.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRww.swift; sourceTree = "<group>"; };
 		8B11E6B828C7197E002ACD85 /* Injaz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injaz.swift; sourceTree = "<group>"; };
 		8B11E6BA28C725DC002ACD85 /* Timer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer1.swift; sourceTree = "<group>"; };
+		8B11E6BC28C73477002ACD85 /* Timer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer2.swift; sourceTree = "<group>"; };
+		8B11E6BE28C73500002ACD85 /* Timer3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer3.swift; sourceTree = "<group>"; };
 		8B1F7CF628B9790B00654C23 /* ViewSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSignup.swift; sourceTree = "<group>"; };
 		8B4A658A28BD9C6200D7075C /* UpNadi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpNadi.swift; sourceTree = "<group>"; };
 		8B4A658C28BDA9EA00D7075C /* NadiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiList.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				8BB1B60F28C1DBBD0020A4B7 /* List10.swift */,
 				8B03A3A428C4F72B0026209E /* TmarinView.swift */,
 				8B11E6BA28C725DC002ACD85 /* Timer1.swift */,
+				8B11E6BC28C73477002ACD85 /* Timer2.swift */,
+				8B11E6BE28C73500002ACD85 /* Timer3.swift */,
 			);
 			path = fitness;
 			sourceTree = "<group>";
@@ -250,6 +256,8 @@
 				8B9030CD28BD936500517FC5 /* NadiView.swift in Sources */,
 				8B4A658F28BDB11B00D7075C /* NadiInfo.swift in Sources */,
 				8BC4F24A28B523DA000A1610 /* ContentView.swift in Sources */,
+				8B11E6BF28C73500002ACD85 /* Timer3.swift in Sources */,
+				8B11E6BD28C73477002ACD85 /* Timer2.swift in Sources */,
 				8BC4F24828B523DA000A1610 /* fitnessApp.swift in Sources */,
 				8BB3DA6E28BB17C0002DBC86 /* AppView.swift in Sources */,
 				8B1F7CF728B9790B00654C23 /* ViewSignup.swift in Sources */,

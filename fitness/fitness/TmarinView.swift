@@ -162,26 +162,28 @@ struct TmarinView: View {
                                                                                                          Text("تمرين الصباح")
                                                                                                          
                                                                                                      }.padding()
-                                                                                                     Divider()
-                                                                                                     HStack{
-                                                                                                         VStack {
-                                                                                                             Image(systemName: "plus.circle.fill")
-                                                                                                                 .font(.system(size: 25))
-                                                                                                                 .foregroundColor(.red)
-                                                                                                             Spacer()
-                                                                                                                                                                    }
-
-                                                                                                         VStack{
-                                                                                                             Text(Title1)
-                                                                                                                 .font(.system(size: 19))
-                                                                                                                 .offset(x: 20,y: -30)
-                                                                                                             Text(Dis1)
-                                                                                                                 .font(.system(size: 15))
-                                                                                                                 .foregroundColor(.gray)
-                                                                                                                 .multilineTextAlignment(.trailing)
-                                                                                                                 .offset( y: -20)
-                                                                                                                 
-                                                                                                         }
+                                                                             Divider()
+                                                                             HStack{
+                                                                                 VStack {
+                                                                                     NavigationLink(destination: Timer1()) {
+                                                                                         Image(systemName: "plus.circle.fill")
+                                                                                             .font(.system(size: 25))
+                    .foregroundColor(.red)
+}
+                                                                                     Spacer()
+                                                                                 }
+                                                                                 
+                                                                                 VStack{
+                                                                                     Text(Title1)
+                                                                                         .font(.system(size: 19))
+                                                                                         .offset(x: 20,y: -30)
+                                                                                     Text(Dis1)
+                                                                                         .font(.system(size: 15))
+                                                                                         .foregroundColor(.gray)
+                                                                                         .multilineTextAlignment(.trailing)
+                                                                                         .offset( y: -20)
+                                                                                     
+                                                                                 }
                                                                                                          Spacer()
                                                                                                          VStack{
                                                       
@@ -240,12 +242,15 @@ struct TmarinView: View {
                                                                                       Text("تمرين الصباح")
                                                                                       
                                                                                   }.padding()
-                                                                                  Divider()
-                                                                                  HStack{
-                                                                                      VStack {
-                                                                                          Image(systemName: "plus.circle.fill")
-                                                                                              .font(.system(size: 25))
-                                                                                              .foregroundColor(.red)
+                                                          Divider()
+                                                          HStack{
+                                                              VStack {
+                                                                  NavigationLink(destination: Timer2()) {
+                                                                      Image(systemName: "plus.circle.fill")
+                                                                          .font(.system(size: 25))
+                                                                          .foregroundColor(.red)
+
+                                                                  }
                                                                                                Spacer()                                                  }
 
 
@@ -316,9 +321,11 @@ struct TmarinView: View {
                                                                                                      Divider()
                                                                                                      HStack{
                                                                                                          VStack {
-                                                                                                             Image(systemName: "plus.circle.fill")
-                                                                                                                 .font(.system(size: 25))
-                                                                                                                 .foregroundColor(.red)
+                                                                                                             NavigationLink(destination: Timer3()) {
+                                                                                                                 Image(systemName: "plus.circle.fill")
+                                                                                                                     .font(.system(size: 25))
+                                                                                                                     .foregroundColor(.red)
+                                                                                                             }
                                                                                                                    Spacer()                                                 }
 
                                                                                                          VStack{

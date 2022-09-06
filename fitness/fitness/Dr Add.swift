@@ -50,11 +50,11 @@ struct Dr_Add: View {
                         .cornerRadius(15)
                         //end nnn
                         VStack(spacing: 0){
-                            Image("ليليان سليم زاهر")
+                            Image("نور العمر")
                                 .resizable()
                                 .frame(width: 70, height: 80)
                                 .clipShape(Circle())
-                            Text("أخصائي تغذية \n ليليان سليم زاهر")
+                            Text("أخصائي تغذية \n نور العمر")
                                 .font(.system(size: 15))
                                 .multilineTextAlignment(.center)
                                 Spacer()
@@ -63,6 +63,7 @@ struct Dr_Add: View {
                                                 
                                                 Image(systemName: "list.bullet.indent")
                                                     .font(.system(size: 39))
+                                                    .foregroundColor(.red)
                             
                                                             
                         }

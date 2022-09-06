@@ -193,6 +193,54 @@ struct AppView: View {
 
                                 .cornerRadius(20)
  
+                            HStack(spacing: 10) {
+                                VStack(spacing: 10){
+                                    
+                                    Image("LOGO")
+                                        .resizable()
+                                        .frame(width: 120, height: 120)
+                                        .cornerRadius(20)
+                                    
+                                    
+                                    
+                                    
+                                    
+                                }                            .padding()
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        Spacer() .frame(width: 5)
+                                NavigationLink(destination: BMR()) {
+                                    VStack(spacing: 20){
+                                        
+                                        HStack {
+                                            Text("مدربين مختصين")
+                                                .font(.system(size: 18))
+                                                .foregroundColor(.black)
+                                            Button {
+                                            
+                                            
+                                        } label: {
+                                            Image(systemName: "arrow.up.forward.circle")
+                                                .font(.system(size: 29))
+                                                .foregroundColor(.black)
+                                            
+                                        }
+                                            
+                                        }
+
+                                    }.padding()
+            
+                                }
+                                                 
+
+                                                        
+                            }.background(Color.white)
+                                .accessibilityElement().frame(width: 390, height: 190)
                             
                         }.frame(width: 420, height: 350)
                             .background(Color.theme.OnBg2)
