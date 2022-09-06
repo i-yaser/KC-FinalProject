@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct ContentView: View {
+struct Nooo: View {
     
     @State var selesctedIndex = 1
 
@@ -101,7 +101,7 @@ struct ContentView: View {
         
     }
 }
-struct ContentView_Previews: PreviewProvider {
+struct Nooo_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()

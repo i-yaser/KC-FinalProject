@@ -13,14 +13,17 @@ struct HealthyView: View {
 //        NavigationView {
   
                 ZStack{
-                    Color.theme.Bg .ignoresSafeArea()
+                    Color.theme.Primary .ignoresSafeArea()
                     
-                    Ellipse()
-                        .scale(1.1)
-                        .foregroundColor(Color.theme.OnBg .opacity(0.15))
+                    RoundedRectangle(cornerRadius: 30,style: .continuous)
+                        .foregroundStyle(.linearGradient(colors: [.pink,.red], startPoint: .topLeading, endPoint: .bottomLeading))
+                        .frame(width: 1100, height: 475)
+                        .rotationEffect(.degrees(135))
+                        .offset( y: -350)
                     
+
                     VStack{
-                        ScrollView(.horizontal) {
+//                        ScrollView(.horizontal) {
                             VStack{
                                 Text("نصايح")
                                     .font(.title3)
@@ -30,7 +33,7 @@ struct HealthyView: View {
                             .frame(width: 380, height: 150)
                             .background(Color.theme.iColor)
                         .cornerRadius(20)
-                        }
+//                        }
                         
                         Divider()
                         
