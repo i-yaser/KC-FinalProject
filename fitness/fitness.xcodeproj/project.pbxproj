@@ -22,6 +22,8 @@
 		8B3CBBF428C7C253001269D6 /* NOOOOO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBBF328C7C253001269D6 /* NOOOOO.swift */; };
 		8B3CBBF828C7C30E001269D6 /* UPupUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBBF728C7C30E001269D6 /* UPupUP.swift */; };
 		8B3CBBFA28C7C394001269D6 /* MTGR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBBF928C7C394001269D6 /* MTGR.swift */; };
+		8B42A60B28C8CB0B0040B30F /* Remo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B42A60A28C8CB0B0040B30F /* Remo.swift */; };
+		8B42A60D28C8D1760040B30F /* Sett.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B42A60C28C8D1760040B30F /* Sett.swift */; };
 		8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658A28BD9C6200D7075C /* UpNadi.swift */; };
 		8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658C28BDA9EA00D7075C /* NadiList.swift */; };
 		8B4A658F28BDB11B00D7075C /* NadiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658E28BDB11B00D7075C /* NadiInfo.swift */; };
@@ -65,6 +67,8 @@
 		8B3CBBF328C7C253001269D6 /* NOOOOO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOOOOO.swift; sourceTree = "<group>"; };
 		8B3CBBF728C7C30E001269D6 /* UPupUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPupUP.swift; sourceTree = "<group>"; };
 		8B3CBBF928C7C394001269D6 /* MTGR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGR.swift; sourceTree = "<group>"; };
+		8B42A60A28C8CB0B0040B30F /* Remo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remo.swift; sourceTree = "<group>"; };
+		8B42A60C28C8D1760040B30F /* Sett.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sett.swift; sourceTree = "<group>"; };
 		8B4A658A28BD9C6200D7075C /* UpNadi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpNadi.swift; sourceTree = "<group>"; };
 		8B4A658C28BDA9EA00D7075C /* NadiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiList.swift; sourceTree = "<group>"; };
 		8B4A658E28BDB11B00D7075C /* NadiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadiInfo.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				8BBAD18E28BC51F40013C5DC /* ProfileView.swift */,
+				8B42A60C28C8D1760040B30F /* Sett.swift */,
 				8BAF9E1F28C2101800B3DCBF /* UpProfile.swift */,
 			);
 			path = Profile;
@@ -198,6 +203,7 @@
 				8BC4F24D28B523DC000A1610 /* Preview Content */,
 				8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */,
 				8B5DF79B28C87C8200301AA6 /* RealLogIn.swift */,
+				8B42A60A28C8CB0B0040B30F /* Remo.swift */,
 				8BB76E2928B95B0800375CFC /* ColorTheme.swift */,
 				8B11E6B828C7197E002ACD85 /* Injaz.swift */,
 				8B3CBBCE28C777C7001269D6 /* Nadi */,
@@ -331,6 +337,7 @@
 				8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */,
 				8B3CBBF828C7C30E001269D6 /* UPupUP.swift in Sources */,
 				8B3CBBFA28C7C394001269D6 /* MTGR.swift in Sources */,
+				8B42A60D28C8D1760040B30F /* Sett.swift in Sources */,
 				8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */,
 				8B11E6B328C70FCE002ACD85 /* BMR.swift in Sources */,
 				8BAF9E2028C2101800B3DCBF /* UpProfile.swift in Sources */,
@@ -339,6 +346,7 @@
 				8B85EB2428C48E8200CED843 /* Task.swift in Sources */,
 				8B11E6B928C7197E002ACD85 /* Injaz.swift in Sources */,
 				8BB76E2A28B95B0800375CFC /* ColorTheme.swift in Sources */,
+				8B42A60B28C8CB0B0040B30F /* Remo.swift in Sources */,
 				8B3CBBF428C7C253001269D6 /* NOOOOO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

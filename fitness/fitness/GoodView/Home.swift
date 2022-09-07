@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct Homei: View {
+    @State var alert971 = false
+    @State var alert972 = false
+
     @StateObject var taskModel: TaskViewModel = TaskViewModel()
     @Namespace var animation
-    @State var Photo1 = "For00"
-    @State var Title1 = "مشي 30د"
-    @State var Dis1 = "لا احد ينكر فائدة المشي كل يوم ،ابدي صباح ب المشي القليل ل تكتسب الطاقه الكافيه لبقيت اليوم..."
-    @State var Photo2 = "Sport-2"
-    @State var Title2 = "تمرين الانحناء"
-    @State var Dis2 = "يساعد هذا التمرين على تقوية العضلات الأساسية ومنع إصابة أسفل الظهر ,ابدا بلاستلقاء على ظهرك  مع ثني الركبتين والقدمين على الأرض"
+    @State var Photo1 = "For99"
+    @State var Title1 = "بيض اومليت + خبر "
+    @State var Dis1 = "الطماطم مصدر ممتاز لفيتامين ج ومضادات الأكسده أما البيض (160 سعرًا حراريًا)"
+    @State var i9771 = ""
+    //
+    @State var Photo2 = "food2"
+    @State var Title2 = "كوب من الفشار بنقطة من الزيت "
+    @State var Dis2 = "(55 سعرًا حراريًا)"
+    @State var i9772 = ""
+//    "كوب من الفشار بنقطة من الزيت وقليل من الملح (55 سعرًا حراريًا)"
     @State var Photo3 = "Sport3"
     @State var Title3 = "تمارين الضغط"
-    @State var Dis3 = "يعتبر تمرين الضغط من أكثر التمارين التي ينتشر تأديتها، والتي يمكنها أن تفرد عضلاتك وتعمل على تقويتها،"
-    
+    @State var Dis3 = "(60 سعرة)"
+    @State var i9773 = ""
     
     var body: some View {
        
@@ -60,7 +67,7 @@ struct Homei: View {
                                   
                                         if taskModel.isTody(date: day){
                                             Capsule()
-                                                .fill(Color.theme.iiColor)
+                                                .fill(Color.theme.Primary)
                                                 .matchedGeometryEffect(id: "CURRENTDAY", in: animation)
                                         }
                                     })
@@ -98,144 +105,215 @@ struct Homei: View {
                 if tasks.isEmpty{
                     
                     VStack{
-                    VStack {
-                                                              VStack{
-
-                                                                  
-                                                                                          HStack{
-                                                                                              Button {
-                                                                                                  Photo1 = "kkd"
-                                                                                                  Title1 = "لمس القدم"
-                                                                                                  Dis1 = "من أهم التمارين الرياضية البسيطة والصحية للجسم، هو تمرين لمس أصابع القدم، بحيث يجلس الشخص ويمدد قدميه أمامه ويقوم لفرد ذراعيه كي يلمس بيديه أطراف أصابع القدم مع فرد الظهر، ويستمر"
-                                                                                              } label: {
-                                                                                                  HStack{
-                                                                                                      Text("تغير التمرين")
-                                                                                                      
-                                                                                                      Image(systemName: "arrowshape.turn.up.backward.2")
-                                                                                                  }
-                                                                                                  .frame(width: 130, height: 30)
-                                                                                                  .background(.red)
-                                                                                                  .cornerRadius(20)
-                                                                                                  .foregroundColor(.black)
-                                                                                              }
-                                                                                              Button {
-                                                                                                  Photo1 = "Sport-1"
-                                                                                                  Title1 = "مشي 30د"
-                                                                                                  Dis1 = "لا احد ينكر فائدة المشي كل يوم ،ابدي صباح ب المشي القليل ل تكتسب الطاقه الكافيه لبقيت اليوم..."
-                                                                                              } label: {
-                                                                                                  Image(systemName: "arrowshape.turn.up.right.circle.fill")
-                                                                                                      .foregroundColor(.black)
-                                                                                                  
-                                                                                              }
-
-                                                                                              
-                                                                                              
-                                                                                              Spacer()
-                                                                                              Text("تمرين الصباح")
-                                                                                              
-                                                                                          }.padding()
-                                                                                          Divider()
-                                                                                          HStack{
-                                                                                              VStack {
-                                                                                                  Image(systemName: "plus.circle.fill")
-                                                                                                      .font(.system(size: 25))
-                                                                                                      .foregroundColor(.red)
-                                                                                                  Spacer()
-                                                                                                                                                         }
-
-                                                                                              VStack{
-                                                                                                  Text(Title1)
-                                                                                                      .font(.system(size: 19))
-                                                                                                      .offset(x: 20,y: -30)
-                                                                                                  Text(Dis1)
-                                                                                                      .font(.system(size: 15))
-                                                                                                      .foregroundColor(.gray)
-                                                                                                      .multilineTextAlignment(.trailing)
-                                                                                                      .offset( y: -20)
-                                                                                                      
-                                                                                              }
-                                                                                              Spacer()
-                                                                                              VStack{
+                        VStack {
+                            VStack{
+                                
+                                
+                                HStack{
+                                    Button {
+                                        Photo1 = "food1"
+                                        Title1 = "بانكيك القمح الكامل بالتوت الأزرق"
+                                        Dis1 = "بانكيك نانو المخبوز بحبوب القمح الكامل والمحشو بالتوت الازرق سناك طري ولذيذ عالي البروتين، قليل السعرات وخالي من السكر المضاف."
+                                    } label: {
+                                        HStack{
+                                            Text("تغير")
+                                            
+                                            Image(systemName: "arrowshape.turn.up.backward.2")
+                                        }
+                                        .frame(width: 130, height: 30)
+                                        .background(Color.theme.Primary)
+                                        .cornerRadius(20)
+                                        .foregroundColor(.black)
+                                    }
+                                    Button {
+                                        Photo1 = "For99"
+                                        Title1 = "بيض اومليت + خبر "
+                                        Dis1 = "الطماطم مصدر ممتاز لفيتامين ج ومضادات الأكسده أما البيض..."
+                                    } label: {
+                                        Image(systemName: "arrowshape.turn.up.right.circle.fill")
+                                            .foregroundColor(.black)
+                                        
+                                    }
+                                    
+                                    
+                                    
+                                    Spacer()
+                                    Text("فطور اليوم")
+                                        .foregroundColor(.black)
+                                }.padding()
+                                Divider()
+                                HStack{
+                                    
+                                    Button {
+                                      i9771 = "checkmark.square"
+                                        alert971.toggle()
+                                    } label: {
+                                        VStack {
+                                            Image(systemName: "plus.circle.fill")
+                                                .font(.system(size: 25))
+                                                .foregroundColor(.black)
+                                            Spacer()
                                            
-                                                                                                  Image(Photo1)
-                                                                                                      .resizable()
-                                                                                                      .frame(width: 120, height: 120)
-                                                                                                      .cornerRadius(15)
-                                                                                                  
-                                                                                              }
-                                                                                              
-                                                                                          }.padding()
-                                                                  
-                                                                                      }                .frame(width: 380, height: 210)
-                                                                                          .background(Color.white)
-                                                                                      .cornerRadius(15)
-                                                          }
+                                            Image(systemName: "\(i9771)")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                                .foregroundColor(.green)
+                                    }
+                                    }.alert(isPresented: $alert971){
+                                        Alert(title: Text("تم كسب 200"), message: Text("استمر هذي البدايه😎"), dismissButton: .default(Text("كمل")))
+                                    }
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    VStack{
+                                        Text(Title1)
+                                            .font(.system(size: 19))
+                                            .offset(x: 20,y: -30)
+                                        Text(Dis1)
+                                            .font(.system(size: 15))
+                                            .foregroundColor(.gray)
+                                            .multilineTextAlignment(.trailing)
+                                            .offset( y: -20)
+                                    }
+                                    Spacer()
+                                    VStack{
+                                        
+                                        Image(Photo1)
+                                            .resizable()
+                                            .frame(width: 120, height: 120)
+                                            .cornerRadius(15)
+                                        
+                                    }
+                                    
+                                }.padding()
+                                
+                            }                .frame(width: 380, height: 210)
+                                .background(Color.white)
+                                .cornerRadius(15)
+                        }
+                        .frame(width: 385, height: 215)
+                        .background(Color.theme.Primary)
+                        .cornerRadius(15)
+                        .frame(width: 380, height: 210)
+                        .background(Color.white)
+                        .cornerRadius(15)
+                    }
                     .frame(width: 385, height: 215)
                     .background(Color.theme.Primary)
                     .cornerRadius(15)
-                    .frame(width: 380, height: 210)
-                    .background(Color.white)
-                    .cornerRadius(15)
-                                                      }
-                                                      .frame(width: 385, height: 215)
-                                                          .background(Color.red)
-                                                      .cornerRadius(15)
                     .frame(width: 385, height: 215)
-                        .background(Color.red)
+                    .background(Color.red)
                     .cornerRadius(15)
+
+
                     //
+
                     VStack {
                         VStack{
-                                                    HStack{
-                                                        HStack{
-                                                        Text("تغير التمرين")
-                                                        
-                                                        Image(systemName: "arrowshape.turn.up.backward.2")
-                                                        }
-                                                        .frame(width: 130, height: 30)
-                                                        .background(.red)
-                                                        .cornerRadius(20)
-                                                        
-                                                        Spacer()
-                                                        Text("تمرين الصباح")
-                                                        
-                                                    }.padding()
-                                                    Divider()
-                                                    HStack{
-                                                        Image(systemName: "plus.circle.fill")
-                                                            .font(.system(size: 35))
-                                                            .foregroundColor(.red)
-                                                            .offset(y: -38)
+                            
+                            HStack {
+                                
+                                Button {
+                                    Photo2 = "food3"
+                                    Title2 = "كوب زبادي كامل الدسم"
+                                    Dis2 = "الطماطم مصدر ممتاز لفيتامين ج ومضادات الأكسده أما البيض..."
 
-                                                        VStack{
-                                                            Text("بيض اومليت + خبر ")
-                                                                .font(.system(size: 19))
-                                                                .offset(x: 20,y: -30)
-                                                            Text("الطماطم مصدر ممتاز لفيتامين ج ومضادات الأكسده أما البيض<<<")
-                                                                .font(.system(size: 15))
-                                                                .foregroundColor(.gray)
-                                                                .multilineTextAlignment(.trailing)
-                                                                .offset( y: -20)
-                                                                
-                                                        }
-                                                        Spacer()
-                                                        VStack{
-                                                            Image("For99")
-                                                                .resizable()
-                                                                .frame(width: 120, height: 120)
-                                                                .cornerRadius(15)
-                                                        }
-                                                        
-                                                    }.padding()
-                                                    
-                                                }                .frame(width: 380, height: 210)
-                                                    .background(Color.white)
-                                                .cornerRadius(15)
+                                } label: {
+                                    HStack{
+                                        Text("تغير")
+                                        
+                                        Image(systemName: "arrowshape.turn.up.backward.2")
+                                    }
+                                    .frame(width: 130, height: 30)
+                                    .background(Color.theme.Primary)
+                                    .cornerRadius(20)
+                                    .foregroundColor(.black)
+
+                                }
+                                
+                                Button {
+                                    
+                                    Photo2 = "food2"
+                                    Title2 = "كوب من الفشار بنقطة من الزيت "
+                                    Dis2 = "(55 سعرًا حراريًا)"
+                                } label: {
+                                    Image(systemName: "arrowshape.turn.up.right.circle.fill")
+                                        .foregroundColor(.black)
+                                    
+                                }
+                                
+                                Spacer()
+                                Text("سناك بعد الفطور")
+                                    .foregroundColor(.black)
+                            }.padding()
+                            
+                            
+                            
+                            
+                            Divider()
+                            HStack{
+                                VStack{
+                                    Button {
+                                        i9772 = "checkmark.square"
+                                        alert972.toggle()
+                                    } label: {
+                                        VStack{
+                                        Image(systemName: "plus.circle.fill")
+                                            .font(.system(size: 25))
+                                            .foregroundColor(.black)
+                                        Spacer()
+                                       
+                                        Image(systemName: "\(i9772)")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                            .foregroundColor(.green)
+                                        }
+
+                                    }.alert(isPresented: $alert972){
+                                    Alert(title: Text("تم كسب 150 نقطه"), message: Text("كفو عليك استمتع ب النقاط 😌"), dismissButton: .default(Text("كمل")))
+                                    }
+                                }.frame(width: 30, height: 130)
+                                
+                                VStack{
+                                    Text(Title2)
+                                        .font(.system(size: 19))
+                                        .offset(x: 20,y: -30)
+                                    Text(Dis2)
+                                        .font(.system(size: 15))
+                                        .foregroundColor(.gray)
+                                        .multilineTextAlignment(.trailing)
+                                        .offset( y: -20)
+                                    
+                                }
+                                Spacer()
+                                VStack{
+                                    Image(Photo2)
+                                        .resizable()
+                                        .frame(width: 120, height: 120)
+                                        .cornerRadius(15)
+                                }.padding()
+
+                                
+                            }
+                            
+                        }
+                        .frame(width: 385, height: 215)
+                        .background(Color.white)
+                        .cornerRadius(15)
+                        .frame(width: 380, height: 210)
+                        .background(Color.theme.Primary)
+                        .cornerRadius(15)
                     }
                     .frame(width: 385, height: 215)
-                        .background(Color.red)
+                    .background(Color.theme.Primary)
+                    .cornerRadius(15)
+                    .frame(width: 385, height: 215)
+                    .background(Color.red)
                     .cornerRadius(15)
                     //
+                    
                 }
                 
                 else{
@@ -252,14 +330,17 @@ struct Homei: View {
             }
             else{
                 ProgressView()
+                    .frame(width: 00, height: 0)
                     .offset(y:100)
             }
             
         }
         .padding()
+        .background()
         .padding(.top)
         .onChange(of: taskModel.currentDay){ newValue in
             taskModel.filterTodayTasks()
+                
         }
         
     }
@@ -322,7 +403,7 @@ struct Homei: View {
             
             Text("اليوم")
                 .font(.largeTitle.bold())
-                .foregroundColor(Color.theme.iiColor)
+                .foregroundColor(Color.theme.Primary)
             }
             .hLeading()
             
@@ -331,7 +412,17 @@ struct Homei: View {
             } label: {
                 Image(systemName: "fork.knife")
                     .font(.system(size: 60))
-                    .foregroundColor(Color.theme.iiColor)
+                    .foregroundColor(Color.theme.Primary)
+//                    .offset(x: 123, y: 6)
+//                Image(systemName: "fork.knife")
+//                    .font(.system(size: 60))
+//                    .foregroundColor(Color.theme.iiColor)
+//                    .offset(x: 60, y: 20)
+//                Image(systemName: "fork.knife")
+//                    .font(.system(size: 60))
+//                    .foregroundColor(Color.theme.Primary)
+
+                
             }
 
         }

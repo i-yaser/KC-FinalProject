@@ -15,11 +15,11 @@ struct HealthyView: View {
                 ZStack{
                     Color.theme.Primary .ignoresSafeArea()
                     
-                    RoundedRectangle(cornerRadius: 30,style: .continuous)
-                        .foregroundStyle(.linearGradient(colors: [.pink,.red], startPoint: .topLeading, endPoint: .bottomLeading))
-                        .frame(width: 1100, height: 475)
-                        .rotationEffect(.degrees(135))
-                        .offset( y: -350)
+//                    RoundedRectangle(cornerRadius: 30,style: .continuous)
+//                        .foregroundStyle(.linearGradient(colors: [.pink,.red], startPoint: .topLeading, endPoint: .bottomLeading))
+//                        .frame(width: 1100, height: 475)
+//                        .rotationEffect(.degrees(135))
+//                        .offset( y: -350)
                     
 
                     VStack{
@@ -232,6 +232,7 @@ struct HealthyView: View {
                     }//VStack 1
                     
                 }
+//                .frame(width: 420, height: 830)
             
 //        } nav
     }

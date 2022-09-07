@@ -106,7 +106,7 @@ struct MainView : View {
         VStack(spacing: 0){
             Spacer().frame(height: 100)
             ZStack{
-                Color.blue.ignoresSafeArea()
+                Color.theme.Primary.ignoresSafeArea()
                 
                 HStack{
                     
