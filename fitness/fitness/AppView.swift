@@ -15,17 +15,82 @@ struct AppView: View {
 //
             RoundedRectangle(cornerRadius: 30,style: .continuous)
                 .foregroundStyle(.linearGradient(colors: [.pink,Color.theme.Primary], startPoint: .topLeading, endPoint: .bottomLeading))
-                .frame(width: 900, height: 920)
+                .frame(width: 910, height: 920)
                 .rotationEffect(.degrees(135))
                 .offset( y: 0)
             
             VStack(spacing: 10){
+              
+                Text("نصائح وتحفيز")
+                    .foregroundColor(.white)
+                    .bold()
+                    .frame(width: 150, height: 30)
+                ScrollView (.horizontal){
+                    
+                        HStack {
+                            Text(" فوائد الرياضة الوقاية من أمراض القلب والسكتة الدماغية")
+//                                .fontWeight(.bold)
+                                .foregroundColor(Color.theme.Outline3)
+                                .font(.system(size: 18))
+                                .multilineTextAlignment(.center)
+                        .frame(width: 300, height: 50)
+                        .background(Color.theme.PrimaryContainer)
+                            .cornerRadius(20)
+                        //
+                       Image(systemName: "timelapse")
+                            Text("فوائد المشي: الحفاظ على وزن صحي وخسارة دهون الجسم")
+//                                .fontWeight(.bold)
+                                .foregroundColor(Color.theme.Outline3)
+                                .font(.system(size: 18))
+                                .multilineTextAlignment(.center)
+                        .frame(width: 300, height: 50)
+                            .background(Color.theme.PrimaryContainer)
+                            .cornerRadius(20)
+                        //
+                            Image(systemName: "timelapse")
+                            Text("أثبتت دراسة بريطانية أن الرياضة تساعد على إفراز المخ لمواد كيميائية مثل «الاندرفينس» التي تجعل الإنسان يشعر بأنه في حال أفضل")
+//                                .fontWeight(.bold)
+                                .foregroundColor(Color.theme.Outline3)
+                                .font(.system(size: 13))
+                                .multilineTextAlignment(.center)
+                        .frame(width: 300, height: 50)
+                            .background(Color.theme.PrimaryContainer)
+                            .cornerRadius(20)
+                            //
+                            Image(systemName: "timelapse")
+                            Text("لقد دعا الإسلام إلى ممارسة الأنشطة الرياضية المفيدة، ورغب النبي بها وكان يوجه الصحابة إليها، لما فيها من تقوية للأجساد والمحافظة على سلامتها")
+//                                .fontWeight(.bold)
+                                .foregroundColor(Color.theme.Outline3)
+                                .font(.system(size: 13))
+                                .multilineTextAlignment(.center)
+                        .frame(width: 300, height: 50)
+                            .background(Color.theme.PrimaryContainer)
+                            .cornerRadius(20)
+                            //
+                            Image(systemName: "timelapse")
+                            Text("فوائدها التغديه: المساعدة على فقدان الوزن. تحسين أداء الجهاز الهضمي والحد من حدوث الإمساك. تخليص الجسم من السموم ومنح الجلد النضارة. تعزيز مستويات الطاقة، ورفع معدل إنتاج خلايا الدم والعضلات")
+                                
+                                .foregroundColor(Color.theme.Outline3)
+                                .font(.system(size: 13))
+                                .multilineTextAlignment(.center)
+                        .frame(width: 300, height: 50)
+                            .background(Color.theme.PrimaryContainer)
+                            .cornerRadius(20)
+                            //
+                            
+                    }
+                    }.frame(width: 405, height: 100)
+                    .background(Color.theme.Bg)
+                    .cornerRadius(10)
+                
+            VStack(spacing: 10){
                 Divider()
             
             
-            
-                Spacer()
-                VStack(spacing: 10){
+//                Spacer()
+   
+                        
+                
                     ScrollView(.horizontal){
                         HStack(spacing: 10) {
                             VStack(spacing: 10){
@@ -64,15 +129,16 @@ struct AppView: View {
                                         Text("نبذه عن التغذية")
                                             .font(.system(size: 18))
                                             .foregroundColor(.black)
-                                        Button {
+                                      
+                                        NavigationLink(destination: takk()) {
+                                            Image(systemName: "arrow.up.forward.circle")
+                                                .font(.system(size: 29))
+                                                .foregroundColor(.black)
+                                        }
+
+                                      
                                         
-                                        
-                                    } label: {
-                                        Image(systemName: "arrow.up.forward.circle")
-                                            .font(.system(size: 29))
-                                            .foregroundColor(.black)
-                                        
-                                }
+                                
                                     }
                                     
                                     HStack {

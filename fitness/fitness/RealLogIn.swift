@@ -34,13 +34,12 @@ struct RealLogIn: View {
                     .resizable()
                     .frame(width: 180, height: 180)
                     .offset(x: -110, y: -89)
-                Text("تسجيل الدخول")
-                    .font(.largeTitle)
+                Text("خيارك الافضل ل صحه")
+                    .font(.system(size: 25))
                     .foregroundColor(Color.white)
                     .padding()
+                    .offset(x: -85, y: -70)
 
-                
-                
                 
                 
                 

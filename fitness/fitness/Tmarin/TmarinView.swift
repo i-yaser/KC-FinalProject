@@ -25,6 +25,13 @@ struct TmarinView: View {
     @State var Title4 = "وضعية الطرف النائم"
     @State var Dis4 = "استلقي على ظهرك مع مدّ ساقيك وذراعيك على جانبيك. حافظ على استقامة ذراعيك وساقيك، وارفعهم عن الأرض نحو السقف.   اثبت على هذه الوضعية لمدة 60 ثانية."
 
+    @State var Photo5 = "البطل المائل"
+    @State var Title5 = "البطل المائل"
+    @State var Dis5 = "اجلس على ركبتيك مع وضع الأرداف على كعبيك، مع إمالة العمود الفقري قليلا إلى الوراء، وضع كفيك خلفك على الأرض واجعل أصابعك باتجاه الأرداف.  قم بثني جسمك للخلف ببطء حتى تتمكن من وضع ظهرك على الأرض لتصبح بشكل ممتد بالكامل، إذا لم تتمكن من الاستلقاء بالكامل، فقم بتحقيق التوازن بين مرفقيك"
+
+    
+    
+    
    var body: some View {
        
        ZStack {
@@ -375,7 +382,7 @@ struct TmarinView: View {
                                                        Dis4 = "استلقي على ظهرك مع رفع ساقيك على الجدار.        اترك ذراعيك يستريحان على جانبيك مع توجيه راحتيك للأعلى. إن شعرت بالشد في أي جزء من جسمك، يمكنك           اثبت في هذه الوضعية لمدة 5-10 دقائق."
                                                    } label: {
                                                        HStack{
-                                                           Text("تغير مسائي")
+                                                           Text("تغير التمرين")
                                                            
                                                            Image(systemName: "arrowshape.turn.up.backward.2")
                                                        }
@@ -397,7 +404,7 @@ struct TmarinView: View {
                                                    
                                                    
                                                    Spacer()
-                                                   Text("تمرين الصباح")
+                                                   Text("تمرين مسائي")
                                                    
                                                }.padding()
                                                Divider()
@@ -449,7 +456,94 @@ struct TmarinView: View {
                                    .background(Color.red)
                                    .cornerRadius(15)
                                    //
-                                   
+                                   //
+                                   VStack{
+                                       VStack {
+                                           VStack{
+                                               
+                                               
+                                               HStack{
+                                                   Button {
+                                                       Photo5 = "حركة التمدد"
+                                                      Title5 = "حركة التمدد"
+                                                    Dis5 = "حركة التمدد التي تؤثر على الركبة، من خلال الاستلقاء على الظهر والإمساك بكل ساق لمدة 30 ثانية."
+                                                   } label: {
+                                                       HStack{
+                                                           Text("تغير التمرين")
+                                                           
+                                                           Image(systemName: "arrowshape.turn.up.backward.2")
+                                                       }
+                                                       .frame(width: 130, height: 30)
+                                                       .background(.red)
+                                                       .cornerRadius(20)
+                                                       .foregroundColor(.black)
+                                                   }
+                                                   Button {
+                                                        Photo5 = "البطل المائل"
+                                                       Title5 = "البطل المائل"
+                                                       Dis5 = "اجلس على ركبتيك مع إمالة العمود الفقري قليلا واجعل أصابعك باتجاه الأرداف. حتى تتمكن من وضع ظهرك على الأرض لتصبح بشكل ممتد بالكامل، فقم بتحقيق التوازن بين مرفقيك"
+
+                                                   } label: {
+                                                       Image(systemName: "arrowshape.turn.up.right.circle.fill")
+                                                           .foregroundColor(.black)
+                                                       
+                                                   }
+                                                   
+                                                   
+                                                   
+                                                   Spacer()
+                                                   Text("تمرين مسائي")
+                                                   
+                                               }.padding()
+                                               Divider()
+                                               HStack{
+                                                   VStack {
+                                                       NavigationLink(destination: Timer1()) {
+                                                           Image(systemName: "plus.circle.fill")
+                                                               .font(.system(size: 25))
+                                                               .foregroundColor(.red)
+                                                       }
+                                                       Spacer()
+                                                   }
+                                                   
+                                                   VStack{
+                                                       Text(Title5)
+                                                           .font(.system(size: 19))
+                                                           .offset(x: 20,y: -30)
+                                                       Text(Dis5)
+                                                           .font(.system(size: 15))
+                                                           .foregroundColor(.gray)
+                                                           .multilineTextAlignment(.trailing)
+                                                           .offset( y: -20)
+                                                       
+                                                   }
+                                                   Spacer()
+                                                   VStack{
+                                                       
+                                                       Image(Photo5)
+                                                           .resizable()
+                                                           .frame(width: 120, height: 120)
+                                                           .cornerRadius(15)
+                                                       
+                                                   }
+                                                   
+                                               }.padding()
+                                               
+                                           }                .frame(width: 380, height: 210)
+                                               .background(Color.white)
+                                               .cornerRadius(15)
+                                       }
+                                       .frame(width: 385, height: 215)
+                                       .background(Color.red)
+                                       .cornerRadius(15)
+                                       .frame(width: 380, height: 210)
+                                       .background(Color.white)
+                                       .cornerRadius(15)
+                                   }
+                                   .frame(width: 385, height: 215)
+                                   .background(Color.red)
+                                   .cornerRadius(15)
+
                                    
                                }
                            }

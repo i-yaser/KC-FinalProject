@@ -109,6 +109,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B22BA3328C9241D0088D5C2 /* Not For View  */ = {
+			isa = PBXGroup;
+			children = (
+				8BCF366928BF8E9E00E1A3FC /* FirstView.swift */,
+				8B1F7CF628B9790B00654C23 /* ViewSignup.swift */,
+				8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */,
+				8B42A60A28C8CB0B0040B30F /* Remo.swift */,
+			);
+			path = "Not For View ";
+			sourceTree = "<group>";
+		};
 		8B3CBBCD28C777A6001269D6 /* Tmarin */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,17 +205,14 @@
 				8BC4F24928B523DA000A1610 /* ContentView.swift */,
 				8B3CBBF328C7C253001269D6 /* NOOOOO.swift */,
 				8B3CBBF728C7C30E001269D6 /* UPupUP.swift */,
-				8BCF366928BF8E9E00E1A3FC /* FirstView.swift */,
 				8BDF0FCD28C3653D003AA3C2 /* Launch Screen.storyboard */,
 				8BC4F24B28B523DC000A1610 /* Assets.xcassets */,
 				8BC4F24D28B523DC000A1610 /* Preview Content */,
-				8B54A8BD28B6DAB100FECA15 /* ViewLogin.swift */,
 				8B5DF79B28C87C8200301AA6 /* RealLogIn.swift */,
-				8B42A60A28C8CB0B0040B30F /* Remo.swift */,
+				8B22BA3328C9241D0088D5C2 /* Not For View  */,
 				8BB76E2928B95B0800375CFC /* ColorTheme.swift */,
 				8B11E6B828C7197E002ACD85 /* Injaz.swift */,
 				8B3CBBCE28C777C7001269D6 /* Nadi */,
-				8B1F7CF628B9790B00654C23 /* ViewSignup.swift */,
 				8BB3DA6D28BB17C0002DBC86 /* AppView.swift */,
 				8B3CBBD028C7790B001269D6 /* takk.swift */,
 				8B11E6B228C70FCE002ACD85 /* BMR.swift */,

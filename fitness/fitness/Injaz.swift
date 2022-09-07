@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct Injaz: View {
+//    @State private var Animate = false
     var body: some View {
+        
         VStack{
             Spacer()
                 .frame( height: 60)
@@ -55,8 +57,15 @@ struct Injaz: View {
                     
                     
                 }
+                Button {
+                    
+//                    Animate = true
+                } label: {
+                    Image(systemName: "chevron.down")
+                        .foregroundColor(.blue)
+                }
+
                 
-                Image(systemName: "chevron.forward")
             }
             .frame(width: 390, height: 120)
             .background(Color.black.opacity(0.05))
@@ -77,7 +86,7 @@ struct Injaz: View {
                     
                 }
                 
-                Image(systemName: "chevron.forward")
+                Image(systemName: "chevron.down")
             }
             .frame(width: 390, height: 120)
             .background(Color.black.opacity(0.05))
@@ -100,7 +109,7 @@ struct Injaz: View {
                     
                 }
                 
-                Image(systemName: "chevron.forward")
+                Image(systemName: "chevron.down")
             }
             .frame(width: 390, height: 120)
             .background(Color.black.opacity(0.05))
@@ -121,7 +130,7 @@ struct Injaz: View {
                     
                 }
                 
-                Image(systemName: "chevron.forward")
+                Image(systemName: "chevron.down")
             }
             .frame(width: 390, height: 120)
             .background(Color.black.opacity(0.05))
@@ -133,6 +142,20 @@ struct Injaz: View {
                 .resizable()
                 .frame(width: 60, height: 110)
                 .offset(x: -10, y: -680)
+            
+//            HStack{
+//               Text("gduv")
+//            }
+//                .frame(width: Animate ? 375 : 370, height: Animate ? 505 : 0)
+//                .background(Color.red)
+//            .frame(width: Animate ? 370 : 370, height: Animate ? 500 : 0)
+//            .background(Color.theme.Bg)
+//
+//                    withAnimation(.spring(response: 0.9, dampingFraction: 0.9, blendDuration: 0.9)) {
+//                        Animate.toggle()
+//
+//                    }
+//
 
         }
     }
