@@ -18,9 +18,9 @@ struct AppView: View {
                 .frame(width: 910, height: 920)
                 .rotationEffect(.degrees(135))
                 .offset( y: 0)
-            
+           
             VStack(spacing: 10){
-              
+                Spacer().frame(height:100)
                 Text("نصائح وتحفيز")
                     .foregroundColor(.white)
                     .bold()

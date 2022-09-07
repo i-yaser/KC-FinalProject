@@ -134,7 +134,7 @@ func fetchCurrentWeek(){
         return
     }
     
-    (0...2).forEach { iday in
+    (1...5).forEach { iday in
         
         if let weekday = calender.date(byAdding: .day, value: iday, to: firstWeekDay){
             icurrenWeek.append(weekday)

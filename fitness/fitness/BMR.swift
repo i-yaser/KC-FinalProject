@@ -11,6 +11,12 @@ struct BMR: View {
     var body: some View {
         ZStack{
             
+            RoundedRectangle(cornerRadius: 30,style: .continuous)
+                .foregroundStyle(.linearGradient(colors: [.pink,Color.theme.Primary], startPoint: .topLeading, endPoint: .bottomLeading))
+                .frame(width: 430, height: 920)
+                .rotationEffect(.degrees(0))
+                .offset( y: 0)
+            
             VStack{
                 Image("BBMRu")
                     .resizable()
@@ -31,7 +37,7 @@ struct BMR: View {
                 Text("- حاسبة السعرات الحرارية (BMR) هي عملية حسابية تقوم على حساب عدد السعرات الحرارية المستهلكة يوميا للشخص (ذكر /أنثى) بناء على عدة عوامل مثل الطول, الوزن, العمر, النوع, ونوعية النشاط اليومي البدني.")
                     .multilineTextAlignment(.center)
                     .font(.system(size: 19))
-                
+                    .frame(width: 360, height: 120)
                 Spacer()
                     .frame(height: 30)
                 HStack {

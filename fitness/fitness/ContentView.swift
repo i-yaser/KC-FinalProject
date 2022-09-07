@@ -16,7 +16,7 @@ struct ContentView: View {
         if log_Status{
             
             NavigationView {
-                AppView()
+                Nooo()
             }
          
         

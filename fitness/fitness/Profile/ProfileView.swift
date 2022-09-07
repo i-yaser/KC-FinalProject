@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ProfileView: View {
     @State var Name = ""
     @State var Email = ""

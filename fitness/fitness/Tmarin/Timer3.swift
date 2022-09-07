@@ -11,6 +11,7 @@ struct Timer3: View {
     @State var DOownTimer = 120
     @State var Timerun = false
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State var aleart = false
     var body: some View {
         VStack(spacing:30){
             Spacer()
@@ -51,6 +52,18 @@ struct Timer3: View {
             }
             Spacer()
                 .frame( height: 305)
+            Button {
+                aleart = true
+            } label: {
+                Text("احصل على الهديه👏🏻").frame(width: 200, height: 40)
+                    .background(Color.black)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                
+            }.alert(isPresented: $aleart){
+                Alert(title: Text("تم كسب 300 نقطة🥳"), dismissButton: .default(Text("كمل")))
+        
+        }
         }
         
     }

@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
+import SystemConfiguration
 
 struct Sett: View {
     @State var Email = ""
+    
+    
     var body: some View {
-        NavigationView {
+//        NavigationView {
             ZStack{
 
                 RoundedRectangle(cornerRadius: 30,style: .continuous)
@@ -115,11 +120,14 @@ struct Sett: View {
                         VStack {
                             HStack{
                             Button {
+                                singOut()
                                 
                             } label: {
                                 HStack{
                                     Image(systemName: "lock.shield.fill")
+                                        .foregroundColor(.blue.opacity(0.7))
                                     Text("تسجيل خروج")
+                                    
                                 }.font(.system(size: 23)).padding(.trailing)
                                     .foregroundColor(.black)
                             }
@@ -148,7 +156,7 @@ struct Sett: View {
                 
                 
             }
-        }
+//        }
         
 
     }
@@ -159,3 +167,17 @@ struct Sett_Previews: PreviewProvider {
         Sett()
     }
 }
+func singOut(){
+    
+let firebaseAuth = Auth.auth()
+    
+do {
+try firebaseAuth.signOut()
+} catch let signOutError as NSError {
+    
+print("Error signing out: %@", signOutError)
+    
+}
+    
+}
+
