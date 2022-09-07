@@ -11,13 +11,13 @@ struct AppView: View {
     var body: some View {
 //        NavigationView {
         ZStack{
-            Color.theme.Primary .ignoresSafeArea()
-            
+//            Color.theme.Primary .ignoresSafeArea()
+//
             RoundedRectangle(cornerRadius: 30,style: .continuous)
-                .foregroundStyle(.linearGradient(colors: [.pink,.red], startPoint: .topLeading, endPoint: .bottomLeading))
-                .frame(width: 1100, height: 475)
+                .foregroundStyle(.linearGradient(colors: [.pink,Color.theme.Primary], startPoint: .topLeading, endPoint: .bottomLeading))
+                .frame(width: 900, height: 920)
                 .rotationEffect(.degrees(135))
-                .offset( y: -350)
+                .offset( y: 0)
             
             VStack(spacing: 10){
                 Divider()
@@ -257,7 +257,7 @@ struct AppView: View {
 //                                .accessibilityElement().frame(width: 390, height: 190)
                             
                         }.frame(width: 420, height: 350)
-                            .background(Color.theme.OnBg2)
+                            .background(Color.clear)
                             .cornerRadius(25)
                     Spacer()
                         .frame(height: 120)

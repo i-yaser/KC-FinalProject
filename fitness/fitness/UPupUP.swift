@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UPupUP: View {
     @State var index = "الصفحة الرئيسية"
+    
     @State var show = false
     var body: some View {
         ZStack{
@@ -108,44 +109,50 @@ struct MainView : View {
             ZStack{
                 Color.theme.Primary.ignoresSafeArea()
                 
-                HStack{
-                    
-                    Button {
+         
+                    HStack{
                         
-                        withAnimation(.spring()){
+                        Button {
                             
-                            self.show.toggle()
-                        }
+                            withAnimation(.spring()){
+                                
+                                self.show.toggle()
+                            }
+                            
+                        } label: {
+                            Image(systemName: "list.bullet")
+                            .font(.system(size: 23))  }
+                        .foregroundColor(.black)
                         
-                    } label: {
-                        Image(systemName: "list.bullet")
-                        .font(.system(size: 23))  }
-                    .foregroundColor(.black)
-                    
-                    Spacer()
-                        .frame(width: 220)
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "circle.hexagongrid.fill")
-                        .font(.system(size: 23))                    }
-                    .foregroundColor(.black)
+                        Spacer()
+                            .frame(width: 220)
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "circle.hexagongrid.fill")
+                            .font(.system(size: 23))                    }
+                        .foregroundColor(.black)
 
 
-                }//end
+                    }
+                //end
                 Text("Home")
                     .fontWeight(.bold)
                     .font(.title)
+                    
+
             }.frame(width: 420, height: 50)
             .padding(.horizontal)
             .padding(.vertical, 10)
+                
             
+           
             ZStack{
 //                AppView().opacity(self.index == "الصفحة الرئيسية" ? 1 : 0)
                 
                 HealthyView().opacity(self.index == "صحه" ? 1 : 0)
 
-                MTGR().opacity(self.index == "متجر" ? 1 : 0)
+                Nooo().opacity(self.index == "متجر" ? 1 : 0)
                 
                 BMR().opacity(self.index == "حاسبة السعرات" ? 1 : 0)
                 
@@ -154,6 +161,8 @@ struct MainView : View {
                 Injaz().opacity(self.index == "نقاطك" ? 1 : 0)
                 
                 ProfileView().opacity(self.index == "ملفك الشخصي" ? 1 : 0)
+                
+//                AppView().opacity(self.index == 0 : 1 ? "الصفحة الرئيسية")
                 
                 
             }.frame(width: 400, height: 900)

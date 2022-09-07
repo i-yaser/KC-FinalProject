@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NadiView: View {
     var body: some View {
-        NavigationView{
+//        NavigationView{
             
             ZStack{
                 Color.theme.Bg .ignoresSafeArea()
@@ -82,7 +82,7 @@ struct NadiView: View {
             
  
         }//N
-    }
+//    }
 }
 }
 struct NadiView_Previews: PreviewProvider {

@@ -23,7 +23,7 @@ struct Injaz: View {
                     HStack{
 
                         Spacer()
-                Text("0,880")
+                Text("0,850")
                     .font(.system(size: 70))
                     
                         

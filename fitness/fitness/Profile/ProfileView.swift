@@ -115,46 +115,46 @@ struct ProfileView: View {
                             .padding()
                             .background(.white .opacity(0.11))
                             
-                            HStack{
-                                VStack{
-                               Image("TW")
-                                        .resizable()
-                                        .frame(width: 30, height: 30 )
-                                    Spacer()
-                                             .frame(height:1)
-                                
-                                Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
-                                    .frame(width: 140, height: 40)
-        //                            .background(Color.white) .cornerRadius(50)
-                                }
-                                VStack{
-                                Image("IN")
-                                        .resizable()
-                                        .frame(width: 30, height: 30 )
-                                    Spacer()
-                                             .frame(height:1)
-                               
-                                
-                                Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
-                                    .frame(width: 140, height: 40)
-        //                            .background(Color.white) .cornerRadius(50)
-                                }
-                                VStack{
-                               Image("WW")
-                                        .resizable()
-                                        .frame(width: 30, height: 30)
-                               Spacer()
-                                        .frame(height:1)
-                                
-                                Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
-                                    .frame(width: 140, height: 40)
-        //                            .background(Color.white) .cornerRadius(50)
-                                }
-                            }//HStack 2
-                            .padding()
-                            .background(.white .opacity(0.11))
+//                            HStack{
+//                                VStack{
+//                               Image("TW")
+//                                        .resizable()
+//                                        .frame(width: 30, height: 30 )
+//                                    Spacer()
+//                                             .frame(height:1)
+//
+//                                Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
+//                                    .frame(width: 140, height: 40)
+//        //                            .background(Color.white) .cornerRadius(50)
+//                                }
+//                                VStack{
+//                                Image("IN")
+//                                        .resizable()
+//                                        .frame(width: 30, height: 30 )
+//                                    Spacer()
+//                                             .frame(height:1)
+//
+//
+//                                Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
+//                                    .frame(width: 140, height: 40)
+//        //                            .background(Color.white) .cornerRadius(50)
+//                                }
+//                                VStack{
+//                               Image("WW")
+//                                        .resizable()
+//                                        .frame(width: 30, height: 30)
+//                               Spacer()
+//                                        .frame(height:1)
+//
+//                                Link("اضغط هنا", destination: URL(string: "https://linktr.ee/fitness000")!)
+//                                    .frame(width: 140, height: 40)
+//        //                            .background(Color.white) .cornerRadius(50)
+//                                }
+//                            }//HStack 2
+//                            .padding()
+//                            .background(.white .opacity(0.11))
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 90)
                            
                         }//VStack 2
                         .padding()
@@ -172,7 +172,7 @@ struct ProfileView: View {
                         })
                         )
                         
-
+                        
                         
                     }//VStack 1
                     .frame(width:420)

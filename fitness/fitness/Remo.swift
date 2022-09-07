@@ -19,10 +19,10 @@ struct Remo: View {
                 .rotationEffect(.degrees(135))
                 .offset( y: -350)
             
-//            Image("LOGO10")
-//                .resizable()
-//                .frame(width: 200, height: 200)
-//                .offset(x: -6, y: -10)
+            Image("LOGO10")
+                .resizable()
+                .frame(width: 200, height: 200)
+                .offset(x: -6, y: -10)
         }
     }
 }

@@ -21,7 +21,6 @@
 		8B3CBBF028C78991001269D6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3CBBEF28C78991001269D6 /* FirebaseAuth */; };
 		8B3CBBF428C7C253001269D6 /* NOOOOO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBBF328C7C253001269D6 /* NOOOOO.swift */; };
 		8B3CBBF828C7C30E001269D6 /* UPupUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBBF728C7C30E001269D6 /* UPupUP.swift */; };
-		8B3CBBFA28C7C394001269D6 /* MTGR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBBF928C7C394001269D6 /* MTGR.swift */; };
 		8B42A60B28C8CB0B0040B30F /* Remo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B42A60A28C8CB0B0040B30F /* Remo.swift */; };
 		8B42A60D28C8D1760040B30F /* Sett.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B42A60C28C8D1760040B30F /* Sett.swift */; };
 		8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A658A28BD9C6200D7075C /* UpNadi.swift */; };
@@ -66,7 +65,6 @@
 		8B3CBBEC28C77B7B001269D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8B3CBBF328C7C253001269D6 /* NOOOOO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOOOOO.swift; sourceTree = "<group>"; };
 		8B3CBBF728C7C30E001269D6 /* UPupUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPupUP.swift; sourceTree = "<group>"; };
-		8B3CBBF928C7C394001269D6 /* MTGR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGR.swift; sourceTree = "<group>"; };
 		8B42A60A28C8CB0B0040B30F /* Remo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remo.swift; sourceTree = "<group>"; };
 		8B42A60C28C8D1760040B30F /* Sett.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sett.swift; sourceTree = "<group>"; };
 		8B4A658A28BD9C6200D7075C /* UpNadi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpNadi.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 			children = (
 				8B85EB1D28C48E8200CED843 /* ViewModel */,
 				8B85EB1F28C48E8200CED843 /* Home.swift */,
-				8B85EB2028C48E8200CED843 /* Model */,
 			);
 			path = GoodView;
 			sourceTree = "<group>";
@@ -156,8 +153,7 @@
 		8B85EB1D28C48E8200CED843 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8B85EB1E28C48E8200CED843 /* TaskViewModel.swift */,
-				8B80A4B928C62E6900876F3B /* Model l.swift */,
+				8B85EB2028C48E8200CED843 /* Model */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -165,6 +161,8 @@
 		8B85EB2028C48E8200CED843 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B80A4B928C62E6900876F3B /* Model l.swift */,
+				8B85EB1E28C48E8200CED843 /* TaskViewModel.swift */,
 				8B85EB2128C48E8200CED843 /* Task.swift */,
 			);
 			path = Model;
@@ -189,14 +187,13 @@
 		8BC4F24628B523DA000A1610 /* fitness */ = {
 			isa = PBXGroup;
 			children = (
+				8B3CBBEC28C77B7B001269D6 /* GoogleService-Info.plist */,
 				8B5DF7A628C886B100301AA6 /* Info.plist */,
 				8B85EB1C28C48E8200CED843 /* GoodView */,
 				8BC4F24728B523DA000A1610 /* fitnessApp.swift */,
-				8B3CBBEC28C77B7B001269D6 /* GoogleService-Info.plist */,
 				8BC4F24928B523DA000A1610 /* ContentView.swift */,
 				8B3CBBF328C7C253001269D6 /* NOOOOO.swift */,
 				8B3CBBF728C7C30E001269D6 /* UPupUP.swift */,
-				8B3CBBF928C7C394001269D6 /* MTGR.swift */,
 				8BCF366928BF8E9E00E1A3FC /* FirstView.swift */,
 				8BDF0FCD28C3653D003AA3C2 /* Launch Screen.storyboard */,
 				8BC4F24B28B523DC000A1610 /* Assets.xcassets */,
@@ -336,7 +333,6 @@
 				8BBAD19128BC78430013C5DC /* HealthyView.swift in Sources */,
 				8B4A658B28BD9C6200D7075C /* UpNadi.swift in Sources */,
 				8B3CBBF828C7C30E001269D6 /* UPupUP.swift in Sources */,
-				8B3CBBFA28C7C394001269D6 /* MTGR.swift in Sources */,
 				8B42A60D28C8D1760040B30F /* Sett.swift in Sources */,
 				8B4A658D28BDA9EA00D7075C /* NadiList.swift in Sources */,
 				8B11E6B328C70FCE002ACD85 /* BMR.swift in Sources */,

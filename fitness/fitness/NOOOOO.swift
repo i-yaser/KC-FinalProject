@@ -16,8 +16,8 @@ struct Nooo: View {
     var body: some View {
         
         ZStack {
-            
-            
+            Color.clear.opacity(0.0)
+
             VStack{
                 
                                     switch selesctedIndex{
@@ -30,17 +30,16 @@ struct Nooo: View {
                             HealthyView()
                         }
                     case 2:
-                                        VStack{
-                                            Text("fjf")
-                                        }
+                        NavigationView{
+                           Injaz()
+                         }
                     case 3:
                      NavigationView{
-                        NadiView()
-                                            
+                      NadiView()
                         }
                     default:
                         NavigationView{
-                            ProfileView()
+                            Sett()
                             
                         }
                     }
@@ -64,10 +63,10 @@ struct Nooo: View {
                                     .foregroundColor(.red)
                             }
                             else if num == 2 {
-                                Image(systemName: IconTabBarView[num])
-                                    .font(.system(size: 40, weight: .bold))
-                                    .foregroundColor(.white)
-                                    .background(.blue)
+                                Image("GGG")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+//                                    .background(.blue)
                                     .cornerRadius(14)
                             }
 
@@ -90,7 +89,7 @@ struct Nooo: View {
 
                     }
                 }
-//                .frame(width: 404, height: 40)
+                .frame(width: 400, height: 30)
 //                .background(Color.theme.OnPrimaryContainer)
 //
 //                .cornerRadius(10)
