@@ -20,6 +20,7 @@ struct Homei: View {
     @State var Title3 = "تمارين الضغط"
     @State var Dis3 = "يعتبر تمرين الضغط من أكثر التمارين التي ينتشر تأديتها، والتي يمكنها أن تفرد عضلاتك وتعمل على تقويتها،"
     
+    
     var body: some View {
        
         ScrollView(.vertical, showsIndicators: false) {
