@@ -80,7 +80,8 @@ struct UPupUP: View {
                             .frame(width: 15, height: 15)
                             .foregroundColor(.black)
                         
-                    }.padding()
+                    }.offset(x: -60)
+                    .padding()
                         .opacity(self.show ? 1 : 0)
 
                 }
@@ -135,7 +136,7 @@ struct MainView : View {
                 Text("Home")
                     .fontWeight(.bold)
                     .font(.title)
-            }.frame(width: 400, height: 50)
+            }.frame(width: 420, height: 50)
             .padding(.horizontal)
             .padding(.vertical, 10)
             
@@ -155,9 +156,10 @@ struct MainView : View {
                 ProfileView().opacity(self.index == "ملفك الشخصي" ? 1 : 0)
                 
                 
-            }
+            }.frame(width: 400, height: 900)
             
-        }.background(Color.white)
+        }.frame(height: 840)
+        .background(Color.white)
     }
 }
 

@@ -16,7 +16,14 @@ struct BMRww: View {
 
     var body: some View {
         ZStack{
-            Color.theme.PrimaryContainer .ignoresSafeArea()
+            Color.theme.Primary .ignoresSafeArea()
+            
+            RoundedRectangle(cornerRadius: 30,style: .continuous)
+                .foregroundStyle(.linearGradient(colors: [.pink,.red], startPoint: .topLeading, endPoint: .bottomLeading))
+                .frame(width: 1100, height: 475)
+                .rotationEffect(.degrees(135))
+                .offset( y: -350)
+
             VStack{
                 
                 Image("BMR")
@@ -147,9 +154,11 @@ struct BMRww: View {
                             
                         
                        
-                            } .background(Color.theme.Primary) .cornerRadius(20)
+                            } .background(Color.red) .cornerRadius(20)
                             
-                        }
+                        }.frame(width: 410, height: 80)
+                       .cornerRadius(20)
+
                         VStack{
                         Text("احتياجك اليومي لسعرات الحراريه")
                            

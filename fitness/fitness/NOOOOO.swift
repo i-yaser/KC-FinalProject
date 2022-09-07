@@ -104,10 +104,10 @@ struct Nooo: View {
 struct Nooo_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
+            Nooo()
                 .preferredColorScheme(.light)
             .previewDevice("iPhone 11")
-            ContentView()
+            Nooo()
                 .preferredColorScheme(.dark)
                 .previewDevice("iPhone 11")
         }

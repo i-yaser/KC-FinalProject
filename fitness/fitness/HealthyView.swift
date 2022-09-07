@@ -24,11 +24,18 @@ struct HealthyView: View {
 
                     VStack{
 //                        ScrollView(.horizontal) {
-                            VStack{
-                                Text("نصايح")
+                            HStack{
+                                Text("كن قوياً")
                                     .font(.title3)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.theme.Outline3)
+                                Image("LOGO")
+                                    .resizable()
+                                    .frame(width: 200, height: 200)
+                                Text("كن صحياً")
+                                    .font(.title3)
+//                                Text("نصايح")
+//                                    .font(.title3)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.theme.Outline3)
                             }
                             .frame(width: 380, height: 150)
                             .background(Color.theme.iColor)
@@ -159,7 +166,7 @@ struct HealthyView: View {
                                     }
 
                                     VStack(spacing: 10){
-                                        Text("التغذيه")
+                                        Text("مدربين")
                                             .font(.system(size: 26))
                                         Image("DIET PLAN")
                                             .resizable()

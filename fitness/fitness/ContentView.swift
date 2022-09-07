@@ -6,111 +6,104 @@
 //
 
 import SwiftUI
-
+import Firebase
+import GoogleSignIn
 
 struct ContentView: View {
-    
-    @State var selesctedIndex = 1
-
-    var IconTabBarView = ["house","bolt.heart","cart", "location.circle", "person.crop.circle"]
+    @AppStorage("log_Status") var log_Status = false
     var body: some View {
         
-        ZStack {
+        if log_Status{
             
-            
-            VStack{
-                
-                                    switch selesctedIndex{
-                    case 0:
-                        NavigationView{
-                            AppView()
-                        }
-                    case 1:
-                        NavigationView{
-                            HealthyView()
-                        }
-                    case 2:
-                                        VStack{
-                                            Text("fjf")
-                                        }
-                    case 3:
-                     NavigationView{
-                        NadiView()
-                                            
-                        }
-                    default:
-                        NavigationView{
-                            ProfileView()
-                            
-                        }
-                    }
-                
-                    
-                
-                
-                Spacer()
-                HStack {
-                    ForEach(0..<5) { num in
-                        Button {
-                           selesctedIndex = num
-                        } label: {
-                            Spacer()
-                            
-//                            "\(image)\(selectedTab == image ? ".fill" : "")")
-//                            "\(IconTabBarView)\(selesctedIndex = IconTabBarView ? ".fill" : "")")
-
-                            if num == 1 {
-                                Image(systemName: IconTabBarView[num])                    .font(.system(size: 34, weight: .bold))
-                                    .foregroundColor(.red)
-                            }
-                            else if num == 2 {
-                                Image(systemName: IconTabBarView[num])
-                                    .font(.system(size: 40, weight: .bold))
-                                    .foregroundColor(.white)
-                                    .background(.blue)
-                                    .cornerRadius(14)
-                            }
-
-                            else if num == 3 {
-                                Image(systemName: IconTabBarView[num])
-                                    .font(.system(size: 34, weight: .bold))
-                                    .foregroundColor(.red)
-                                    
-
-                            }
-                            else{
-                                Image(systemName: IconTabBarView[num])
-                                    .font(.system(size: 24, weight: .bold))
-                                    .foregroundColor(.blue)
-                                    .foregroundColor(selesctedIndex == num ? Color(.black) : .init(white: 0.8))
-//                                    .offset(y: selesctedIndex == IconTabBarView ? -10 : 0)
-                            }
-                            Spacer()
-                        }
-
-                    }
-                }
-//                .frame(width: 404, height: 40)
-//                .background(Color.theme.OnPrimaryContainer)
-//
-//                .cornerRadius(10)
+            NavigationView {
+                AppView()
             }
+         
+        
+        
         }
-
-        
-        
+        else {
+            RealLogIn()
+        }
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
                 .preferredColorScheme(.light)
-            .previewDevice("iPhone 11")
             ContentView()
                 .preferredColorScheme(.dark)
-                .previewDevice("iPhone 11")
+
         }
+            
     }
 }
+
+//
+//        NavigationView {
+//            ZStack{
+//
+//                Color.theme.Primary .ignoresSafeArea()
+//
+//                RoundedRectangle(cornerRadius: 30,style: .continuous)
+//                    .foregroundStyle(.linearGradient(colors: [.pink, .red], startPoint: .topLeading, endPoint: .bottomLeading))
+//                    .frame(width: 1120, height: 475)
+//                    .rotationEffect(.degrees(135))
+//                    .offset( y: -350)
+//
+//
+//
+
+//                VStack{
+//
+//                   Spacer()
+//
+//                    Image("LOGO")
+//                        .resizable()
+//                        .frame(width: 200, height: 200)
+//                        .cornerRadius(550)
+//                        .offset(x: -130,y: -20)
+//
+//
+//
+//                    Text("اهلا بك \n خيارك الأفضل لصحه")
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color.theme.Bg)
+//                        .font(.system(size: 23))
+//                        .frame(width: 200, height: 80)
+//                        .padding()
+//                        .offset(x: -80, y: -20)
+//                    Spacer()
+//
+//                    NavigationLink(destination: TheFirst()){
+//                        Text("تسجيل الدخول")
+//                        .foregroundColor(.white)
+//                        .frame(width: 300, height: 50)
+//                        .background(Color.black .opacity(0.8))
+//                        .cornerRadius(10)
+//
+//                    }
+//
+//                    NavigationLink(destination: ViewSignup()){
+//                        Text("إنشاء حساب جديد")
+//                            .foregroundColor(.white)
+////                            .foregroundStyle(.linearGradient(colors: [.pink, .red], startPoint: .topLeading, endPoint: .bottomLeading))
+//.frame(width: 300, height: 50)
+//                        .background(Color.black .opacity(0.8))
+//                        .cornerRadius(10)
+//
+//                    }
+//
+//                        Spacer()
+//                        .frame(height: 190)
+//
+//
+//                    Spacer()
+//
+//                }
+//            }.navigationTitle("Fitness")
+//        }
+            
 

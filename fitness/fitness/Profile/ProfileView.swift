@@ -16,11 +16,14 @@ struct ProfileView: View {
         
         NavigationView {
             ZStack{
-                Color.theme.Bg .ignoresSafeArea()
+//                Color.black .ignoresSafeArea()
+//
+                RoundedRectangle(cornerRadius: 30,style: .continuous)
+                    .foregroundStyle(.linearGradient(colors: [.pink,.red], startPoint: .topLeading, endPoint: .bottomLeading))
+                    .frame(width: 1500, height: 1475)
+                    .rotationEffect(.degrees(135))
+                    .offset( y: -350)
                 
-                Ellipse()
-                    .scale(1.1)
-                    .foregroundColor(Color.theme.OnBg .opacity(0.15))
 //                Color.theme.Primary .ignoresSafeArea()
 //
 //                Ellipse()
@@ -56,27 +59,32 @@ struct ProfileView: View {
                             Divider()
                         Image(systemName: "person.crop.circle")
                             .font(.system(size: 110))
-                        Text("اهلا بك يا \(Name)")
+//                        Text("اهلا بك يا \(Name)")
                         
                         Text(Name)
                             .font(.system(size: 18))
                             .frame(width: 300, height: 40)
-                            .background(Color.theme.Primary)
+                            .background(Color.black)
+                            .foregroundColor(.white)
                             .cornerRadius(18)
                         
                         Text(Email)
                             .font(.system(size: 18))
                             .frame(width: 300, height: 40)
-                            .background(Color.theme.Primary)
+                            .background(Color.black)
+                            .foregroundColor(.white)
                             .cornerRadius(18)
                         Text("\(NNN)")
                             .font(.system(size: 18))
                             .frame(width: 300, height: 40)
-                            .background(Color.theme.Primary)
+                            .background(Color.black)
+                            .foregroundColor(.white)
                             .cornerRadius(18)
                         Divider()
                         Text("اذا كنت تريد حاسبة السعرات الحراريه \n اتجه الى القائمة الرئيسيه")
                             .multilineTextAlignment(.center)
+                            .foregroundColor(.white)
+
                         //u معلومات المستخدم
                         
                         VStack{
@@ -84,7 +92,7 @@ struct ProfileView: View {
                             HStack{
                                 
                                 Text("الشروط والأحكام")
-                                
+                                    .foregroundColor(.white)
                                 Spacer()
                                 
                                 Link("اضغط هنا", destination: URL(string: "https://www.youtube.com/watch?v=8TqH661a2Uc&list=RD38y_Znfe-rw&index=31")!)
@@ -96,7 +104,8 @@ struct ProfileView: View {
                             
                             HStack{
                                 Text("سياسة التطبيق")
-                                
+                                    .foregroundColor(.white)
+
                                 Spacer()
                                 
                                 Link("اضغط هنا", destination: URL(string: "https://www.youtube.com/watch?v=8TqH661a2Uc&list=RD38y_Znfe-rw&index=31")!)

@@ -68,7 +68,7 @@ struct ViewSignup: View {
                 TextField("اكتب اسمك", text: $Name)
                     .padding()
                     .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
+                    .background(Color.white.opacity(0.5))
                     .cornerRadius(10)
                     .foregroundColor(.black)
 
@@ -76,34 +76,34 @@ struct ViewSignup: View {
                     .keyboardType(.emailAddress)
                     .padding()
                     .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
+                    .background(Color.white.opacity(0.5))
                     .cornerRadius(10)
-                    .foregroundColor(.black)
-
+                    .foregroundColor(.white)
+                    
                 SecureField("اكتب كلمة المرور", text: $Password)
                     .padding()
                     .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
+                    .background(Color.white.opacity(0.5))
                     .cornerRadius(10)
                     .foregroundColor(.black)
                 
                 TextField("اكتب طولك هنا بالمتر", text: $tol)
                     .padding()
                     .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
+                    .background(Color.white.opacity(0.5))
                     .cornerRadius(10)
                     .foregroundColor(.black)
                 
                 TextField("اكتب وزنك هنا بالكيلو جرام", text: $wzin)
                     .padding()
                     .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
+                    .background(Color.white.opacity(0.5))
                     .cornerRadius(10)
                     .foregroundColor(.black)
                 TextField("اكتب عمرك هكذا (17.0)", text: $age)
                     .padding()
                     .frame(width: 300, height: 50)
-                    .background(Color.black.opacity(0.05))
+                    .background(Color.white.opacity(0.5))
                     .cornerRadius(10)
                     .foregroundColor(.black)
                 
@@ -212,9 +212,13 @@ struct ViewSignup: View {
                             
                         
                        
-                            } .background(Color.theme.Primary) .cornerRadius(20)
+                            }
+                            .background(Color.black) .cornerRadius(20)
+                                
                             
-                        }
+                        }.frame(width: 410, height: 80)
+                        .cornerRadius(20)
+
                         VStack{
                         Text("احتياجك اليومي لسعرات الحراريه")
                            

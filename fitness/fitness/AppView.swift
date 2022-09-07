@@ -11,11 +11,14 @@ struct AppView: View {
     var body: some View {
 //        NavigationView {
         ZStack{
-            Color.theme.Bg .ignoresSafeArea()
+            Color.theme.Primary .ignoresSafeArea()
             
-            Ellipse()
-                .scale(1.1)
-                .foregroundColor(Color.theme.OnBg .opacity(0.15))
+            RoundedRectangle(cornerRadius: 30,style: .continuous)
+                .foregroundStyle(.linearGradient(colors: [.pink,.red], startPoint: .topLeading, endPoint: .bottomLeading))
+                .frame(width: 1100, height: 475)
+                .rotationEffect(.degrees(135))
+                .offset( y: -350)
+            
             VStack(spacing: 10){
                 Divider()
             
@@ -191,8 +194,13 @@ struct AppView: View {
                                                  
 
                                                         
-                            }.background(Color.white)
-                                .accessibilityElement().frame(width: 390, height: 190)
+                            }
+                            .background(Color.white)                                .cornerRadius(20)
+                            .frame(width: 370, height: 150)
+                            .frame(width: 371, height: 158)
+                            .background(.red).cornerRadius(20)
+
+//                                .accessibilityElement().frame(width: 390, height: 190)
 
                                 .cornerRadius(20)
  
@@ -242,8 +250,11 @@ struct AppView: View {
                                                  
 
                                                         
-                            }.background(Color.white)
-                                .accessibilityElement().frame(width: 390, height: 190)
+                            }.background(Color.white)                                .cornerRadius(20)
+                                .frame(width: 370, height: 150)
+                                .frame(width: 371, height: 158)
+                                .background(.red).cornerRadius(20)
+//                                .accessibilityElement().frame(width: 390, height: 190)
                             
                         }.frame(width: 420, height: 350)
                             .background(Color.theme.OnBg2)
