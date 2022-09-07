@@ -31,7 +31,7 @@ struct Sett: View {
                                 .foregroundColor(.white)
                             Spacer()
                                 .frame(height: 3)
-        Text("@UserName")
+        Text("@UserName \n Q8yaser@icloud.com")
                                 .font(.system(size: 16))
                                 .foregroundColor(.white)
                         
@@ -70,7 +70,7 @@ struct Sett: View {
                         
                         Spacer() .frame( height: 40)
                         
-                        Text("اذا كنت تريد حاسبة السعرات \n اتجه الى الصغحة الرئيسية.")
+                        Text("اذا كنت تريد حاسبة السعرات \n اتجه الى الصفحة الرئيسية.")
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
